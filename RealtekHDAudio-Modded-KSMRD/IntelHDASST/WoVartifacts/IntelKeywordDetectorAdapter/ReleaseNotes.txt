@@ -1,4 +1,4 @@
-﻿Version: 1.0.0.115
+﻿Version: 1.0.0.105
 
 Intel® Smart Sound Technology Driver for Skylake-CPU and Skylake-PCH - Bring Up Guide is available under http://www.intel.com/cd/edesign/library/asmo-na/eng/552151.htm
 
