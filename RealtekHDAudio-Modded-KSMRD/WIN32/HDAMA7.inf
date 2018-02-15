@@ -3,7 +3,7 @@
 ;
 
 [Version]
-CatalogFile=HDXRT.CAT
+CatalogFile=HDARt.cat
 Signature = "$chicago$"
 Class=MEDIA
 ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
@@ -16,72 +16,66 @@ DriverVer=03/28/2017, 6.0.1.8105
 222="Realtek HD Audio Installation Disk",,,
 
 [SourceDisksFiles]
-RTKVHD64.sys=222
+RTKVHDA.sys=222
 RtlCPAPI.dll=222
 RTCOMDLL.dll=222
-RtlUpd64.exe=222
-RTSnMg64.cpl=222
-
-RtPgEx64.dll=222
-RtkCoLDR64.dll=222
-RCoInstII64.dll=222
-RtkApi64.dll=222
-RtCOM64.dll=222
-RtkCfg64.dll=222
 RtkCfg.dll=222
-RtlCPAPI64.dll=222
-MaxxAudioMeters64.exe=222
-RtkAudioService64.exe=222
-RAVBg64.exe=222
-RtkNGUI64.exe=222
+RtlUpd.exe=222
+RTSndMgr.CPL=222
+RltkAPO.dll=222
+RtkPgExt.dll=222
+RtkCoLDR.dll=222
+RtkCoInstII.dll=222
+RtkApoApi.dll=222
+WavesLib.dll=222
+MaxxAudioMeters.exe=222
+RtkAudioService.exe=222
+RtHDVBg.exe=222
+RtkNGUI.exe=222
 RTAIODAT.DAT=222
 RtDataProc.dll=222
-RtDataProc64.dll=222
 rtvienna.dat=222
-ToastDll64.dll=222
-; MaxxAudioCapture64.dll=222
-; MaxxAudioRender64.dll=222
-; MaxxAudioRenderAVX64.dll=222
+ToastDll.dll=222
+MaxxAudioCapture.dll=222
+MaxxAudioRender.dll=222
+MaxxAudioRenderAVX.dll=222
 tbb_waves.dll=222
-  RTHDASIO64.dll=222
   RTHDASIO.dll=222
-  RTASIOCP64.dll=222
   RTASIOCP.dll=222
-  "Maxx Audio Installer (x64).msi"=222
+  "Maxx Audio Installer (x86).msi"=222
   MaxxAudio_Data.cab=222
+
 
 
 [DestinationDirs]
 DefaultDestDir=10; dirid = \system32\drivers
 IntcAzAudModelCopyFiles = 10,"system32\drivers"
-RTLCPAPI.CopyList  = 10, "SysWOW64\RTCOM"
-RTCOMDLL.CopyList  = 10, "SysWOW64\RTCOM"
-RTCOMDLL.DelList   = 10, "SysWOW64\RTCOM"
-RTLCPAPI.DelList   = 10, "SysWOW64\RTCOM"
+RTLCPAPI.CopyList  = 11,"RTCOM"
+RTCOMDLL.CopyList  = 11,"RTCOM"
+RTCOMDLL.DelList   = 11,"RTCOM"
+RTLCPAPI.DelList   = 11,"RTCOM"
 RTUninstall.CopyList = 16422, "Realtek\Audio\HDA"
 RTUI.CopyList      = 16422, "Realtek\Audio\HDA"
 RTCPL.CopyList     = 11
-
+SfxFx.CopyList     = 11     ; %windir%\system32
 RtkCoInst.CopyList = 11
-RTCOM64.CopyList   = 11
-  RTASIODLL.CopyList  = 10, "SysWOW64"
-  RTASIO64DLL.CopyList  = 11
+  RTASIODLL.CopyList  = 11
   RTASIOCPL.CopyList  = 16422, "Realtek\Audio\Asio"
   MaxxAudio.CopyList = 16422, "Realtek\Audio\HDA\Waves"
 
-[SignatureAttributes]
-RTKVHD64.sys=SignatureAttributes.DRM
 
+[SignatureAttributes]
+RTKVHDA.sys=SignatureAttributes.DRM
+RltkAPO.dll=SignatureAttributes.PETrust
 RtlCPAPI.dll=SignatureAttributes.PETrust
 RTCOMDLL.dll=SignatureAttributes.PETrust
-RtkApi64.dll=SignatureAttributes.PETrust
-RtCOM64.dll=SignatureAttributes.PETrust
-RtkCfg64.dll=SignatureAttributes.PETrust
 RtkCfg.dll=SignatureAttributes.PETrust
-RtlCPAPI64.dll=SignatureAttributes.PETrust
+RtkApoApi.dll=SignatureAttributes.PETrust
 RtDataProc.dll=SignatureAttributes.PETrust
-RtDataProc64.dll=SignatureAttributes.PETrust
-
+MaxxAudioCapture.dll=SignatureAttributes.PETrust
+MaxxAudioRender.dll=SignatureAttributes.PETrust
+MaxxAudioRenderAVX.dll=SignatureAttributes.PETrust
+tbb_waves.dll=SignatureAttributes.PETrust
 
 [SignatureAttributes.DRM]
 DRMLevel=1300
@@ -90,9 +84,9 @@ DRMLevel=1300
 PETrust=true
 
 [Manufacturer]
-%MfgName% = AzaliaManufacturerID, NTamd64.6.0
+%MfgName% = AzaliaManufacturerID, NTX86.6.0
 
-[AzaliaManufacturerID.NTamd64.6.0]
+[AzaliaManufacturerID.NTX86.6.0]
 "Realtek Audio" = IntcAzAudModel1028052E, HDAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_10280726
 "Realtek Audio" = IntcAzAudModel1028052E, HDAUDIO\FUNC_01&VEN_10EC&DEV_0225&SUBSYS_10280740
 "Realtek Audio" = IntcAzAudModel1028052E, HDAUDIO\FUNC_01&VEN_10EC&DEV_0225&SUBSYS_10280741
@@ -209,19 +203,19 @@ HKLM,Software\Avance
 HKR,Settings
 
 [IntcAzAudModelCopyFiles]
-RTKVHD64.sys
+RTKVHDA.sys
 RTAIODAT.DAT
 rtvienna.dat
 
 [RtkCoInst.CopyList]
-RtkCoLDR64.dll
-RCoInstII64.dll
+RtkCoLDR.dll
+RtkCoInstII.dll
 
 [RtkCoInstInfo]
 OriginalInfSourcePath = %1%
 
 [MaxxAudio.CopyList]
-  "Maxx Audio Installer (x64).msi"
+  "Maxx Audio Installer (x86).msi"
   MaxxAudio_Data.cab
 
 [RTASIODLL.CopyList]
@@ -229,67 +223,64 @@ OriginalInfSourcePath = %1%
 
 [RTASIOCPL.CopyList]
   RTASIOCP.dll
-  RTASIOCP64.dll
-
-[RTASIO64DLL.CopyList]
-  RTHDASIO64.dll
 
 [RTUninstall.CopyList]
-RtlUpd64.exe
+RtlUpd.exe
 
 [RTLCPAPI.CopyList]
 RTLCPAPI.dll
 
 [RTCOMDLL.CopyList]
 RTCOMDLL.dll
-RtkCfg.dll 
+RtkCfg.dll
 RtDataProc.dll
-
-[RTCOM64.CopyList]
-RTCOM64.dll
-RtlCPAPI64.dll
-RtkCfg64.dll
-RtDataProc64.dll
 
 [RTLCPAPI.DelList]
 RTLCPAPI.dll
 
 [RTCOMDLL.DelList]
 RTCOMDLL.dll
-RtkCfg.dll 
+RtkCfg.dll
 RtDataProc.dll
 
 [RTUI.CopyList]
-RtkAudioService64.exe
-RAVBg64.exe
-RtkNGUI64.exe
-ToastDll64.dll
+RtkAudioService.exe
+RtHDVBg.exe
+RtkNGUI.exe
+ToastDll.dll
 
 [RTCPL.CopyList]
-RTSnMg64.cpl
+RTSndMgr.cpl
 
 ;; Copy custom SYSFX
 [SfxFx.CopyList]
+RltkAPO.dll
+RtkPgExt.dll
+RtkApoApi.dll
+WavesLib.dll
+MaxxAudioMeters.exe
+MaxxAudioCapture.dll
+MaxxAudioRender.dll
+MaxxAudioRenderAVX.dll
+tbb_waves.dll
 
-
-;;================= Windows 64 ====================
-[IntcAzAudModel.NTamd64]
+[IntcAzAudModel.NTX86]
 Include=ks.inf,wdmaudio.inf
 Needs=KS.Registration,WDMAUDIO.Registration,mssysfx.CopyFilesAndRegister
 DelFiles  = RTCOMDLL.DelList,RTLCPAPI.DelList
-CopyFiles = IntcAzAudModelCopyFiles, RTLCPAPI.CopyList, RTCOMDLL.CopyList, RTUninstall.CopyList, RTUI.CopyList, RTCPL.CopyList, RTCOM64.CopyList, RTASIODLL.CopyList, RTASIOCPL.CopyList, RTASIO64DLL.CopyList,
-DelReg    = RtkHD.DelReg, RTCOMDLL.DelReg, RealtekSep.DelReg
-AddReg    = IntcAzAudModelAddReg, AECBF.AddReg, AZAUD_OEM.AddReg, RTLCPAPI.AddReg, RTCOMDLL.AddReg, RTUninstall.AddReg, RTUI.AddReg, CPL_Class.AddReg, Coexist.AddReg, GUIInformation.AddReg, WavesInstaller.AddReg, RealtekSep.AddReg,
+CopyFiles = IntcAzAudModelCopyFiles, RTLCPAPI.CopyList, RTCOMDLL.CopyList, RTUninstall.CopyList, RTUI.CopyList, RTCPL.CopyList, SfxFx.CopyList, RTASIODLL.CopyList, RTASIOCPL.CopyList, MaxxAudio.CopyList
+DelReg    = RtkHD.DelReg, RealtekSep.DelReg
+AddReg    = IntcAzAudModelAddReg, AECBF.AddReg, AZAUD_OEM.AddReg, RTUninstall.AddReg, RTUI.AddReg, CPL_Class.AddReg, Coexist.AddReg, GUIInformation.AddReg, WavesInstaller.AddReg, RealtekSep.AddReg, MaxxAudioAPO.AddReg
 AddProperty  = OEMCustomBranding.AddProperty
-RegisterDlls = RTCOM64.RegisterDlls, RTASIODLL.RegisterDlls
+RegisterDlls = SfxFx.RegisterDlls, rtcom.RegisterDlls, RTASIODLL.RegisterDlls
 
-[IntcAzAudModel.NTamd64.HW]
+[IntcAzAudModel.NTX86.HW]
 AddReg=HdAudSecurity.AddReg
 
-[IntcAzAudModel.NTamd64.Services]
+[IntcAzAudModel.NTX86.Services]
 AddService = IntcAzAudAddService, 0x00000002, IntcAzAudServiceInstall
 
-[IntcAzAudModel.NTamd64.CoInstallers]
+[IntcAzAudModel.NTX86.CoInstallers]
 CopyFiles = RtkCoInst.CopyList
 AddReg = RtkCoInst.AddReg
 
@@ -298,6 +289,10 @@ HKLM,Software\Realtek\SBCoexist
 
 [Coexist.AddReg.Security]
 "G:BUD:(A;CIOI;KA;;;BU)"
+
+[Dolby4.DelReg]
+HKLM,Software\Dolby\PCEE4\DynamicKeys
+HKLM,Software\Dolby\PCEE4\StaticKeys
 
 [GUIInformation.AddReg]
 HKLM,SOFTWARE\Realtek\Audio\GUI_INFORMATION
@@ -314,9 +309,9 @@ DisplayName   = "Service for Realtek HD Audio (WDM)"
 ServiceType   = 1
 StartType     = 3
 ErrorControl  = 1
-ServiceBinary = %10%\system32\drivers\RTKVHD64.sys
+ServiceBinary = %10%\system32\drivers\RTKVHDA.sys
 
-[IntcAzAudModel.NTamd64.Interfaces]
+[IntcAzAudModel.NTX86.Interfaces]
 AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_RearLineOutWave%, IntcAzAudModel.RearLineOutWave
 AddInterface=%KSCATEGORY_RENDER%,%KSNAME_RearLineOutWave%, IntcAzAudModel.RearLineOutWave
 AddInterface=%KSCATEGORY_REALTIME%,%KSNAME_RearLineOutWave%, IntcAzAudModel.RearLineOutWave
@@ -1000,26 +995,55 @@ AddInterface=%KSCATEGORY_TOPOLOGY%,%KSNAME_RtHDMI19224ADWTopo%, RtHDA.RtHDMIADWT
 
 ;; Register custom SYSFX and property page
 [SfxFx.RegisterDlls]
+11,,RltkAPO.dll,1
+11,,RtkPgExt.dll,1
+11,,RtkApoApi.dll,1
+11,,MaxxAudioCapture.dll,1
+11,,MaxxAudioRender.dll,1
 
-
-[RTCOM64.RegisterDlls]
-11,,RtCOM64.dll,1
-11,,RtlCPAPI64.dll,1
-11,,RtkCfg64.dll,1
+[rtcom.RegisterDlls]
+11,RTCOM,RtlCPAPI.dll,1
+11,RTCOM,RTCOMDLL.dll,1
+11,RTCOM,RtkCfg.dll,1
 
 [RTASIODLL.RegisterDlls]
-  11,,RTHDASIO64.dll,1
-  10,SysWOW64,RTHDASIO.dll,1
-
+  11,,RTHDASIO.dll,1
 
 [OEMCustomBranding.AddProperty]
-DeviceBrandingIcon,,,,"%11%\RtPgEx64.dll,-200"
-DeviceVendorWebSite,,,,"http://www.soundcloud.com/shamuofficial" ; Place your URL here
+DeviceBrandingIcon,,,,"%11%\RtkPgExt.dll,-200"
+DeviceVendorWebSite,,,,"http://www.realtek.com.tw/" ; Place your URL here
 
 ;; All FX\\0 entries in the same grouping
 [SysFx.AddReg]
+HKR,"FX\\0",%PKEY_DisplayName%,,%SYSFX_FriendlyName%
+HKR,"FX\\0",%PKEY_SYSFX_PreMixClsid%,,%SYSFX_PREMIX_CLSID%
+HKR,"FX\\0",%PKEY_SYSFX_PostMixClsid%,,%SYSFX_POSTMIX_CLSID%
+HKR,"FX\\0",%PKEY_SYSFX_SFXClsid%,,%SYSFX_SFX_CLSID%
+HKR,"FX\\0",%PKEY_SYSFX_MFXClsid%,,%SYSFX_MFX_CLSID%
+HKR,"FX\\0",%PKEY_SYSFX_EFXClsid%,,%SYSFX_EFX_CLSID%
+HKR,"FX\\0",%PKEY_SYSFX_UiClsid%,,%SYSFX_UI_CLSID%
+HKR,"FX\\0",%PKEY_SYSFX_Association%,,%KSNODETYPE_ANY%  ; GUID NULL means install on all endpoints
+                                                        ; supply a specific GUID to install on a particular bridge pin node type
+HKR,"FX\\0","{255E1543-5FB7-439b-B353-C6608D680537},0",0x00010001,0x1    ;; PKEY_MAXX_3_HP_SIZE: Maxx Audio 3 Headphone Size=1, Medium
+HKR,"FX\\0","{255E1543-5FB7-439b-B353-C6608D680537},1",0x00010001,0x1    ;; PKEY_MAXX_3_EXT_SPKR_SIZE: Maxx Audio 3 External Speaker Size=1, Medium
 
-[]
+HKR,"FX\\0",%PKEY_SFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+HKR,"FX\\0",%PKEY_MFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+HKR,"FX\\0",%PKEY_EFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+
+[SysRecFx.AddReg]
+HKR,"FX\\0",%PKEY_DisplayName%,,%SYSFX_FriendlyName%
+HKR,"FX\\0",%PKEY_SYSFX_PreMixClsid%,,%SYSRECFX_PREMIX_CLSID%
+HKR,"FX\\0",%PKEY_SYSFX_MFXClsid%,,%SYSRECFX_MFX_CLSID%
+HKR,"FX\\0",%PKEY_SYSFX_EFXClsid%,,%SYSRECFX_EFX_CLSID%
+HKR,"FX\\0",%PKEY_SYSFX_UiClsid%,,%SYSFX_UI_CLSID%
+HKR,"FX\\0",%PKEY_SYSFX_Association%,,%KSNODETYPE_ANY%  ; GUID NULL means install on all endpoints
+                                                        ; supply a specific GUID to install on a particular bridge pin node type
+HKR,"EP\\0",%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_ANY%
+HKR,"EP\\0",%PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+
+HKR,"FX\\0",%PKEY_MFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+HKR,"FX\\0",%PKEY_EFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
 
 ;;
 ;; All EP\\0 entries in the same grouping
@@ -1028,15 +1052,32 @@ DeviceVendorWebSite,,,,"http://www.soundcloud.com/shamuofficial" ; Place your UR
 ;; Add endpoint extension property page
 ;;
 [OEMSettingsOverride.AddReg]
+HKR,"EP\\0", %PKEY_AudioEndpoint_Association%,,%KSNODETYPE_ANY%
+;48k16bit HKR,"EP\\0", %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,EE,02,00,04,00,10,00,16,00,10,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
+HKR,"EP\\0", %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,DC,05,00,08,00,20,00,16,00,18,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
+HKR,"EP\\0", %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+HKR,"EP\\0",%PKEY_APO_REDIRECT%,%REG_BINARY%, 0B,00,63,00,01,00,00,00,01,00,00,00
 
 [OEMSPDIFSettingsOverride.AddReg]
+HKR,"EP\\0", %PKEY_AudioEndpoint_Association%,,%KSNODETYPE_HDMI_INTERFACE%
+HKR,"EP\\0", %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,EE,02,00,04,00,10,00,16,00,10,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
+HKR,"EP\\0", %PKEY_SupportFormat_OEMFormat%, %REG_BINARY%, 41,00,75,00,0c,00,00,00,10,00,00,00,02,00,00,00,00,00,00,00
+HKR,"EP\\0", %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+HKR,"EP\\0", %PKEY_APO_REDIRECT%,%REG_BINARY%, 0B,00,63,00,01,00,00,00,01,00,00,00
+
+HKR,"EP\\1", %PKEY_AudioEndpoint_Association%,,%KSNODETYPE_ANY%
+HKR,"EP\\1", %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,EE,02,00,04,00,10,00,16,00,10,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
+HKR,"EP\\1", %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+HKR,"EP\\1", %PKEY_APO_REDIRECT%,%REG_BINARY%, 0B,00,63,00,01,00,00,00,01,00,00,00
 
 [RTHDAProperties.AddReg]
+HKR,"EP\\0",%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_ANY%
+HKR,"EP\\0",%PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
 
 [RTUninstall.AddReg]
 HKLM,%RT_UNINSTALL%,DisplayName,,"Realtek High Definition Audio Driver"
-HKLM,%RT_UNINSTALL%,UninstallString,,%16422%"\Realtek\Audio\HDA\RtlUpd64.exe -r -m -nrg2709"
-HKLM,%RT_UNINSTALL%,DisplayIcon,,%16422%"\Realtek\Audio\HDA\RtlUpd64.exe"
+HKLM,%RT_UNINSTALL%,UninstallString,,%16422%"\Realtek\Audio\HDA\RtlUpd.exe -r -m -nrg2709"
+HKLM,%RT_UNINSTALL%,DisplayIcon,,%16422%"\Realtek\Audio\HDA\Rtlupd.exe"
 HKLM,%RT_UNINSTALL%,Publisher,,%OrganizationName%
 HKLM,%RT_UNINSTALL%,DisplayVersion,,"6.0.1.8105"
 HKLM,%RT_UNINSTALL%,InstallLocation,,%16422%"\Realtek\Audio\HDA"
@@ -1046,103 +1087,6 @@ HKLM,%COEXIST%,{A5A63314-41AC-484F-85B8-FC15335C24CF},,"{90361AEF-24CF-43B4-A5F2
 
 [CPL_Class.AddReg]
 HKLM,%CPL_CLASS_S%,%NEWCPL_CLASS_KS%,0x00010001 ,0x00000004
-
-[RTLCPAPI.AddReg]
-HKCR,Wow6432Node\RtlCP.RtlCP.1,,0,"RtlCP Class"
-HKCR,Wow6432Node\RtlCP.RtlCP.1\CLSID,,0,%RTLCPAPI_CLSID%
-HKCR,Wow6432Node\RtlCP.RtlCP,,0,"RtlCP Class"
-HKCR,Wow6432Node\RtlCP.RtlCP\CurVer,,0,"RtlCP.RtlCP.1"
-HKCR,Wow6432Node\CLSID\%RTLCPAPI_CLSID%,,0,"RtlCP Class"
-HKCR,Wow6432Node\CLSID\%RTLCPAPI_CLSID%\ProgID,,0,"RtlCP.RtlCP.1"
-HKCR,Wow6432Node\CLSID\%RTLCPAPI_CLSID%\VersionIndependentProgID,,0,"RtlCP.RtlCP"
-HKCR,Wow6432Node\CLSID\%RTLCPAPI_CLSID%\Programmable
-HKCR,Wow6432Node\CLSID\%RTLCPAPI_CLSID%\InProcServer32,,0,%10%\SysWOW64\RTCOM\RTLCPAPI.dll
-HKCR,Wow6432Node\CLSID\%RTLCPAPI_CLSID%\InProcServer32,ThreadingModel,0,Both
-
-[RTCOMDLL.AddReg]
-HKCR,Wow6432Node\RTCOMDLL.RTLCSSAPI.1,,0,"RTLCSSAPI Class"
-HKCR,Wow6432Node\RTCOMDLL.RTLCSSAPI.1\CLSID,,0,%RTCOMDLL_CLSID%
-HKCR,Wow6432Node\RTCOMDLL.RTLCSSAPI,,0,"RTLCSSAPI Class"
-HKCR,Wow6432Node\RTCOMDLL.RTLCSSAPI\CurVer,,0,"RTCOMDLL.RTLCSSAPI.1"
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%,,0,"RTLCSSAPI Class"
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%\ProgID,,0,"RTCOMDLL.RTLCSSAPI.1"
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%\VersionIndependentProgID,,0,"RTCOMDLL.RTLCSSAPI"
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%\Programmable
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%\InProcServer32,,0,%10%\SysWOW64\RTCOM\RTCOMDLL.dll
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%\InProcServer32,ThreadingModel,0,Apartment
-HKCR,Wow6432Node\RTCOMDLL.SONY.1,,0,"SONY Class"
-HKCR,Wow6432Node\RTCOMDLL.SONY.1\CLSID,,0,%RTCOMDLL_CLSID2%
-HKCR,Wow6432Node\RTCOMDLL.SONY,,0,"SONY Class"
-HKCR,Wow6432Node\RTCOMDLL.SONY\CurVer,,0,"RTCOMDLL.SONY.1"
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID2%,,0,"SONY Class"
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID2%\ProgID,,0,"RTCOMDLL.SONY.1"
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID2%\VersionIndependentProgID,,0,"RTCOMDLL.SONY"
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID2%\Programmable
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID2%\InProcServer32,,0,%10%\SysWOW64\RTCOM\RTCOMDLL.dll
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID2%\InProcServer32,ThreadingModel,0,Apartment
-HKCR,Wow6432Node\PropSet.PropSet.1,,0,"PropSet Class"
-HKCR,Wow6432Node\PropSet.PropSet.1\CLSID,,0,%RTCOMDLL_CLSID3%
-HKCR,Wow6432Node\PropSet.PropSet,,0,"PropSet Class"
-HKCR,Wow6432Node\PropSet.PropSet\CurVer,,0,"PropSet.PropSet.1"
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID3%,,0,"PropSet Class"
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID3%\ProgID,,0,"PropSet.PropSet.1"
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID3%\VersionIndependentProgID,,0,"PropSet.PropSet"
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID3%\Programmable
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID3%\InProcServer32,,0,%10%\SysWOW64\RTCOM\RTCOMDLL.dll
-HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID3%\InProcServer32,ThreadingModel,0,Apartment
-
-HKCR,Wow6432Node\RtkCfg.RtkCfgApi.1,,0,"RtkCfgApi Class"
-HKCR,Wow6432Node\RtkCfg.RtkCfgApi.1\CLSID,,0,%RTKCFG_CLSID%
-HKCR,Wow6432Node\RtkCfg.RtkCfgApi,,0,"RtkCfgApi Class"
-HKCR,Wow6432Node\RtkCfg.RtkCfgApi\CurVer,,0,"RtkCfg.RtkCfgApi.1"
-HKCR,Wow6432Node\RtkCfg.RtkCfgApi\CLSID,,0,%RTKCFG_CLSID%
-HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%,,0,"RtkCfgApi Class"
-HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%\ProgID,,0,"RtkCfg.RtkCfgApi.1"
-HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%\VersionIndependentProgID,,0,"RtkCfg.RtkCfgApi"
-HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%\Programmable
-HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%\InProcServer32,,0,%10%\SysWOW64\RTCOM\RtkCfg.dll
-HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%\InProcServer32,ThreadingModel,0,Both
-
-HKCR,Wow6432Node\%RTDP_CID1_PATH%,,0,"RtNuanceProc Class"
-HKCR,Wow6432Node\%RTDP_CID1_PATH%\InProcServer32,,0,%10%\SysWOW64\RTCOM\RtDataProc.dll
-HKCR,Wow6432Node\%RTDP_CID1_PATH%\InProcServer32,ThreadingModel,0,Both
-HKCR,Wow6432Node\%RTDP_CID2_PATH%,,0,"RtDataProc Class"
-HKCR,Wow6432Node\%RTDP_CID2_PATH%\InProcServer32,,0,%10%\SysWOW64\RTCOM\RtDataProc.dll
-HKCR,Wow6432Node\%RTDP_CID2_PATH%\InProcServer32,ThreadingModel,0,Both
-HKCR,%RTDP_CID1_PATH%,,0,"RtNuanceProc Class"
-HKCR,%RTDP_CID1_PATH%\InProcServer32,,0,%11%\RtDataProc64.dll
-HKCR,%RTDP_CID1_PATH%\InProcServer32,ThreadingModel,0,Both
-HKCR,%RTDP_CID2_PATH%,,0,"RtDataProc Class"
-HKCR,%RTDP_CID2_PATH%\InProcServer32,,0,%11%\RtDataProc64.dll
-HKCR,%RTDP_CID2_PATH%\InProcServer32,ThreadingModel,0,Both
-
-[RTCOMDLL.DelReg]
-;;HKCR,Wow6432Node\RTCOMDLL.SONY.1,,0,"SONY Class"
-;;HKCR,Wow6432Node\RTCOMDLL.SONY.1\CLSID,,0,%RTCOMDLL_CLSID%
-;;HKCR,Wow6432Node\RTCOMDLL.SONY,,0,"SONY Class"
-;;HKCR,Wow6432Node\RTCOMDLL.SONY\CurVer,,0,"RTCOMDLL.SONY.1"
-;;HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%,,0,"SONY Class"
-;;HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%\ProgID,,0,"RTCOMDLL.SONY.1"
-;;HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%\VersionIndependentProgID,,0,"RTCOMDLL.SONY"
-;;HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%\Programmable
-;;HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%\InProcServer32,,0,RTCOMDLL.dll
-;;HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%\InProcServer32,ThreadingModel,0,Apartment
-
-;;HKCR,Wow6432Node\RtkCfg.RtkCfgApi.1,,0,"RtkCfgApi Class"
-;;HKCR,Wow6432Node\RtkCfg.RtkCfgApi.1\CLSID,,0,%RTKCFG_CLSID%
-;;HKCR,Wow6432Node\RtkCfg.RtkCfgApi,,0,"RtkCfgApi Class"
-;;HKCR,Wow6432Node\RtkCfg.RtkCfgApi\CurVer,,0,"RtkCfg.RtkCfgApi.1"
-;;HKCR,Wow6432Node\RtkCfg.RtkCfgApi\CLSID,,0,%RTKCFG_CLSID%
-;;HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%,,0,"RtkCfgApi Class"
-;;HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%\ProgID,,0,"RtkCfg.RtkCfgApi.1"
-;;HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%\VersionIndependentProgID,,0,"RtkCfg.RtkCfgApi"
-;;HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%\Programmable
-;;HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%\InProcServer32,,0,%10%\SysWOW64\RTCOM\RtkCfg.dll
-;;HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%\InProcServer32,ThreadingModel,0,Both
-
-[Dolby4.DelReg]
-HKLM,Software\Dolby\PCEE4\DynamicKeys
-HKLM,Software\Dolby\PCEE4\StaticKeys
 
 [AECBF.AddReg]
 HKLM,SOFTWARE\Realtek\AECBF\icrcAudioProcessingDemo,AcousticSourceTracking,0x00010001,1
@@ -1194,6 +1138,13 @@ HKLM,SOFTWARE\Realtek\AECBF\icrcAudioProcessingDemo\GSCBeamformer\PostFiltering,
 HKLM,SOFTWARE\Realtek\AECBF\icrcAudioProcessingDemo\GSCBeamformer\PostFiltering,scale_spec_sub,0,"1.200000"
 HKLM,SOFTWARE\Realtek\AECBF\icrcAudioProcessingDemo\GSCBeamformer\PostFiltering,constraint,0x00010001,0x1
 
+HKCR,%RTDP_CID1_PATH%,,0,"RtNuanceProc Class"
+HKCR,%RTDP_CID1_PATH%\InProcServer32,,0,%11%\RTCOM\RtDataProc.dll
+HKCR,%RTDP_CID1_PATH%\InProcServer32,ThreadingModel,0,Both
+HKCR,%RTDP_CID2_PATH%,,0,"RtDataProc Class"
+HKCR,%RTDP_CID2_PATH%\InProcServer32,,0,%11%\RTCOM\RtDataProc.dll
+HKCR,%RTDP_CID2_PATH%\InProcServer32,ThreadingModel,0,Both
+
 [AZAUD_OEM.AddReg]
 ;;HKR,Settings,RearJackShare,1,1
 HKR,GlobalSettings,HpShutsOffRearSpeaker,1,00,00,00,00 ; Headphone does not mute rear speakers
@@ -1211,12 +1162,12 @@ HKR,,DeviceType,0x10001,0x0000001D
 
 
 [RtkCoInst.AddReg]
-HKR,,CoInstallers32,,"RtkCoLDR64.dll,RtkCoInstallerLoader"
+HKR,,CoInstallers32,,"RtkCoLDR.dll,RtkCoInstallerLoader"
 
 [IntcAzAudModelAddReg]
 HKR,Settings,EffectComponents,0x00010001,0xFF06
 HKR,,AssociatedFilters,,"wdmaud,swmidi,redbook"
-HKR,,Driver,,RTKVHD64.sys
+HKR,,Driver,,RTKVHDA.sys
 
 ;From 5574
 HKR,PowerSettings,ConservationIdleTime,00,00,00,00,0     ; Not doing idle power management when on battery
@@ -1254,7 +1205,7 @@ HKR,,FriendlyName,,%PrimaryLineOutWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.PrimaryLineOutTopo]
-AddReg = IntcAzAudModel.PrimaryLineOutTopo.AddReg, OEMSettingsOverride.AddReg
+AddReg = IntcAzAudModel.PrimaryLineOutTopo.AddReg, SysFx.AddReg, OEMSettingsOverride.AddReg
 
 [IntcAzAudModel.PrimaryLineOutTopo.AddReg]
 HKR,,FriendlyName,,%PrimaryLineOutTopoDeviceName%
@@ -1268,7 +1219,7 @@ HKR,,FriendlyName,,%SingleLineOutWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.SingleLineOutTopo]
-AddReg = IntcAzAudModel.SingleLineOutTopo.AddReg, OEMSettingsOverride.AddReg
+AddReg = IntcAzAudModel.SingleLineOutTopo.AddReg, SysFx.AddReg, OEMSettingsOverride.AddReg
 
 [IntcAzAudModel.SingleLineOutTopo.AddReg]
 HKR,,FriendlyName,,%SingleLineOutTopoDeviceName%
@@ -1296,7 +1247,7 @@ HKR,,FriendlyName,,%SecondaryLineOutWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.SecondaryLineOutTopo]
-AddReg = IntcAzAudModel.SecondaryLineOutTopo.AddReg, OEMSettingsOverride.AddReg
+AddReg = IntcAzAudModel.SecondaryLineOutTopo.AddReg, SysFx.AddReg, OEMSettingsOverride.AddReg
 
 [IntcAzAudModel.SecondaryLineOutTopo.AddReg]
 HKR,,FriendlyName,,%SecondaryLineOutTopoDeviceName%
@@ -1591,16 +1542,20 @@ HKLM,%MediaCategories%\%GUID.FjMic1Wave%,Name,,%FjMic1WaveDeviceName%
 HKLM,%MediaCategories%\%GUID.FjMic1Wave%,Display,1,00,00,00,00
 HKLM,%MediaCategories%\%GUID.FjLineIn1Wave%,Name,,%FjLineIn1WaveDeviceName%
 HKLM,%MediaCategories%\%GUID.FjLineIn1Wave%,Display,1,00,00,00,00
-HKLM,%MediaCategories%\%GUID.IntrSubWoofer%,Name,,%IntrSubWooferDeviceName%
-HKLM,%MediaCategories%\%GUID.IntrSubWoofer%,Display,1,00,00,00,00
 
 HKLM,%MediaCategories%\%GUID.DigitalMic%,Name,,%Node.DigitalMic%
 HKLM,%MediaCategories%\%GUID.DigitalMic%,Display,1,00,00,00,00
 
 HKLM,%MediaCategories%\%GUID.FMRadio%,Name,,%Node.FMRadio%
 HKLM,%MediaCategories%\%GUID.FMRadio%,Display,1,00,00,00,00
+
+HKLM,%MediaCategories%\%GUID.IntrSubWoofer%,Name,,%IntrSubWooferDeviceName%
+HKLM,%MediaCategories%\%GUID.IntrSubWoofer%,Display,1,00,00,00,00
+
+
+
 [IntcAzAudModel.RearLineOutTopo]
-AddReg = IntcAzAudModel.RearLineOutTopo.AddReg, OEMSettingsOverride.AddReg
+AddReg = IntcAzAudModel.RearLineOutTopo.AddReg, SysFx.AddReg, OEMSettingsOverride.AddReg
 
 [IntcAzAudModel.RearLineOutTopo.AddReg]
 HKR,,FriendlyName,,%RearLineOutTopoDeviceName%
@@ -1614,7 +1569,7 @@ HKR,,FriendlyName,,%SecondaryLineInWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.SecondaryLineInTopo]
-AddReg = IntcAzAudModel.SecondaryLineInTopo.AddReg,
+AddReg = IntcAzAudModel.SecondaryLineInTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.SecondaryLineInTopo.AddReg]
 HKR,,FriendlyName,,%SecondaryLineInTopoDeviceName%
@@ -1628,7 +1583,7 @@ HKR,,FriendlyName,,%PrimaryLineInWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.PrimaryLineInTopo]
-AddReg = IntcAzAudModel.PrimaryLineInTopo.AddReg,
+AddReg = IntcAzAudModel.PrimaryLineInTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.PrimaryLineInTopo.AddReg]
 HKR,,FriendlyName,,%PrimaryLineInTopoDeviceName%
@@ -1643,7 +1598,7 @@ HKR,,FriendlyName,,%HPRearCaptureWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.HPRearCaptureTopo]
-AddReg = IntcAzAudModel.HPRearCaptureTopo.AddReg,
+AddReg = IntcAzAudModel.HPRearCaptureTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.HPRearCaptureTopo.AddReg]
 HKR,,FriendlyName,,%HPRearCaptureTopoDeviceName%
@@ -1657,7 +1612,7 @@ HKR,,FriendlyName,,%HPCPCCaptureWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.HPCPCCaptureTopo]
-AddReg = IntcAzAudModel.HPCPCCaptureTopo.AddReg,
+AddReg = IntcAzAudModel.HPCPCCaptureTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.HPCPCCaptureTopo.AddReg]
 HKR,,FriendlyName,,%HPCPCCaptureTopoDeviceName%
@@ -1672,7 +1627,7 @@ HKR,,FriendlyName,,%FrontPanelHeadphoneWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontPanelHeadphoneTopo]
-AddReg = IntcAzAudModel.FrontPanelHeadphoneTopo.AddReg, OEMSettingsOverride.AddReg
+AddReg = IntcAzAudModel.FrontPanelHeadphoneTopo.AddReg, SysFx.AddReg, OEMSettingsOverride.AddReg
 
 [IntcAzAudModel.FrontPanelHeadphoneTopo.AddReg]
 HKR,,FriendlyName,,%FrontPanelHeadphoneTopoDeviceName%
@@ -1703,7 +1658,7 @@ HKR,,FriendlyName,,%RearLineInBlackWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearLineInBlackTopo]
-AddReg = IntcAzAudModel.RearLineInBlackTopo.AddReg,
+AddReg = IntcAzAudModel.RearLineInBlackTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearLineInBlackTopo.AddReg]
 HKR,,FriendlyName,,%RearLineInBlackTopoDeviceName%
@@ -1717,7 +1672,7 @@ HKR,,FriendlyName,,%RearLineInGreyWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearLineInGreyTopo]
-AddReg = IntcAzAudModel.RearLineInGreyTopo.AddReg,
+AddReg = IntcAzAudModel.RearLineInGreyTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearLineInGreyTopo.AddReg]
 HKR,,FriendlyName,,%RearLineInGreyTopoDeviceName%
@@ -1731,7 +1686,7 @@ HKR,,FriendlyName,,%RearLineInBlueWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearLineInBlueTopo]
-AddReg = IntcAzAudModel.RearLineInBlueTopo.AddReg,
+AddReg = IntcAzAudModel.RearLineInBlueTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearLineInBlueTopo.AddReg]
 HKR,,FriendlyName,,%RearLineInBlueTopoDeviceName%
@@ -1745,7 +1700,7 @@ HKR,,FriendlyName,,%RearLineInGreenWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearLineInGreenTopo]
-AddReg = IntcAzAudModel.RearLineInGreenTopo.AddReg,
+AddReg = IntcAzAudModel.RearLineInGreenTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearLineInGreenTopo.AddReg]
 HKR,,FriendlyName,,%RearLineInGreenTopoDeviceName%
@@ -1759,7 +1714,7 @@ HKR,,FriendlyName,,%RearLineInRedWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearLineInRedTopo]
-AddReg = IntcAzAudModel.RearLineInRedTopo.AddReg,
+AddReg = IntcAzAudModel.RearLineInRedTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearLineInRedTopo.AddReg]
 HKR,,FriendlyName,,%RearLineInRedTopoDeviceName%
@@ -1773,7 +1728,7 @@ HKR,,FriendlyName,,%RearLineInOrangeWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearLineInOrangeTopo]
-AddReg = IntcAzAudModel.RearLineInOrangeTopo.AddReg,
+AddReg = IntcAzAudModel.RearLineInOrangeTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearLineInOrangeTopo.AddReg]
 HKR,,FriendlyName,,%RearLineInOrangeTopoDeviceName%
@@ -1787,7 +1742,7 @@ HKR,,FriendlyName,,%RearLineInYellowWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearLineInYellowTopo]
-AddReg = IntcAzAudModel.RearLineInYellowTopo.AddReg,
+AddReg = IntcAzAudModel.RearLineInYellowTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearLineInYellowTopo.AddReg]
 HKR,,FriendlyName,,%RearLineInYellowTopoDeviceName%
@@ -1801,7 +1756,7 @@ HKR,,FriendlyName,,%RearLineInPurpleWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearLineInPurpleTopo]
-AddReg = IntcAzAudModel.RearLineInPurpleTopo.AddReg,
+AddReg = IntcAzAudModel.RearLineInPurpleTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearLineInPurpleTopo.AddReg]
 HKR,,FriendlyName,,%RearLineInPurpleTopoDeviceName%
@@ -1815,7 +1770,7 @@ HKR,,FriendlyName,,%RearLineInPinkWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearLineInPinkTopo]
-AddReg = IntcAzAudModel.RearLineInPinkTopo.AddReg,
+AddReg = IntcAzAudModel.RearLineInPinkTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearLineInPinkTopo.AddReg]
 HKR,,FriendlyName,,%RearLineInPinkTopoDeviceName%
@@ -1829,7 +1784,7 @@ HKR,,FriendlyName,,%RearLineInGoldenWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearLineInGoldenTopo]
-AddReg = IntcAzAudModel.RearLineInGoldenTopo.AddReg,
+AddReg = IntcAzAudModel.RearLineInGoldenTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearLineInGoldenTopo.AddReg]
 HKR,,FriendlyName,,%RearLineInGoldenTopoDeviceName%
@@ -1843,7 +1798,7 @@ HKR,,FriendlyName,,%RearLineInSilverWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearLineInSilverTopo]
-AddReg = IntcAzAudModel.RearLineInSilverTopo.AddReg,
+AddReg = IntcAzAudModel.RearLineInSilverTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearLineInSilverTopo.AddReg]
 HKR,,FriendlyName,,%RearLineInSilverTopoDeviceName%
@@ -1857,7 +1812,7 @@ HKR,,FriendlyName,,%RearLineInWhiteWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearLineInWhiteTopo]
-AddReg = IntcAzAudModel.RearLineInWhiteTopo.AddReg,
+AddReg = IntcAzAudModel.RearLineInWhiteTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearLineInWhiteTopo.AddReg]
 HKR,,FriendlyName,,%RearLineInWhiteTopoDeviceName%
@@ -1871,7 +1826,7 @@ HKR,,FriendlyName,,%RearMicInBlackWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearMicInBlackTopo]
-AddReg = IntcAzAudModel.RearMicInBlackTopo.AddReg,
+AddReg = IntcAzAudModel.RearMicInBlackTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearMicInBlackTopo.AddReg]
 HKR,,FriendlyName,,%RearMicInBlackTopoDeviceName%
@@ -1885,7 +1840,7 @@ HKR,,FriendlyName,,%RearMicInGreyWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearMicInGreyTopo]
-AddReg = IntcAzAudModel.RearMicInGreyTopo.AddReg,
+AddReg = IntcAzAudModel.RearMicInGreyTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearMicInGreyTopo.AddReg]
 HKR,,FriendlyName,,%RearMicInGreyTopoDeviceName%
@@ -1899,7 +1854,7 @@ HKR,,FriendlyName,,%RearMicInBlueWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearMicInBlueTopo]
-AddReg = IntcAzAudModel.RearMicInBlueTopo.AddReg,
+AddReg = IntcAzAudModel.RearMicInBlueTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearMicInBlueTopo.AddReg]
 HKR,,FriendlyName,,%RearMicInBlueTopoDeviceName%
@@ -1913,7 +1868,7 @@ HKR,,FriendlyName,,%RearMicInGreenWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearMicInGreenTopo]
-AddReg = IntcAzAudModel.RearMicInGreenTopo.AddReg,
+AddReg = IntcAzAudModel.RearMicInGreenTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearMicInGreenTopo.AddReg]
 HKR,,FriendlyName,,%RearMicInGreenTopoDeviceName%
@@ -1927,7 +1882,7 @@ HKR,,FriendlyName,,%RearMicInRedWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearMicInRedTopo]
-AddReg = IntcAzAudModel.RearMicInRedTopo.AddReg,
+AddReg = IntcAzAudModel.RearMicInRedTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearMicInRedTopo.AddReg]
 HKR,,FriendlyName,,%RearMicInRedTopoDeviceName%
@@ -1941,7 +1896,7 @@ HKR,,FriendlyName,,%RearMicInOrangeWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearMicInOrangeTopo]
-AddReg = IntcAzAudModel.RearMicInOrangeTopo.AddReg,
+AddReg = IntcAzAudModel.RearMicInOrangeTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearMicInOrangeTopo.AddReg]
 HKR,,FriendlyName,,%RearMicInOrangeTopoDeviceName%
@@ -1955,7 +1910,7 @@ HKR,,FriendlyName,,%RearMicInYellowWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearMicInYellowTopo]
-AddReg = IntcAzAudModel.RearMicInYellowTopo.AddReg,
+AddReg = IntcAzAudModel.RearMicInYellowTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearMicInYellowTopo.AddReg]
 HKR,,FriendlyName,,%RearMicInYellowTopoDeviceName%
@@ -1969,7 +1924,7 @@ HKR,,FriendlyName,,%RearMicInPurpleWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearMicInPurpleTopo]
-AddReg = IntcAzAudModel.RearMicInPurpleTopo.AddReg,
+AddReg = IntcAzAudModel.RearMicInPurpleTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearMicInPurpleTopo.AddReg]
 HKR,,FriendlyName,,%RearMicInPurpleTopoDeviceName%
@@ -1983,7 +1938,7 @@ HKR,,FriendlyName,,%RearMicInPinkWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearMicInPinkTopo]
-AddReg = IntcAzAudModel.RearMicInPinkTopo.AddReg,
+AddReg = IntcAzAudModel.RearMicInPinkTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearMicInPinkTopo.AddReg]
 HKR,,FriendlyName,,%RearMicInPinkTopoDeviceName%
@@ -1997,7 +1952,7 @@ HKR,,FriendlyName,,%RearMicInGoldenWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearMicInGoldenTopo]
-AddReg = IntcAzAudModel.RearMicInGoldenTopo.AddReg, 
+AddReg = IntcAzAudModel.RearMicInGoldenTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearMicInGoldenTopo.AddReg]
 HKR,,FriendlyName,,%RearMicInGoldenTopoDeviceName%
@@ -2011,7 +1966,7 @@ HKR,,FriendlyName,,%RearMicInSilverWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearMicInSilverTopo]
-AddReg = IntcAzAudModel.RearMicInSilverTopo.AddReg, 
+AddReg = IntcAzAudModel.RearMicInSilverTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearMicInSilverTopo.AddReg]
 HKR,,FriendlyName,,%RearMicInSilverTopoDeviceName%
@@ -2025,7 +1980,7 @@ HKR,,FriendlyName,,%RearMicInWhiteWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RearMicInWhiteTopo]
-AddReg = IntcAzAudModel.RearMicInWhiteTopo.AddReg, 
+AddReg = IntcAzAudModel.RearMicInWhiteTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RearMicInWhiteTopo.AddReg]
 HKR,,FriendlyName,,%RearMicInWhiteTopoDeviceName%
@@ -2039,7 +1994,7 @@ HKR,,FriendlyName,,%FrontLineInBlackWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontLineInBlackTopo]
-AddReg = IntcAzAudModel.FrontLineInBlackTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontLineInBlackTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontLineInBlackTopo.AddReg]
 HKR,,FriendlyName,,%FrontLineInBlackTopoDeviceName%
@@ -2053,7 +2008,7 @@ HKR,,FriendlyName,,%FrontLineInGreyWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontLineInGreyTopo]
-AddReg = IntcAzAudModel.FrontLineInGreyTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontLineInGreyTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontLineInGreyTopo.AddReg]
 HKR,,FriendlyName,,%FrontLineInGreyTopoDeviceName%
@@ -2067,7 +2022,7 @@ HKR,,FriendlyName,,%FrontLineInBlueWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontLineInBlueTopo]
-AddReg = IntcAzAudModel.FrontLineInBlueTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontLineInBlueTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontLineInBlueTopo.AddReg]
 HKR,,FriendlyName,,%FrontLineInBlueTopoDeviceName%
@@ -2081,7 +2036,7 @@ HKR,,FriendlyName,,%FrontLineInGreenWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontLineInGreenTopo]
-AddReg = IntcAzAudModel.FrontLineInGreenTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontLineInGreenTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontLineInGreenTopo.AddReg]
 HKR,,FriendlyName,,%FrontLineInGreenTopoDeviceName%
@@ -2095,7 +2050,7 @@ HKR,,FriendlyName,,%FrontLineInRedWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontLineInRedTopo]
-AddReg = IntcAzAudModel.FrontLineInRedTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontLineInRedTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontLineInRedTopo.AddReg]
 HKR,,FriendlyName,,%FrontLineInRedTopoDeviceName%
@@ -2109,7 +2064,7 @@ HKR,,FriendlyName,,%FrontLineInOrangeWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontLineInOrangeTopo]
-AddReg = IntcAzAudModel.FrontLineInOrangeTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontLineInOrangeTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontLineInOrangeTopo.AddReg]
 HKR,,FriendlyName,,%FrontLineInOrangeTopoDeviceName%
@@ -2123,7 +2078,7 @@ HKR,,FriendlyName,,%FrontLineInYellowWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontLineInYellowTopo]
-AddReg = IntcAzAudModel.FrontLineInYellowTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontLineInYellowTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontLineInYellowTopo.AddReg]
 HKR,,FriendlyName,,%FrontLineInYellowTopoDeviceName%
@@ -2137,7 +2092,7 @@ HKR,,FriendlyName,,%FrontLineInPurpleWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontLineInPurpleTopo]
-AddReg = IntcAzAudModel.FrontLineInPurpleTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontLineInPurpleTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontLineInPurpleTopo.AddReg]
 HKR,,FriendlyName,,%FrontLineInPurpleTopoDeviceName%
@@ -2151,7 +2106,7 @@ HKR,,FriendlyName,,%FrontLineInPinkWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontLineInPinkTopo]
-AddReg = IntcAzAudModel.FrontLineInPinkTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontLineInPinkTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontLineInPinkTopo.AddReg]
 HKR,,FriendlyName,,%FrontLineInPinkTopoDeviceName%
@@ -2165,7 +2120,7 @@ HKR,,FriendlyName,,%FrontLineInGoldenWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontLineInGoldenTopo]
-AddReg = IntcAzAudModel.FrontLineInGoldenTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontLineInGoldenTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontLineInGoldenTopo.AddReg]
 HKR,,FriendlyName,,%FrontLineInGoldenTopoDeviceName%
@@ -2179,7 +2134,7 @@ HKR,,FriendlyName,,%FrontLineInSilverWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontLineInSilverTopo]
-AddReg = IntcAzAudModel.FrontLineInSilverTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontLineInSilverTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontLineInSilverTopo.AddReg]
 HKR,,FriendlyName,,%FrontLineInSilverTopoDeviceName%
@@ -2193,7 +2148,7 @@ HKR,,FriendlyName,,%FrontLineInWhiteWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontLineInWhiteTopo]
-AddReg = IntcAzAudModel.FrontLineInWhiteTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontLineInWhiteTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontLineInWhiteTopo.AddReg]
 HKR,,FriendlyName,,%FrontLineInWhiteTopoDeviceName%
@@ -2207,7 +2162,7 @@ HKR,,FriendlyName,,%FrontMicInBlackWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontMicInBlackTopo]
-AddReg = IntcAzAudModel.FrontMicInBlackTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontMicInBlackTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontMicInBlackTopo.AddReg]
 HKR,,FriendlyName,,%FrontMicInBlackTopoDeviceName%
@@ -2221,7 +2176,7 @@ HKR,,FriendlyName,,%FrontMicInGreyWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontMicInGreyTopo]
-AddReg = IntcAzAudModel.FrontMicInGreyTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontMicInGreyTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontMicInGreyTopo.AddReg]
 HKR,,FriendlyName,,%FrontMicInGreyTopoDeviceName%
@@ -2235,7 +2190,7 @@ HKR,,FriendlyName,,%FrontMicInBlueWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontMicInBlueTopo]
-AddReg = IntcAzAudModel.FrontMicInBlueTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontMicInBlueTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontMicInBlueTopo.AddReg]
 HKR,,FriendlyName,,%FrontMicInBlueTopoDeviceName%
@@ -2249,7 +2204,7 @@ HKR,,FriendlyName,,%FrontMicInGreenWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontMicInGreenTopo]
-AddReg = IntcAzAudModel.FrontMicInGreenTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontMicInGreenTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontMicInGreenTopo.AddReg]
 HKR,,FriendlyName,,%FrontMicInGreenTopoDeviceName%
@@ -2263,7 +2218,7 @@ HKR,,FriendlyName,,%FrontMicInRedWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontMicInRedTopo]
-AddReg = IntcAzAudModel.FrontMicInRedTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontMicInRedTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontMicInRedTopo.AddReg]
 HKR,,FriendlyName,,%FrontMicInRedTopoDeviceName%
@@ -2277,7 +2232,7 @@ HKR,,FriendlyName,,%FrontMicInOrangeWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontMicInOrangeTopo]
-AddReg = IntcAzAudModel.FrontMicInOrangeTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontMicInOrangeTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontMicInOrangeTopo.AddReg]
 HKR,,FriendlyName,,%FrontMicInOrangeTopoDeviceName%
@@ -2291,7 +2246,7 @@ HKR,,FriendlyName,,%FrontMicInYellowWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontMicInYellowTopo]
-AddReg = IntcAzAudModel.FrontMicInYellowTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontMicInYellowTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontMicInYellowTopo.AddReg]
 HKR,,FriendlyName,,%FrontMicInYellowTopoDeviceName%
@@ -2305,7 +2260,7 @@ HKR,,FriendlyName,,%FrontMicInPurpleWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontMicInPurpleTopo]
-AddReg = IntcAzAudModel.FrontMicInPurpleTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontMicInPurpleTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontMicInPurpleTopo.AddReg]
 HKR,,FriendlyName,,%FrontMicInPurpleTopoDeviceName%
@@ -2319,7 +2274,7 @@ HKR,,FriendlyName,,%FrontMicInPinkWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontMicInPinkTopo]
-AddReg = IntcAzAudModel.FrontMicInPinkTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontMicInPinkTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontMicInPinkTopo.AddReg]
 HKR,,FriendlyName,,%FrontMicInPinkTopoDeviceName%
@@ -2333,7 +2288,7 @@ HKR,,FriendlyName,,%FrontMicInGoldenWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontMicInGoldenTopo]
-AddReg = IntcAzAudModel.FrontMicInGoldenTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontMicInGoldenTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontMicInGoldenTopo.AddReg]
 HKR,,FriendlyName,,%FrontMicInGoldenTopoDeviceName%
@@ -2347,7 +2302,7 @@ HKR,,FriendlyName,,%FrontMicInSilverWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontMicInSilverTopo]
-AddReg = IntcAzAudModel.FrontMicInSilverTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontMicInSilverTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontMicInSilverTopo.AddReg]
 HKR,,FriendlyName,,%FrontMicInSilverTopoDeviceName%
@@ -2361,7 +2316,7 @@ HKR,,FriendlyName,,%FrontMicInWhiteWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.FrontMicInWhiteTopo]
-AddReg = IntcAzAudModel.FrontMicInWhiteTopo.AddReg, 
+AddReg = IntcAzAudModel.FrontMicInWhiteTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.FrontMicInWhiteTopo.AddReg]
 HKR,,FriendlyName,,%FrontMicInWhiteTopoDeviceName%
@@ -2375,7 +2330,7 @@ HKR,,FriendlyName,,%RtSpdifWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RtSpdifTopo]
-AddReg = IntcAzAudModel.RtSpdifTopo.AddReg, OEMSPDIFSettingsOverride.AddReg
+AddReg = IntcAzAudModel.RtSpdifTopo.AddReg, SysFx.AddReg, OEMSPDIFSettingsOverride.AddReg
 
 [IntcAzAudModel.RtSpdifTopo.AddReg]
 HKR,,FriendlyName,,%RtSpdifTopoDeviceName%
@@ -2387,7 +2342,7 @@ AddReg = IntcAzAudModel.RtSpdifHDMIWave.AddReg
 HKR,,FriendlyName,,%RtSpdifHDMIWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 [IntcAzAudModel.RtSpdifHDMITopo]
-AddReg = IntcAzAudModel.RtSpdifHDMITopo.AddReg, OEMSPDIFSettingsOverride.AddReg
+AddReg = IntcAzAudModel.RtSpdifHDMITopo.AddReg, SysFx.AddReg, OEMSPDIFSettingsOverride.AddReg
 [IntcAzAudModel.RtSpdifHDMITopo.AddReg]
 HKR,,FriendlyName,,%RtSpdifHDMITopoDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
@@ -2398,7 +2353,7 @@ AddReg = IntcAzAudModel.RtSpdifRCAWave.AddReg
 HKR,,FriendlyName,,%RtSpdifRCAWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 [IntcAzAudModel.RtSpdifRCATopo]
-AddReg = IntcAzAudModel.RtSpdifRCATopo.AddReg, OEMSPDIFSettingsOverride.AddReg
+AddReg = IntcAzAudModel.RtSpdifRCATopo.AddReg, SysFx.AddReg, OEMSPDIFSettingsOverride.AddReg
 [IntcAzAudModel.RtSpdifRCATopo.AddReg]
 HKR,,FriendlyName,,%RtSpdifRCATopoDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
@@ -2409,7 +2364,7 @@ AddReg = IntcAzAudModel.RtSpdifOptWave.AddReg
 HKR,,FriendlyName,,%RtSpdifOptWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 [IntcAzAudModel.RtSpdifOptTopo]
-AddReg = IntcAzAudModel.RtSpdifOptTopo.AddReg, OEMSPDIFSettingsOverride.AddReg
+AddReg = IntcAzAudModel.RtSpdifOptTopo.AddReg, SysFx.AddReg, OEMSPDIFSettingsOverride.AddReg
 [IntcAzAudModel.RtSpdifOptTopo.AddReg]
 HKR,,FriendlyName,,%RtSpdifOptTopoDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
@@ -2465,49 +2420,49 @@ HKR,,FriendlyName,,%RtFrontLineInWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RtStereoMixTopo]
-AddReg = IntcAzAudModel.RtStereoMixTopo.AddReg, 
+AddReg = IntcAzAudModel.RtStereoMixTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RtStereoMixTopo.AddReg]
 HKR,,FriendlyName,,%RtStereoMixTopoDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RtMicInTopo]
-AddReg = IntcAzAudModel.RtMicInTopo.AddReg, 
+AddReg = IntcAzAudModel.RtMicInTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RtMicInTopo.AddReg]
 HKR,,FriendlyName,,%RtMicInTopoDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RtLineInTopo]
-AddReg = IntcAzAudModel.RtLineInTopo.AddReg, 
+AddReg = IntcAzAudModel.RtLineInTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RtLineInTopo.AddReg]
 HKR,,FriendlyName,,%RtLineInTopoDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RtCDInTopo]
-AddReg = IntcAzAudModel.RtCDInTopo.AddReg, 
+AddReg = IntcAzAudModel.RtCDInTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RtCDInTopo.AddReg]
 HKR,,FriendlyName,,%RtCDInTopoDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RtAuxInTopo]
-AddReg = IntcAzAudModel.RtAuxInTopo.AddReg, 
+AddReg = IntcAzAudModel.RtAuxInTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RtAuxInTopo.AddReg]
 HKR,,FriendlyName,,%RtAuxInTopoDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RtFrontMicInTopo]
-AddReg = IntcAzAudModel.RtFrontMicInTopo.AddReg, 
+AddReg = IntcAzAudModel.RtFrontMicInTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RtFrontMicInTopo.AddReg]
 HKR,,FriendlyName,,%RtFrontMicInTopoDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RtFrontLineInTopo]
-AddReg = IntcAzAudModel.RtFrontLineInTopo.AddReg, 
+AddReg = IntcAzAudModel.RtFrontLineInTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RtFrontLineInTopo.AddReg]
 HKR,,FriendlyName,,%RtFrontLineInTopoDeviceName%
@@ -2521,7 +2476,7 @@ HKR,,FriendlyName,,%DigitalMICWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.DigitalMICTopo]
-AddReg = IntcAzAudModel.DigitalMICTopo.AddReg, 
+AddReg = IntcAzAudModel.DigitalMICTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.DigitalMICTopo.AddReg]
 HKR,,FriendlyName,,%DigitalMICTopoDeviceName%
@@ -2535,7 +2490,7 @@ HKR,,FriendlyName,,%RtMicArWaveDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [IntcAzAudModel.RtMicArTopo]
-AddReg = IntcAzAudModel.RtMicArTopo.AddReg, 
+AddReg = IntcAzAudModel.RtMicArTopo.AddReg, SysRecFx.AddReg
 
 [IntcAzAudModel.RtMicArTopo.AddReg]
 HKR,,FriendlyName,,%RtMicArTopoDeviceName%
@@ -2552,56 +2507,56 @@ HKR,,CLSID,,%Proxy.CLSID%
 HKR,"EP\\0", %PKEY_AudioEndpoint_Association%,,%KSNODETYPE_HDMI_INTERFACE%
 HKR,"EP\\0", %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,EE,02,00,04,00,10,00,16,00,10,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
 HKR,"EP\\0", %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
-HKR,"EP\\0",%PKEY_APO_REDIRECT%,%REG_BINARY%, 0B,00,63,00,01,00,00,00,01,00,00,00
+HKR,"EP\\0", %PKEY_APO_REDIRECT%,%REG_BINARY%, 0B,00,63,00,01,00,00,00,01,00,00,00
 
 [RtHDA.GenRtHDMITopo.AddReg]
 HKR,,FriendlyName,,%RtSpdifHDMITopoDeviceName%
 HKR,,CLSID,,%Proxy.CLSID%
 
 [RtHDA.RtHDMITopo]
-AddReg = RtHDA.RtHDMITopo.AddReg, RtHDA.GenRtHDMITopo.AddReg, DefaultOutFormat.AddReg
+AddReg = RtHDA.RtHDMITopo.AddReg, RtHDA.GenRtHDMITopo.AddReg, SysFx.AddReg, DefaultOutFormat.AddReg
 [RtHDA.RtHDMITopo.AddReg]
 HKR,"EP\\0", %PKEY_AudioEndpoint_Association%,,%KSNODETYPE_HDMI_INTERFACE%
 HKR,"EP\\0", %PKEY_SupportFormat_OEMFormat%, %REG_BINARY%,41,00,75,00,0C,00,00,00,50,01,00,00,02,00,00,00,00,00,00,00
 
 [RtHDA.RtHDMIATopo]
-AddReg = RtHDA.RtHDMIATopo.AddReg, RtHDA.GenRtHDMITopo.AddReg, DefaultOutFormat.AddReg
+AddReg = RtHDA.RtHDMIATopo.AddReg, RtHDA.GenRtHDMITopo.AddReg, SysFx.AddReg, DefaultOutFormat.AddReg
 [RtHDA.RtHDMIATopo.AddReg]
 HKR,"EP\\0", %PKEY_AudioEndpoint_Association%,,%KSNODETYPE_HDMI_INTERFACE%
 HKR,"EP\\0", %PKEY_SupportFormat_OEMFormat%, %REG_BINARY%,41,00,63,00,1C,00,00,00,50,01,00,00,02,00,00,00,01,00,00,00,92,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
 
 [RtHDA.RtHDMIDTopo]
-AddReg = RtHDA.RtHDMIDTopo.AddReg, RtHDA.GenRtHDMITopo.AddReg, DefaultOutFormat.AddReg
+AddReg = RtHDA.RtHDMIDTopo.AddReg, RtHDA.GenRtHDMITopo.AddReg, SysFx.AddReg, DefaultOutFormat.AddReg
 [RtHDA.RtHDMIDTopo.AddReg]
 HKR,"EP\\0", %PKEY_AudioEndpoint_Association%,,%KSNODETYPE_HDMI_INTERFACE%
 HKR,"EP\\0", %PKEY_SupportFormat_OEMFormat%, %REG_BINARY%,41,00,63,00,1C,00,00,00,50,01,00,00,02,00,00,00,01,00,00,00,08,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
 
 [RtHDA.RtHDMIWTopo]
-AddReg = RtHDA.RtHDMIWTopo.AddReg, RtHDA.GenRtHDMITopo.AddReg, DefaultOutFormat.AddReg
+AddReg = RtHDA.RtHDMIWTopo.AddReg, RtHDA.GenRtHDMITopo.AddReg, SysFx.AddReg, DefaultOutFormat.AddReg
 [RtHDA.RtHDMIWTopo.AddReg]
 HKR,"EP\\0", %PKEY_AudioEndpoint_Association%,,%KSNODETYPE_HDMI_INTERFACE%
 HKR,"EP\\0", %PKEY_SupportFormat_OEMFormat%, %REG_BINARY%,41,00,63,00,1C,00,00,00,50,01,00,00,02,00,00,00,01,00,00,00,64,01,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
 
 [RtHDA.RtHDMIADTopo]
-AddReg = RtHDA.RtHDMIADTopo.AddReg, RtHDA.GenRtHDMITopo.AddReg, DefaultOutFormat.AddReg
+AddReg = RtHDA.RtHDMIADTopo.AddReg, RtHDA.GenRtHDMITopo.AddReg, SysFx.AddReg, DefaultOutFormat.AddReg
 [RtHDA.RtHDMIADTopo.AddReg]
 HKR,"EP\\0", %PKEY_AudioEndpoint_Association%,,%KSNODETYPE_HDMI_INTERFACE%
 HKR,"EP\\0", %PKEY_SupportFormat_OEMFormat%, %REG_BINARY%,41,00,A3,74,2C,00,00,00,50,01,00,00,02,00,00,00,02,00,00,00,08,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71,92,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
 
 [RtHDA.RtHDMIAWTopo]
-AddReg = RtHDA.RtHDMIAWTopo.AddReg, RtHDA.GenRtHDMITopo.AddReg, DefaultOutFormat.AddReg
+AddReg = RtHDA.RtHDMIAWTopo.AddReg, RtHDA.GenRtHDMITopo.AddReg, SysFx.AddReg, DefaultOutFormat.AddReg
 [RtHDA.RtHDMIAWTopo.AddReg]
 HKR,"EP\\0", %PKEY_AudioEndpoint_Association%,,%KSNODETYPE_HDMI_INTERFACE%
 HKR,"EP\\0", %PKEY_SupportFormat_OEMFormat%, %REG_BINARY%,41,00,A3,74,2C,00,00,00,50,01,00,00,02,00,00,00,02,00,00,00,92,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71,64,01,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
 
 [RtHDA.RtHDMIDWTopo]
-AddReg = RtHDA.RtHDMIDWTopo.AddReg, RtHDA.GenRtHDMITopo.AddReg, DefaultOutFormat.AddReg
+AddReg = RtHDA.RtHDMIDWTopo.AddReg, RtHDA.GenRtHDMITopo.AddReg, SysFx.AddReg, DefaultOutFormat.AddReg
 [RtHDA.RtHDMIDWTopo.AddReg]
 HKR,"EP\\0", %PKEY_AudioEndpoint_Association%,,%KSNODETYPE_HDMI_INTERFACE%
 HKR,"EP\\0", %PKEY_SupportFormat_OEMFormat%, %REG_BINARY%,41,00,A3,74,2C,00,00,00,50,01,00,00,02,00,00,00,02,00,00,00,08,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71,64,01,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
 
 [RtHDA.RtHDMIADWTopo]
-AddReg = RtHDA.RtHDMIADWTopo.AddReg, RtHDA.GenRtHDMITopo.AddReg, DefaultOutFormat.AddReg
+AddReg = RtHDA.RtHDMIADWTopo.AddReg, RtHDA.GenRtHDMITopo.AddReg, SysFx.AddReg, DefaultOutFormat.AddReg
 [RtHDA.RtHDMIADWTopo.AddReg]
 HKR,"EP\\0", %PKEY_AudioEndpoint_Association%,,%KSNODETYPE_HDMI_INTERFACE%
 HKR,"EP\\0", %PKEY_SupportFormat_OEMFormat%, %REG_BINARY%,41,00,34,12,3C,00,00,00,50,01,00,00,02,00,00,00,03,00,00,00,08,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71,92,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71,64,01,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
@@ -2615,26 +2570,26 @@ MediaCategories="SYSTEM\CurrentControlSet\Control\MediaCategories"
 ; localizable
 OrganizationName="Realtek Semiconductor Corp."
 PackageDisplayName="HD Audio Driver"
-;;WavesPreset="Software\Waves Audio\MaxxAudio\General"
+WavesPreset="Software\Waves Audio\MaxxAudio\General"
 
 ;;
 ;; PropertyKey GUIDS
 ;;
-; PKEY_SYSFX_Association          = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},0"
-; PKEY_SYSFX_PreMixClsid          = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},1"
-; PKEY_SYSFX_PostMixClsid         = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},2"
-; PKEY_SYSFX_SFXClsid             = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},5"
-; PKEY_SYSFX_MFXClsid             = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},6"
-; PKEY_SYSFX_EFXClsid             = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},7"
-; PKEY_SYSFX_UiClsid              = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},3"
+PKEY_SYSFX_Association          = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},0"
+PKEY_SYSFX_PreMixClsid          = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},1"
+PKEY_SYSFX_PostMixClsid         = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},2"
+PKEY_SYSFX_SFXClsid             = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},5"
+PKEY_SYSFX_MFXClsid             = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},6"
+PKEY_SYSFX_EFXClsid             = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},7"
+PKEY_SYSFX_UiClsid              = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},3"
 PKEY_DisplayName                = "{B725F130-47EF-101A-A5F1-02608C9EEBAC},10"
 ;;PKEY_DisplayName                = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},4"
-; PKEY_AudioEndpoint_Ext_UiClsid  = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},1"
-; PKEY_AudioEndpoint_Association  = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},2"
-; PKEY_AudioEndpoint_Supports_EventDriven_Mode = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},7"
-; PKEY_SYSFX_Andrea_License	= "{b7eae14c-6c01-446f-b83f-3181e129b6dd},6"
+PKEY_AudioEndpoint_Ext_UiClsid  = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},1"
+PKEY_AudioEndpoint_Association  = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},2"
+PKEY_AudioEndpoint_Supports_EventDriven_Mode = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},7"
+PKEY_SYSFX_Andrea_License	= "{b7eae14c-6c01-446f-b83f-3181e129b6dd},6"
 
-; PKEY_AudioEndpoint_ControlPanelPageProvider = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E}"
+PKEY_AudioEndpoint_ControlPanelPageProvider = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E}"
 
 ;;
 ;; PKEY_AudioEngine_OEMFormat:  Specifies the default format that is used for rendering/capturing.
@@ -2647,25 +2602,25 @@ PKEY_SupportFormat_OEMFormat = "{B3F8FA53-0004-438E-9003-51A46E139BFC},5"
 CONTROLLER_EXT_UI_CLSID    = "{30A4AD88-9965-4569-85A1-8453A8DE8DA7}"
 
 ;;AUDIOENDPOINT_EXT_UI_CLSID = "{6C57B2A2-91F5-4b90-93D5-FAB82485ECA6}"
-; AUDIOENDPOINT_EXT_UI_CLSID = "{31A53A7B-E0D8-4f99-B950-F6C8F25E6731}"
+AUDIOENDPOINT_EXT_UI_CLSID = "{31A53A7B-E0D8-4f99-B950-F6C8F25E6731}"
 
-; SYSFX_PREMIX_CLSID    = "{DC253AB8-10DC-483c-AB5F-D6A4E189FD70}"
-; SYSFX_POSTMIX_CLSID   = "{A27368B3-D810-42ce-B114-83900258B8EC}"
-; SYSFX_SFX_CLSID       = "{DA2C9ECE-7418-4906-B4FA-0A00B3EB88AA}"
-; SYSFX_MFX_CLSID       = "{A296D363-EE83-4af9-9BE7-729C1296150A}"
-; SYSFX_EFX_CLSID       = "{A29EB043-6CE2-4ee2-B38C-F58719E0D88F}"
-; SYSFX_UI_CLSID        = "{6861CFDC-0461-49d5-A8DF-BE5ACD02692F}"
-; SYSFX_FriendlyName    = "Realtek System Effect"
-; SYSRECFX_PREMIX_CLSID = "{A51A19D6-80F1-4abf-AB95-AF5215E8B052}"
-; SYSRECFX_MFX_CLSID = "{A69C91DC-11C4-414f-A919-4DA8EA3F3CA6}"
-; SYSRECFX_EFX_CLSID = "{AB3B404A-B18F-4b4f-B91F-77F2DE95EB18}"
+SYSFX_PREMIX_CLSID    = "{DC253AB8-10DC-483c-AB5F-D6A4E189FD70}"
+SYSFX_POSTMIX_CLSID   = "{A27368B3-D810-42ce-B114-83900258B8EC}"
+SYSFX_SFX_CLSID       = "{DA2C9ECE-7418-4906-B4FA-0A00B3EB88AA}"
+SYSFX_MFX_CLSID       = "{A296D363-EE83-4af9-9BE7-729C1296150A}"
+SYSFX_EFX_CLSID       = "{A29EB043-6CE2-4ee2-B38C-F58719E0D88F}"
+SYSFX_UI_CLSID        = "{6861CFDC-0461-49d5-A8DF-BE5ACD02692F}"
+SYSFX_FriendlyName    = "Realtek System Effect"
+SYSRECFX_PREMIX_CLSID = "{A51A19D6-80F1-4abf-AB95-AF5215E8B052}"
+SYSRECFX_MFX_CLSID = "{A69C91DC-11C4-414f-A919-4DA8EA3F3CA6}"
+SYSRECFX_EFX_CLSID = "{AB3B404A-B18F-4b4f-B91F-77F2DE95EB18}"
 
-; PKEY_SFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},5"
-; PKEY_MFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},6"
-; PKEY_EFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},7"
-; AUDIO_SIGNALPROCESSINGMODE_DEFAULT = "{C18E2F7E-933D-4965-B7D1-1EEF228D2AF3}"
+PKEY_SFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},5"
+PKEY_MFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},6"
+PKEY_EFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},7"
+AUDIO_SIGNALPROCESSINGMODE_DEFAULT = "{C18E2F7E-933D-4965-B7D1-1EEF228D2AF3}"
 
-; PKEY_APO_REDIRECT = "{91C9BA06-777C-4766-A7F2-C4B3E0CB121B},0"
+PKEY_APO_REDIRECT = "{91C9BA06-777C-4766-A7F2-C4B3E0CB121B},0"
 
 KSNODETYPE_ANY      = "{00000000-0000-0000-0000-000000000000}"
 KSNODETYPE_SPEAKER  = "{DFF21CE1-F70F-11D0-B917-00A0C9223196}"
@@ -2677,18 +2632,18 @@ REG_DWORD	    = 0x00010001
 
 RunOnce = "Software\Microsoft\Windows\CurrentVersion\RunOnce"
 
-; SYSFX_MAXXAUDIO_AVX_A         = "{77777710-1a40-4d4e-ba7a-4e0d9d5e11e9}"
-; SYSFX_MAXXAUDIO_AVX_B         = "{77777711-e646-487e-8eca-0d56d8c8f49d}"
-; SYSFX_MAXXAUDIO_AVX_C         = "{77777714-eae7-4420-aa26-197075b5e212}"
-; SYSFX_MAXXAUDIO_AVX_DOCK_A    = "{77777712-a138-40df-8a2a-425917e4dc67}"
-; SYSFX_MAXXAUDIO_AVX_DOCK_B    = "{77777713-cdc9-4325-85a1-cc6b881c3b81}"
-; SYSFX_MAXXAUDIO_AVX_DOCK_C    = "{77777715-2c4b-40d4-a552-e6d4c1d9e027}"
+SYSFX_MAXXAUDIO_AVX_A         = "{77777710-1a40-4d4e-ba7a-4e0d9d5e11e9}"
+SYSFX_MAXXAUDIO_AVX_B         = "{77777711-e646-487e-8eca-0d56d8c8f49d}"
+SYSFX_MAXXAUDIO_AVX_C         = "{77777714-eae7-4420-aa26-197075b5e212}"
+SYSFX_MAXXAUDIO_AVX_DOCK_A    = "{77777712-a138-40df-8a2a-425917e4dc67}"
+SYSFX_MAXXAUDIO_AVX_DOCK_B    = "{77777713-cdc9-4325-85a1-cc6b881c3b81}"
+SYSFX_MAXXAUDIO_AVX_DOCK_C    = "{77777715-2c4b-40d4-a552-e6d4c1d9e027}"
 
 Audio3D_CLSID="{D8F1EEE0-F634-11CF-8700-00A0245D918B}"
 COEXIST="SOFTWARE\Creative Tech\Sound Blaster X-Fi MB\UpDownMix Co-exist"
-RT_UNINSTALL="Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{F132AF7F-7BCA-4EDE-8A7C-958108FE7DBC}"
+RT_UNINSTALL="Software\Microsoft\Windows\CurrentVersion\Uninstall\{F132AF7F-7BCA-4EDE-8A7C-958108FE7DBC}"
 CPL_CLASS_S="SOFTWARE\Microsoft\Windows\CurrentVersion\Control Panel\Extended Properties\{305CA226-D286-468e-B848-2B2E8E697B74} 2"
-NEWCPL_CLASS_KS="%SystemRoot%\System32\RTSnMg64.cpl"
+NEWCPL_CLASS_KS="%SystemRoot%\system32\RTSndMgr.CPL"
 
 RearLineOutWaveDeviceName="Realtek HD Audio rear output"
 RearLineOutTopoDeviceName="Realtek HD rear output mixer"
@@ -3122,14 +3077,6 @@ KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
 KSCATEGORY_TOPOLOGY="{DDA54A40-1E4C-11D1-A050-405705C10000}"
 Proxy.CLSID ="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
 
-RTLCPAPI_CLSID="{E9F1F599-7B14-4213-BF46-F992758CAB81}"
-
-RTCOMDLL_CLSID="{CC0CA09A-5B84-43F2-BE5C-9169C192565F}"
-RTCOMDLL_CLSID2="{A9C2CEBF-36DC-40A3-92E6-ED59FDD9D20D}"
-RTCOMDLL_CLSID3="{C6606CA5-2108-4CAF-8E52-1953F2DBF716}"
-
-RTKCFG_CLSID="{AF099A7C-45D2-4CE6-9327-EEAAB0395444}"
-
 ; guids for rear line out
 IntAzAudGuidRearLineOutDac= "{EEF86A90-3742-4974-B8D2-5370E1C540F6}"
 IntAzAudGuidFrontHPOutDac = "{497B34AD-D67F-411c-8076-80D5B4250D67}"
@@ -3368,30 +3315,29 @@ GUID.IntrSubWoofer        ="{CE407554-302B-44a8-9455-BB933694A1A5}"
 RTDP_CID1_PATH="CLSID\{3739576F-F27B-4857-9E3E-8BAAA2A030B9}"
 RTDP_CID2_PATH="CLSID\{BBA39DEF-B0D8-4D50-9133-85D5B1AC7971}"
 
-[IntcAzAudModel1028052E.NTamd64]
+[IntcAzAudModel1028052E.NTX86]
 Include=ks.inf,wdmaudio.inf
 Needs=KS.Registration,WDMAUDIO.Registration,mssysfx.CopyFilesAndRegister
 DelFiles  = RTCOMDLL.DelList,RTLCPAPI.DelList
-CopyFiles = IntcAzAudModelCopyFiles, RTLCPAPI.CopyList, RTCOMDLL.CopyList, RTUninstall.CopyList, RTUI.CopyList, RTCPL.CopyList, RTCOM64.CopyList, RTASIODLL.CopyList, RTASIOCPL.CopyList, RTASIO64DLL.CopyList,
-DelReg    = RtkHD.DelReg, RTCOMDLL.DelReg, RealtekSep.DelReg
-AddReg    = IntcAzAudModelAddReg, AECBF.AddReg, AZAUD_OEM.AddReg, RTLCPAPI.AddReg, RTCOMDLL.AddReg, RTUninstall.AddReg, RTUI.AddReg, CPL_Class.AddReg, Coexist.AddReg, GUIInformation.AddReg, CusEffectSettingsMA4EQ.AddReg, RealtekSep.AddReg,
+CopyFiles = IntcAzAudModelCopyFiles, RTLCPAPI.CopyList, RTCOMDLL.CopyList, RTUninstall.CopyList, RTUI.CopyList, RTCPL.CopyList, SfxFx.CopyList, RTASIODLL.CopyList, RTASIOCPL.CopyList, MaxxAudio.CopyList
+DelReg    = RtkHD.DelReg, RealtekSep.DelReg
+AddReg    = IntcAzAudModelAddReg, AECBF.AddReg, AZAUD_OEM.AddReg, RTUninstall.AddReg, RTUI.AddReg, CPL_Class.AddReg, Coexist.AddReg, GUIInformation.AddReg, CusEffectSettingsMA4EQ.AddReg, WavesInstaller.AddReg, RealtekSep.AddReg, MaxxAudioAPO.AddReg
 AddProperty  = OEMCustomBranding.AddProperty
-RegisterDlls = RTCOM64.RegisterDlls, RTASIODLL.RegisterDlls
-[IntcAzAudModel1028052E.NTamd64.HW]
-Needs=IntcAzAudModel.NTamd64.HW
-[IntcAzAudModel1028052E.NTamd64.Services]
-Needs=IntcAzAudModel.NTamd64.Services
-[IntcAzAudModel1028052E.NTamd64.CoInstallers]
+RegisterDlls = SfxFx.RegisterDlls, rtcom.RegisterDlls, RTASIODLL.RegisterDlls
+[IntcAzAudModel1028052E.NTX86.HW]
+Needs=IntcAzAudModel.NTX86.HW
+[IntcAzAudModel1028052E.NTX86.Services]
+Needs=IntcAzAudModel.NTX86.Services
+[IntcAzAudModel1028052E.NTX86.CoInstallers]
 CopyFiles = RtkCoInst.CopyList
 AddReg = RtkCoInst.AddReg
-[IntcAzAudModel1028052E.NTamd64.Interfaces]
-Needs=IntcAzAudModel.NTamd64.Interfaces
+[IntcAzAudModel1028052E.NTX86.Interfaces]
+Needs=IntcAzAudModel.NTX86.Interfaces
 
 [CusEffectSettingsMA4EQ.AddReg]
 HKLM,%WavesPreset%, Presets1,1,52,50,43,46,01,1b,00,00,00,ff,fe,ff,04,46,00,6c,00,61,00,74,00,00,0a,00,8b,00,00,00,00,00,00,00,8a,00,00,00,00,00,00,00,89,00,00,00,00,00,00,00,88,00,00,00,00,00,00,00,87,00,00,00,00,00,00,00,86,00,00,00,00,00,00,00,85,00,00,00,00,00,00,00,84,00,00,00,00,00,00,00,83,00,00,00,00,00,00,00,82,00,00,00,00,00,00,00,ff,fe,ff,05,42,00,6c,00,75,00,65,00,73,00,00,0a,00,8b,00,00,00,00,00,00,00,8a,00,00,00,27,00,00,00,89,00,00,00,13,00,00,00,88,00,00,00,00,00,00,00,87,00,00,00,00,00,00,00,86,00,00,00,f6,ff,ff,ff,85,00,00,00,07,00,00,00,84,00,00,00,16,00,00,00,83,00,00,00,1d,00,00,00,82,00,00,00,09,00,00,00,ff,fe,ff,07,43,00,6c,00,61,00,73,00,73,00,69,00,63,00,00,0a,00,8b,00,00,00,2b,00,00,00,8a,00,00,00,10,00,00,00,89,00,00,00,15,00,00,00,88,00,00,00,06,00,00,00,87,00,00,00,f8,ff,ff,ff,86,00,00,00,f5,ff,ff,ff,85,00,00,00,06,00,00,00,84,00,00,00,0f,00,00,00,83,00,00,00,14,00,00,00,82,00,00,00,2a,00,00,00,ff,fe,ff,06,44,00,4a,00,20,00,53,00,65,00,74,00,00,0a,00,8b,00,00,00,00,00,00,00,8a,00,00,00,15,00,00,00,89,00,00,00,1c,00,00,00,88,00,00,00,1c,00,00,00,87,00,00,00,fd,ff,ff,ff,86,00,00,00,e0,ff,ff,ff,85,00,00,00,02,00,00,00,84,00,00,00,1c,00,00,00,83,00,00,00,1b,00,00,00,82,00,00,00,0b,00,00,00,ff,fe,ff,05,44,00,61,00,6e,00,63,00,65,00,00,0a,00,8b,00,00,00,00,00,00,00,8a,00,00,00,15,00,00,00,89,00,00,00,1c,00,00,00,88,00,00,00,14,00,00,00,87,00,00,00,fd,ff,ff,ff,86,00,00,00,f4,ff,ff,ff,85,00,00,00,02,00,00,00,84,00,00,00,1c,00,00,00,83,00,00,00,1b,00,00,00,82,00,00,00,0b,00,00,00,ff,fe,ff,0a,45,00,6c,00,65,00,63,00,74,00,72,00,6f,00,6e,00,69,00,63,00,00,0a,00,8b,00,00,00,17,00,00,00,8a,00,00,00,1c,00,00,00,89,00,00,00,0b,00,00,00,88,00,00,00,07,00,00,00,87,00,00,00,0d,00,00,00,86,00,00,00,f4,ff,ff,ff,85,00,00,00,f9,ff,ff,ff,84,00,00,00,0f,00,00,00,83,00,00,00,1b,00,00,00,82,00,00,00,07,00,00,00,ff,fe,ff,04,46,00,6f,00,6c,00,6b,00,00,0a,00,82,00,00,00,f6,ff,ff,ff,83,00,00,00,16,00,00,00,84,00,00,00,10,00,00,00,85,00,00,00,fb,ff,ff,ff,86,00,00,00,00,00,00,00,87,00,00,00,0a,00,00,00,88,00,00,00,0c,00,00,00,89,00,00,00,18,00,00,00,8a,00,00,00,18,00,00,00,8b,00,00,00,f0,ff,ff,ff,ff,fe,ff,0c,48,00,69,00,70,00,2d,00,48,00,6f,00,70,00,20,00,48,00,61,00,72,00,64,00,00,0a,00,82,00,00,00,04,00,00,00,83,00,00,00,16,00,00,00,84,00,00,00,0f,00,00,00,85,00,00,00,0e,00,00,00,86,00,00,00,f9,ff,ff,ff,87,00,00,00,f6,ff,ff,ff,88,00,00,00,04,00,00,00,89,00,00,00,19,00,00,00,8a,00,00,00,19,00,00,00,8b,00,00,00,08,00,00,00,ff,fe,ff,0c,48,00,69,00,70,00,2d,00,48,00,6f,00,70,00,20,00,53,00,6f,00,66,00,74,00,00,0a,00,82,00,00,00,08,00,00,00,83,00,00,00,12,00,00,00,84,00,00,00,0e,00,00,00,85,00,00,00,05,00,00,00,86,00,00,00,f9,ff,ff,ff,87,00,00,00,f8,ff,ff,ff,88,00,00,00,0d,00,00,00,89,00,00,00,0b,00,00,00,8a,00,00,00,15,00,00,00,8b,00,00,00,17,00,00,00,ff,fe,ff,05,49,00,6e,00,64,00,69,00,65,00,00,0a,00,8b,00,00,00,11,00,00,00,8a,00,00,00,15,00,00,00,89,00,00,00,08,00,00,00,88,00,00,00,0b,00,00,00,87,00,00,00,f9,ff,ff,ff,86,00,00,00,05,00,00,00,85,00,00,00,fb,ff,ff,ff,84,00,00,00,0d,00,00,00,83,00,00,00,11,00,00,00,82,00,00,00,0b,00,00,00,ff,fe,ff,04,4a,00,61,00,7a,00,7a,00,00,0a,00,8b,00,00,00,0e,00,00,00,8a,00,00,00,0e,00,00,00,89,00,00,00,0d,00,00,00,88,00,00,00,04,00,00,00,87,00,00,00,f6,ff,ff,ff,86,00,00,00,f7,ff,ff,ff,85,00,00,00,14,00,00,00,84,00,00,00,08,00,00,00,83,00,00,00,0d,00,00,00,82,00,00,00,17,00,00,00,ff,fe,ff,08,4c,00,6f,00,75,00,64,00,6e,00,65,00,73,00,73,00,00,0a,00,82,00,00,00,28,00,00,00,83,00,00,00,19,00,00,00,84,00,00,00,0f,00,00,00,85,00,00,00,08,00,00,00,86,00,00,00,fe,ff,ff,ff,87,00,00,00,fd,ff,ff,ff,88,00,00,00,09,00,00,00,89,00,00,00,10,00,00,00,8a,00,00,00,1a,00,00,00,8b,00,00,00,28,00,00,00,ff,fe,ff,06,4c,00,6f,00,75,00,6e,00,67,00,65,00,00,0a,00,82,00,00,00,18,00,00,00,83,00,00,00,23,00,00,00,84,00,00,00,0e,00,00,00,85,00,00,00,f8,ff,ff,ff,86,00,00,00,fe,ff,ff,ff,87,00,00,00,04,00,00,00,88,00,00,00,f5,ff,ff,ff,89,00,00,00,00,00,00,00,8a,00,00,00,21,00,00,00,8b,00,00,00,17,00,00,00,ff,fe,ff,05,4d,00,65,00,74,00,61,00,6c,00,00,0a,00,8b,00,00,00,0b,00,00,00,8a,00,00,00,22,00,00,00,89,00,00,00,00,00,00,00,88,00,00,00,0b,00,00,00,87,00,00,00,f9,ff,ff,ff,86,00,00,00,00,00,00,00,85,00,00,00,00,00,00,00,84,00,00,00,1f,00,00,00,83,00,00,00,09,00,00,00,82,00,00,00,f9,ff,ff,ff,ff,fe,ff,06,4d,00,6f,00,76,00,69,00,65,00,73,00,00,0a,00,82,00,00,00,10,00,00,00,83,00,00,00,28,00,00,00,84,00,00,00,0f,00,00,00,85,00,00,00,05,00,00,00,86,00,00,00,18,00,00,00,87,00,00,00,08,00,00,00,88,00,00,00,09,00,00,00,89,00,00,00,13,00,00,00,8a,00,00,00,28,00,00,00,8b,00,00,00,00,00,00,00,ff,fe,ff,06,4f,00,6c,00,64,00,69,00,65,00,73,00,00,0a,00,82,00,00,00,16,00,00,00,83,00,00,00,1a,00,00,00,84,00,00,00,08,00,00,00,85,00,00,00,fe,ff,ff,ff,86,00,00,00,f6,ff,ff,ff,87,00,00,00,04,00,00,00,88,00,00,00,0b,00,00,00,89,00,00,00,17,00,00,00,8a,00,00,00,0d,00,00,00,8b,00,00,00,eb,ff,ff,ff,ff,fe,ff,05,50,00,69,00,61,00,6e,00,6f,00,00,0a,00,8b,00,00,00,08,00,00,00,8a,00,00,00,00,00,00,00,89,00,00,00,17,00,00,00,88,00,00,00,15,00,00,00,87,00,00,00,fa,ff,ff,ff,86,00,00,00,0f,00,00,00,85,00,00,00,0f,00,00,00,84,00,00,00,f2,ff,ff,ff,83,00,00,00,0d,00,00,00,82,00,00,00,15,00,00,00,ff,fe,ff,03,50,00,6f,00,70,00,00,0a,00,82,00,00,00,14,00,00,00,83,00,00,00,38,00,00,00,84,00,00,00,fe,ff,ff,ff,85,00,00,00,c5,ff,ff,ff,86,00,00,00,44,00,00,00,87,00,00,00,22,00,00,00,88,00,00,00,ab,ff,ff,ff,89,00,00,00,34,00,00,00,8a,00,00,00,22,00,00,00,8b,00,00,00,12,00,00,00,ff,fe,ff,03,52,00,26,00,42,00,00,0a,00,8b,00,00,00,0f,00,00,00,8a,00,00,00,14,00,00,00,89,00,00,00,0c,00,00,00,88,00,00,00,18,00,00,00,87,00,00,00,00,00,00,00,86,00,00,00,f1,ff,ff,ff,85,00,00,00,e6,ff,ff,ff,84,00,00,00,32,00,00,00,83,00,00,00,1a,00,00,00,82,00,00,00,00,00,00,00,ff,fe,ff,0b,52,00,6f,00,63,00,6b,00,20,00,2d,00,20,00,48,00,61,00,72,00,64,00,00,0a,00,82,00,00,00,22,00,00,00,83,00,00,00,1a,00,00,00,84,00,00,00,24,00,00,00,85,00,00,00,0d,00,00,00,86,00,00,00,f6,ff,ff,ff,87,00,00,00,fd,ff,ff,ff,88,00,00,00,06,00,00,00,89,00,00,00,15,00,00,00,8a,00,00,00,1a,00,00,00,8b,00,00,00,2b,00,00,00,ff,fe,ff,0b,52,00,6f,00,63,00,6b,00,20,00,2d,00,20,00,53,00,6f,00,66,00,74,00,00,0a,00,82,00,00,00,1a,00,00,00,83,00,00,00,12,00,00,00,84,00,00,00,16,00,00,00,85,00,00,00,08,00,00,00,86,00,00,00,f2,ff,ff,ff,87,00,00,00,fd,ff,ff,ff,88,00,00,00,03,00,00,00,89,00,00,00,0e,00,00,00,8a,00,00,00,20,00,00,00,8b,00,00,00,18,00,00,00,ff,fe,ff,06,53,00,70,00,65,00,65,00,63,00,68,00,00,0a,00,8b,00,00,00,ed,ff,ff,ff,8a,00,00,00,00,00,00,00,89,00,00,00,11,00,00,00,88,00,00,00,19,00,00,00,87,00,00,00,1a,00,00,00,86,00,00,00,13,00,00,00,85,00,00,00,0e,00,00,00,84,00,00,00,0d,00,00,00,83,00,00,00,00,00,00,00,82,00,00,00,e9,ff,ff,ff,ff,fe,ff,08,54,00,72,00,69,00,70,00,20,00,68,00,6f,00,70,00,00,0a,00,82,00,00,00,11,00,00,00,83,00,00,00,0f,00,00,00,84,00,00,00,0b,00,00,00,85,00,00,00,fd,ff,ff,ff,86,00,00,00,f7,ff,ff,ff,87,00,00,00,0f,00,00,00,88,00,00,00,07,00,00,00,89,00,00,00,10,00,00,00,8a,00,00,00,11,00,00,00,8b,00,00,00,0b,00,00,00,ff,fe,ff,09,55,00,6e,00,70,00,6c,00,75,00,67,00,67,00,65,00,64,00,00,0a,00,82,00,00,00,f9,ff,ff,ff,83,00,00,00,25,00,00,00,84,00,00,00,14,00,00,00,85,00,00,00,e5,ff,ff,ff,86,00,00,00,00,00,00,00,87,00,00,00,00,00,00,00,88,00,00,00,26,00,00,00,89,00,00,00,fd,ff,ff,ff,8a,00,00,00,0c,00,00,00,8b,00,00,00,00,00,00,00,ff,fe,ff,13,59,00,6f,00,75,00,72,00,20,00,54,00,75,00,62,00,65,00,20,00,2d,00,20,00,4c,00,65,00,63,00,74,00,75,00,72,00,65,00,00,0a,00,82,00,00,00,a6,ff,ff,ff,83,00,00,00,1d,00,00,00,84,00,00,00,09,00,00,00,85,00,00,00,0f,00,00,00,86,00,00,00,18,00,00,00,87,00,00,00,01,00,00,00,88,00,00,00,2b,00,00,00,89,00,00,00,07,00,00,00,8a,00,00,00,e9,ff,ff,ff,8b,00,00,00,be,ff,ff,ff,ff,fe,ff,11,59,00,6f,00,75,00,72,00,20,00,54,00,75,00,62,00,65,00,20,00,2d,00,20,00,4d,00,75,00,73,00,69,00,63,00,00,0a,00,82,00,00,00,0f,00,00,00,83,00,00,00,1e,00,00,00,84,00,00,00,0a,00,00,00,85,00,00,00,ff,ff,ff,ff,86,00,00,00,03,00,00,00,87,00,00,00,fd,ff,ff,ff,88,00,00,00,03,00,00,00,89,00,00,00,0e,00,00,00,8a,00,00,00,3c,00,00,00,8b,00,00,00,c2,ff,ff,ff,ff,fe,ff,0e,59,00,6f,00,75,00,72,00,20,00,54,00,75,00,62,00,65,00,20,00,2d,00,20,00,54,00,56,00,00,0a,00,82,00,00,00,af,ff,ff,ff,83,00,00,00,19,00,00,00,84,00,00,00,0e,00,00,00,85,00,00,00,00,00,00,00,86,00,00,00,ca,ff,ff,ff,87,00,00,00,31,00,00,00,88,00,00,00,f1,ff,ff,ff,89,00,00,00,3b,00,00,00,8a,00,00,00,dc,ff,ff,ff,8b,00,00,00,b3,ff,ff,ff
 
 [RealtekSep.AddReg]
-HKLM,Software\Wow6432Node\Realtek\Audio\VbCmdMonitor
 HKLM,Software\Realtek\Audio\VbCmdMonitor
 HKLM,Software\Realtek\SpkProtection
 
@@ -3399,8 +3345,26 @@ HKLM,Software\Realtek\SpkProtection
 "G:BUD:(A;CIOI;KA;;;BU)"
 
 [RealtekSep.DelReg]
-HKLM,Software\Wow6432Node\Realtek\Audio\VbCmdMonitor
 HKLM,Software\Realtek\Audio\VbCmdMonitor
 
 [MaxxAudioAPO.AddReg]
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_A%,,0,"MaxxAudioAPO Class"
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_B%,,0,"MaxxAudioAPO B Class"
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_C%,,0,"MaxxAudioAPO C Class"
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_A%,,0,"MaxxAudioAPO Dock A Class"
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_B%,,0,"MaxxAudioAPO Dock B Class"
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_C%,,0,"MaxxAudioAPO Dock C Class"
 
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_A%\InProcServer32,,0,%11%\MaxxAudioRenderAVX.dll
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_B%\InProcServer32,,0,%11%\MaxxAudioRenderAVX.dll
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_C%\InProcServer32,,0,%11%\MaxxAudioRenderAVX.dll
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_A%\InProcServer32,,0,%11%\MaxxAudioRenderAVX.dll
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_B%\InProcServer32,,0,%11%\MaxxAudioRenderAVX.dll
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_C%\InProcServer32,,0,%11%\MaxxAudioRenderAVX.dll
+
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_A%\InProcServer32,ThreadingModel,0,Both
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_B%\InProcServer32,ThreadingModel,0,Both
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_C%\InProcServer32,ThreadingModel,0,Both
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_A%\InProcServer32,ThreadingModel,0,Both
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_B%\InProcServer32,ThreadingModel,0,Both
+HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_C%\InProcServer32,ThreadingModel,0,Both

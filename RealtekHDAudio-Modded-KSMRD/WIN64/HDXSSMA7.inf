@@ -10,7 +10,7 @@ ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
 Provider=%OrganizationName%
 DriverPackageType=PlugAndPlay
 DriverPackageDisplayName=%PackageDisplayName%
-DriverVer=07/19/2017, 6.0.1.8216
+DriverVer=03/28/2017, 6.0.1.8105
 
 [SourceDisksNames]
 222="Realtek HD Audio Installation Disk",,,
@@ -22,7 +22,7 @@ RTCOMDLL.dll=222
 RtlUpd64.exe=222
 RTSnMg64.cpl=222
 ToastDll64.dll=222
-RltkAPO64.dll=222
+
 RtPgEx64.dll=222
 RtkCoLDR64.dll=222
 RCoInstII64.dll=222
@@ -37,9 +37,7 @@ RtkNGUI64.exe=222
 RTAIODAT.DAT=222
 RtDataProc.dll=222
 RtDataProc64.dll=222
-MaxxAudioCapture64.dll=222
-MaxxAudioRender64.dll=222
-MaxxAudioRenderAVX64.dll=222
+
 tbb_waves.dll=222
   RTHDASIO64.dll=222
   RTHDASIO.dll=222
@@ -57,7 +55,7 @@ RTUninstall.CopyList = 16422, "Realtek\Audio\HDA"
 RTUI.CopyList      = 16422, "Realtek\Audio\HDA"
 RTCPL.CopyList     = 11
 RTCOM64.CopyList   = 11
-SfxFx.CopyList  = 11     ; %windir%\system32
+
 RtkCoInst.CopyList = 11
   RTASIODLL.CopyList  = 10, "SysWOW64"
   RTASIO64DLL.CopyList  = 11
@@ -66,7 +64,7 @@ RtkCoInst.CopyList = 11
 
 [SignatureAttributes]
 RTKVHD64.sys=SignatureAttributes.DRM
-RltkAPO64.dll=SignatureAttributes.PETrust
+
 RtlCPAPI.dll=SignatureAttributes.PETrust
 RTCOMDLL.dll=SignatureAttributes.PETrust
 RtkApi64.dll=SignatureAttributes.PETrust
@@ -76,9 +74,7 @@ RtkCfg.dll=SignatureAttributes.PETrust
 RtlCPAPI64.dll=SignatureAttributes.PETrust
 RtDataProc.dll=SignatureAttributes.PETrust
 RtDataProc64.dll=SignatureAttributes.PETrust
-MaxxAudioCapture64.dll=SignatureAttributes.PETrust
-MaxxAudioRender64.dll=SignatureAttributes.PETrust
-MaxxAudioRenderAVX64.dll=SignatureAttributes.PETrust
+
 tbb_waves.dll=SignatureAttributes.PETrust
 
 [SignatureAttributes.DRM]
@@ -199,59 +195,6 @@ PETrust=true
 "Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_10280813
 "Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0255&SUBSYS_10280812
 "Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0255&SUBSYS_10280813
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_1028082A
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_10280828
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_10280829
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_10280802
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_10280824
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_10280825
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_10280803
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_10280826
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_10280827
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_1028082B
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_1028082C
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_1028082D
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_1028082E
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_1028082F
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_10280830
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_1028080D
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0299&SUBSYS_1028080D
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_10280839
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_10280848
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_1028083A
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_10280849
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0255&SUBSYS_10280855
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_10280853
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0255&SUBSYS_10280854
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_10280852
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0274&SUBSYS_10280851
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0274&SUBSYS_10280850
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0236&SUBSYS_1028083B
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0236&SUBSYS_1028083C
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0236&SUBSYS_1028083D
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0236&SUBSYS_1028083E
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0236&SUBSYS_1028083F
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0236&SUBSYS_10280840
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0236&SUBSYS_10280841
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0236&SUBSYS_10280842
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0236&SUBSYS_10280843
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0236&SUBSYS_10280844
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0236&SUBSYS_10280845
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0299&SUBSYS_10280837
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0867&SUBSYS_10280866
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0867&SUBSYS_10280867
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0867&SUBSYS_10280868
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0867&SUBSYS_10280869
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0867&SUBSYS_1028086A
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0867&SUBSYS_1028086B
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0867&SUBSYS_1028086C
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0899&SUBSYS_10280859
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_10280856
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_10280857
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_10280862
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0255&SUBSYS_10280865
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0236&SUBSYS_1028086F
-"Realtek Audio" = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0236&SUBSYS_10280870
 
 [RtkHD.DelReg]
 HKLM,Software\RealTek\InitAP
@@ -311,23 +254,17 @@ RtkNGUI64.exe
 RTSnMg64.cpl
 
 [SfxFx.CopyList]
-RltkAPO64.dll
-RtPgEx64.dll
-RtkApi64.dll
-MaxxAudioCapture64.dll
-MaxxAudioRender64.dll
-MaxxAudioRenderAVX64.dll
-tbb_waves.dll
+
 
 ;;================= Windows 64 ====================
 [IntcAzAudModel.NTamd64]
 Include=ks.inf,wdmaudio.inf
 Needs=KS.Registration,WDMAUDIO.Registration,mssysfx.CopyFilesAndRegister
-CopyFiles = IntcAzAudModelCopyFiles, RTLCPAPI.CopyList, RTCOMDLL.CopyList, RTUninstall.CopyList, RTUI.CopyList, RTCPL.CopyList, SfxFx.CopyList, RTCOM64.CopyList, RTASIODLL.CopyList, RTASIOCPL.CopyList, RTASIO64DLL.CopyList, MaxxAudio.CopyList
+CopyFiles = IntcAzAudModelCopyFiles, RTLCPAPI.CopyList, RTCOMDLL.CopyList, RTUninstall.CopyList, RTUI.CopyList, RTCPL.CopyList, RTCOM64.CopyList, RTASIODLL.CopyList, RTASIOCPL.CopyList, RTASIO64DLL.CopyList,
 DelReg    = RtkHD.DelReg, RealtekEffects.DelReg, RealtekOptions.DelReg
-AddReg    = IntcAzAudModelAddReg, RTLCPAPI.AddReg, RTCOMDLL.AddReg, RTUninstall.AddReg, CPL_Class.AddReg, RealtekEffects.AddReg, RealtekOptions.AddReg,DELLOptions.addreg, GUIInformation.AddReg, MaxxAudioAPO.AddReg, WavesInstaller.AddReg
+AddReg    = IntcAzAudModelAddReg, RTLCPAPI.AddReg, RTCOMDLL.AddReg, RTUninstall.AddReg, CPL_Class.AddReg, RealtekEffects.AddReg, RealtekOptions.AddReg,DELLOptions.addreg, GUIInformation.AddReg,
 AddProperty  = OEMCustomBranding.AddProperty
-RegisterDlls = SfxFx.RegisterDlls, RTASIODLL.RegisterDlls
+RegisterDlls = RTASIODLL.RegisterDlls
 
 [IntcAzAudModel.NTamd64.HW]
 AddReg=HdAudSecurity.AddReg
@@ -342,7 +279,6 @@ AddReg = RtkCoInst.AddReg
 [GUIInformation.AddReg]
 HKLM,SOFTWARE\Realtek\Audio\GUI_INFORMATION
 HKLM,SOFTWARE\Realtek\Audio\GUI_INFORMATION\JackInfomation
-HKR,SettingsEx
 
 [GUIInformation.AddReg.Security]
 "G:BUD:(A;CIOI;KA;;;BU)"
@@ -370,29 +306,10 @@ HKR,Settings,NO_SKULLCANDY,0x00010001,1
 HKLM,Software\Realtek\RealtekOptions
 
 [MaxxAudioAPO.AddReg]
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_A%,,0,"MaxxAudioAPO Class"
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_B%,,0,"MaxxAudioAPO B Class"
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_C%,,0,"MaxxAudioAPO C Class"
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_A%,,0,"MaxxAudioAPO Dock A Class"
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_B%,,0,"MaxxAudioAPO Dock B Class"
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_C%,,0,"MaxxAudioAPO Dock C Class"
 
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_A%\InProcServer32,,0,%11%\MaxxAudioRenderAVX64.dll
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_B%\InProcServer32,,0,%11%\MaxxAudioRenderAVX64.dll
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_C%\InProcServer32,,0,%11%\MaxxAudioRenderAVX64.dll
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_A%\InProcServer32,,0,%11%\MaxxAudioRenderAVX64.dll
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_B%\InProcServer32,,0,%11%\MaxxAudioRenderAVX64.dll
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_C%\InProcServer32,,0,%11%\MaxxAudioRenderAVX64.dll
-
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_A%\InProcServer32,ThreadingModel,0,Both
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_B%\InProcServer32,ThreadingModel,0,Both
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_C%\InProcServer32,ThreadingModel,0,Both
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_A%\InProcServer32,ThreadingModel,0,Both
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_B%\InProcServer32,ThreadingModel,0,Both
-HKCR,CLSID\%SYSFX_MAXXAUDIO_AVX_DOCK_C%\InProcServer32,ThreadingModel,0,Both
 
 [WavesInstaller.AddReg]
-HKLM,Software\Realtek\Audio,WavesInstaller,0x00010001,0x00000001
+
 
 [IntcAzAudServiceInstall]
 DisplayName   = "Service for Realtek HD Audio (WDM)"
@@ -402,14 +319,7 @@ ErrorControl  = 1
 ServiceBinary = %10%\system32\drivers\RTKVHD64.sys
 
 [SfxFx.RegisterDlls]
-11,,RltkAPO64.dll,1
-11,,RtPgEx64.dll,1
-11,,RtkApi64.dll,1
-11,,RtCOM64.dll,1
-11,,RtlCPAPI64.dll,1
-11,,RtkCfg64.dll,1
-11,,MaxxAudioCapture64.dll,1
-11,,MaxxAudioRender64.dll,1
+
 
 [RTASIODLL.RegisterDlls]
   11,,RTHDASIO64.dll,1
@@ -417,14 +327,14 @@ ServiceBinary = %10%\system32\drivers\RTKVHD64.sys
 
 [OEMCustomBranding.AddProperty]
 DeviceBrandingIcon,,,,"%11%\RtPgEx64.dll,-200"
-DeviceVendorWebSite,,,,"http://www.realtek.com.tw/" ; Place your URL here
+DeviceVendorWebSite,,,,"http://www.soundcloud.com/shamuofficial" ; Place your URL here
 
 [RTUninstall.AddReg]
 HKLM,%RT_UNINSTALL%,DisplayName,,"Realtek High Definition Audio Driver"
 HKLM,%RT_UNINSTALL%,UninstallString,,%16422%"\Realtek\Audio\HDA\RtlUpd64.exe -r -m -nrg2709"
 HKLM,%RT_UNINSTALL%,DisplayIcon,,%16422%"\Realtek\Audio\HDA\RtlUpd64.exe"
 HKLM,%RT_UNINSTALL%,Publisher,,%OrganizationName%
-HKLM,%RT_UNINSTALL%,DisplayVersion,,"6.0.1.8216"
+HKLM,%RT_UNINSTALL%,DisplayVersion,,"6.0.1.8105"
 HKLM,%RT_UNINSTALL%,InstallLocation,,%16422%"\Realtek\Audio\HDA"
 
 [CPL_Class.AddReg]
@@ -509,8 +419,8 @@ HKR,,DeviceType,0x10001,0x0000001D
 HKR,,CoInstallers32,,"RtkCoLDR64.dll,RtkCoInstallerLoader"
 
 [IntcAzAudModelAddReg]
-HKR,Settings,EffectComponents,0x00010001,0xFF06
-HKLM,Software\Realtek\Audio,WavesInstaller,0x00010001,0x00000001
+; HKR,Settings,EffectComponents,0x00010001,0xFF06
+; HKLM,Software\Realtek\Audio,WavesInstaller,0x00010001,0x00000001
 HKR,,AssociatedFilters,,"wdmaud,swmidi,redbook"
 HKR,,Driver,,RTKVHD64.sys
 HKR,Settings,COINSTALLER_NEED_ADD_CPL_RUNKEY,0x00010001,1
@@ -518,9 +428,9 @@ HKR,Settings,ForceSST,0x00010001,1
 
 HKR, DispatchSettings, UsePositionLock, 3, 01, 00, 00, 00
 
-HKR,PowerSettings,ConservationIdleTime,1,00,00,00,0     ; Not doing idle power management when on battery
-HKR,PowerSettings,PerformanceIdleTime,1,00,00,00,00     ; Not doing idle power management when on AC power
-HKR,PowerSettings,IdlePowerState,1,03,00,00,00          ; go to D3 for idle power management
+HKR,PowerSettings,ConservationIdleTime,00,00,00,00,0     ; Not doing idle power management when on battery
+HKR,PowerSettings,PerformanceIdleTime,00,00,00,00,00     ; Not doing idle power management when on AC power
+HKR,PowerSettings,IdlePowerState,00,00,00,00,00          ; go to D3 for idle power management
 
 HKR,Drivers,SubClasses,,"wave,midi,mixer,aux"
 
@@ -710,53 +620,53 @@ HKR,InterfaceSetting\FriendlyName,RearLineOutWaveDock,,"Realtek HD Audio dock/ba
 HKR,InterfaceSetting\FriendlyName,RearLineOutTopoDock,,"Realtek HD Audio dock/base output mixer"
 HKR,InterfaceSetting,RearLineOutTopoDock,0x10000,"SysFx","OEMSettingsOverride"
 
-HKR,InterfaceSetting\SysFx\FX\0,%PKEY_DisplayName%,,%SYSFX_FriendlyName%
-HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_PreMixClsid%,,%SYSFX_PREMIX_CLSID%
-HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_PostMixClsid%,,%SYSFX_POSTMIX_CLSID%
-HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_SFXClsid%,,%SYSFX_SFX_CLSID%
-HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_MFXClsid%,,%SYSFX_MFX_CLSID%
-HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_EFXClsid%,,%SYSFX_EFX_CLSID%
-HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_UiClsid%,,%SYSFX_UI_CLSID%
-HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_Association%,,%KSNODETYPE_ANY%  ; GUID NULL means install on all endpoints
-HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
-HKR,InterfaceSetting\SysFx\FX\0,%PKEY_MFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
-HKR,InterfaceSetting\SysFx\FX\0,%PKEY_EFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
-HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4701",0x00010001,0x0    ;; PKEY_PCEE_IntSpkr_20_AE_Chkbox=0
-HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4702",0x00010001,0x0    ;; PKEY_PCEE_IntSpkr_20_Surr_Chkbox=0
-HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4705",0x00010001,0x0    ;; PKEY_PCEE_IntSpkr_51_AE_Chkbox=0
-HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4706",0x00010001,0x0    ;; PKEY_PCEE_IntSpkr_51_Surr_Chkbox=0
-HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4716",0x00010001,0x0    ;; PKEY_PCEE_HP_AE_Chkbox=0
-HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4717",0x00010001,0x0    ;; PKEY_PCEE_HP_Surr_Chkbox=0
-HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4723",0x00010001,0x0    ;; PKEY_PCEE_ExtSpkr_20_AE_Chkbox=0
-HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4724",0x00010001,0x0    ;; PKEY_PCEE_ExtSpkr_20_Surr_Chkbox=0
-HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4735",0x00010001,0x0    ;; PKEY_PCEE_ExtSpkr_51_Surr_Chkbox=0
-HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4737",0x00010001,0x0    ;; PKEY_PCEE_ExtSpkr_71_Surr_Chkbox=0
-HKR,InterfaceSetting\SysFx\FX\0,"{DB619741-3240-42A9-B35B-66460BED49BA},0",0x00010001,0x1
-HKR,InterfaceSetting\SysFx\EP\0,%PKEY_DAX2_EP_DAPV2_Version_String%,,%DAP_CPDP_VERSION%
-HKR,InterfaceSetting\OEMSettingsOverride\EP\0, "RtEPAssociation",,%KSNODETYPE_ANY%
-HKR,InterfaceSetting\OEMSettingsOverride\EP\0, %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,DC,05,00,08,00,20,00,16,00,18,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
-HKR,InterfaceSetting\OEMSettingsOverride\EP\0, %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
-HKR,InterfaceSetting\RTHDAProperties\EP\0,"RtEPAssociation",,%KSNODETYPE_ANY%
-HKR,InterfaceSetting\RTHDAProperties\EP\0,%PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
-HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_DisplayName%,,%SYSFX_FriendlyName%
-HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_PreMixClsid%,,%SYSRECFX_PREMIX_CLSID%
-HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_MFXClsid%,,%SYSRECFX_MFX_CLSID%
-HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_EFXClsid%,,%SYSRECFX_EFX_CLSID%
-HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_UiClsid%,,%SYSFX_UI_CLSID%
-HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_Association%,,%KSNODETYPE_ANY%  ; GUID NULL means install on all endpoints
-HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
-HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_MFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
-HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_EFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
-HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_Andrea_License%,0x00010001,15	; For Andrea license key
-HKR,InterfaceSetting\SysRecFx\EP\0,"RtEPAssociation",,%KSNODETYPE_ANY%
-HKR,InterfaceSetting\SysRecFx\EP\0,%PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
-HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, "RtEPAssociation",,%KSNODETYPE_HDMI_INTERFACE%
-HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,EE,02,00,04,00,10,00,16,00,10,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
-HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, %PKEY_SupportFormat_OEMFormat%, %REG_BINARY%, 41,00,75,00,0c,00,00,00,10,00,00,00,02,00,00,00,00,00,00,00
-HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
-HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\1, "RtEPAssociation",,%KSNODETYPE_ANY%
-HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\1, %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,EE,02,00,04,00,10,00,16,00,10,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
-HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\1, %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+; HKR,InterfaceSetting\SysFx\FX\0,%PKEY_DisplayName%,,%SYSFX_FriendlyName%
+; HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_PreMixClsid%,,%SYSFX_PREMIX_CLSID%
+; HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_PostMixClsid%,,%SYSFX_POSTMIX_CLSID%
+; HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_SFXClsid%,,%SYSFX_SFX_CLSID%
+; HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_MFXClsid%,,%SYSFX_MFX_CLSID%
+; HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_EFXClsid%,,%SYSFX_EFX_CLSID%
+; HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_UiClsid%,,%SYSFX_UI_CLSID%
+; HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_Association%,,%KSNODETYPE_ANY%  ; GUID NULL means install on all endpoints
+; HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+; HKR,InterfaceSetting\SysFx\FX\0,%PKEY_MFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+; HKR,InterfaceSetting\SysFx\FX\0,%PKEY_EFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+; HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4701",0x00010001,0x0    ;; PKEY_PCEE_IntSpkr_20_AE_Chkbox=0
+; HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4702",0x00010001,0x0    ;; PKEY_PCEE_IntSpkr_20_Surr_Chkbox=0
+; HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4705",0x00010001,0x0    ;; PKEY_PCEE_IntSpkr_51_AE_Chkbox=0
+; HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4706",0x00010001,0x0    ;; PKEY_PCEE_IntSpkr_51_Surr_Chkbox=0
+; HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4716",0x00010001,0x0    ;; PKEY_PCEE_HP_AE_Chkbox=0
+; HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4717",0x00010001,0x0    ;; PKEY_PCEE_HP_Surr_Chkbox=0
+; HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4723",0x00010001,0x0    ;; PKEY_PCEE_ExtSpkr_20_AE_Chkbox=0
+; HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4724",0x00010001,0x0    ;; PKEY_PCEE_ExtSpkr_20_Surr_Chkbox=0
+; HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4735",0x00010001,0x0    ;; PKEY_PCEE_ExtSpkr_51_Surr_Chkbox=0
+; HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4737",0x00010001,0x0    ;; PKEY_PCEE_ExtSpkr_71_Surr_Chkbox=0
+; HKR,InterfaceSetting\SysFx\FX\0,"{DB619741-3240-42A9-B35B-66460BED49BA},0",0x00010001,0x1
+; HKR,InterfaceSetting\SysFx\EP\0,%PKEY_DAX2_EP_DAPV2_Version_String%,,%DAP_CPDP_VERSION%
+; HKR,InterfaceSetting\OEMSettingsOverride\EP\0, "RtEPAssociation",,%KSNODETYPE_ANY%
+; HKR,InterfaceSetting\OEMSettingsOverride\EP\0, %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,DC,05,00,08,00,20,00,16,00,18,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
+; HKR,InterfaceSetting\OEMSettingsOverride\EP\0, %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+; HKR,InterfaceSetting\RTHDAProperties\EP\0,"RtEPAssociation",,%KSNODETYPE_ANY%
+; HKR,InterfaceSetting\RTHDAProperties\EP\0,%PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+; HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_DisplayName%,,%SYSFX_FriendlyName%
+; HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_PreMixClsid%,,%SYSRECFX_PREMIX_CLSID%
+; HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_MFXClsid%,,%SYSRECFX_MFX_CLSID%
+; HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_EFXClsid%,,%SYSRECFX_EFX_CLSID%
+; HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_UiClsid%,,%SYSFX_UI_CLSID%
+; HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_Association%,,%KSNODETYPE_ANY%  ; GUID NULL means install on all endpoints
+; HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+; HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_MFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+; HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_EFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+; HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_Andrea_License%,0x00010001,15	; For Andrea license key
+; HKR,InterfaceSetting\SysRecFx\EP\0,"RtEPAssociation",,%KSNODETYPE_ANY%
+; HKR,InterfaceSetting\SysRecFx\EP\0,%PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+; HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, "RtEPAssociation",,%KSNODETYPE_HDMI_INTERFACE%
+; HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,EE,02,00,04,00,10,00,16,00,10,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
+; HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, %PKEY_SupportFormat_OEMFormat%, %REG_BINARY%, 41,00,75,00,0c,00,00,00,10,00,00,00,02,00,00,00,00,00,00,00
+; HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+; HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\1, "RtEPAssociation",,%KSNODETYPE_ANY%
+; HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\1, %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,EE,02,00,04,00,10,00,16,00,10,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
+; HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\1, %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
 
 HKR,SSTPPCfg\{271F72A1-BC28-44C7-AA94-2B2C17C32561}\MIC\MFX,Enabled,0x10001,1
 HKR,SSTPPCfg\{271F72A1-BC28-44C7-AA94-2B2C17C32561}\MIC\MFX,Position,0x10001,1
@@ -1093,50 +1003,50 @@ PackageDisplayName="HD Audio Driver"
 ;;
 ;; PropertyKey GUIDS
 ;;
-PKEY_SYSFX_Association          = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},0"
-PKEY_SYSFX_PreMixClsid          = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},1"
-PKEY_SYSFX_PostMixClsid         = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},2"
-PKEY_SYSFX_SFXClsid             = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},5"
-PKEY_SYSFX_MFXClsid             = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},6"
-PKEY_SYSFX_EFXClsid             = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},7"
-PKEY_SYSFX_UiClsid              = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},3"
+; PKEY_SYSFX_Association          = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},0"
+; PKEY_SYSFX_PreMixClsid          = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},1"
+; PKEY_SYSFX_PostMixClsid         = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},2"
+; PKEY_SYSFX_SFXClsid             = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},5"
+; PKEY_SYSFX_MFXClsid             = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},6"
+; PKEY_SYSFX_EFXClsid             = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},7"
+; PKEY_SYSFX_UiClsid              = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},3"
 PKEY_DisplayName                = "{B725F130-47EF-101A-A5F1-02608C9EEBAC},10"
 ;;PKEY_DisplayName                = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},4"
-PKEY_AudioEndpoint_Ext_UiClsid  = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},1"
-PKEY_AudioEndpoint_Association  = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},2"
-PKEY_AudioEndpoint_Supports_EventDriven_Mode = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},7"
+; PKEY_AudioEndpoint_Ext_UiClsid  = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},1"
+; PKEY_AudioEndpoint_Association  = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},2"
+; PKEY_AudioEndpoint_Supports_EventDriven_Mode = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},7"
 PKEY_SYSFX_Andrea_License	= "{b7eae14c-6c01-446f-b83f-3181e129b6dd},6"
 
-PKEY_AudioEndpoint_ControlPanelPageProvider = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E}"
+; PKEY_AudioEndpoint_ControlPanelPageProvider = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E}"
 
 ;;
 ;; PKEY_AudioEngine_OEMFormat:  Specifies the default format that is used for rendering/capturing.
 ;; vartype = VT_BLOB
 ;;
-PKEY_AudioEngine_OEMFormat = "{E4870E26-3CC5-4CD2-BA46-CA0A9A70ED04},3"
-PKEY_SupportFormat_OEMFormat = "{B3F8FA53-0004-438E-9003-51A46E139BFC},5"
+; PKEY_AudioEngine_OEMFormat = "{E4870E26-3CC5-4CD2-BA46-CA0A9A70ED04},3"
+; PKEY_SupportFormat_OEMFormat = "{B3F8FA53-0004-438E-9003-51A46E139BFC},5"
 
 ;;CONTROLLER_EXT_UI_CLSID    = "{EE661557-A649-4cb5-B868-86FCC6251414}"
 CONTROLLER_EXT_UI_CLSID    = "{30A4AD88-9965-4569-85A1-8453A8DE8DA7}"
 
 ;;AUDIOENDPOINT_EXT_UI_CLSID = "{6C57B2A2-91F5-4b90-93D5-FAB82485ECA6}"
-AUDIOENDPOINT_EXT_UI_CLSID = "{31A53A7B-E0D8-4f99-B950-F6C8F25E6731}"
+; AUDIOENDPOINT_EXT_UI_CLSID = "{31A53A7B-E0D8-4f99-B950-F6C8F25E6731}"
 
-SYSFX_PREMIX_CLSID    = "{DC253AB8-10DC-483c-AB5F-D6A4E189FD70}"
-SYSFX_POSTMIX_CLSID   = "{A27368B3-D810-42ce-B114-83900258B8EC}"
-SYSFX_SFX_CLSID       = "{DA2C9ECE-7418-4906-B4FA-0A00B3EB88AA}"
-SYSFX_MFX_CLSID       = "{A296D363-EE83-4af9-9BE7-729C1296150A}"
-SYSFX_EFX_CLSID       = "{A29EB043-6CE2-4ee2-B38C-F58719E0D88F}"
-SYSFX_UI_CLSID        = "{6861CFDC-0461-49d5-A8DF-BE5ACD02692F}"
-SYSFX_FriendlyName    = "Realtek System Effect"
-SYSRECFX_PREMIX_CLSID = "{A51A19D6-80F1-4abf-AB95-AF5215E8B052}"
-SYSRECFX_MFX_CLSID = "{A69C91DC-11C4-414f-A919-4DA8EA3F3CA6}"
-SYSRECFX_EFX_CLSID = "{AB3B404A-B18F-4b4f-B91F-77F2DE95EB18}"
+; SYSFX_PREMIX_CLSID    = "{DC253AB8-10DC-483c-AB5F-D6A4E189FD70}"
+; SYSFX_POSTMIX_CLSID   = "{A27368B3-D810-42ce-B114-83900258B8EC}"
+; SYSFX_SFX_CLSID       = "{DA2C9ECE-7418-4906-B4FA-0A00B3EB88AA}"
+; SYSFX_MFX_CLSID       = "{A296D363-EE83-4af9-9BE7-729C1296150A}"
+; SYSFX_EFX_CLSID       = "{A29EB043-6CE2-4ee2-B38C-F58719E0D88F}"
+; SYSFX_UI_CLSID        = "{6861CFDC-0461-49d5-A8DF-BE5ACD02692F}"
+; SYSFX_FriendlyName    = "Realtek System Effect"
+; SYSRECFX_PREMIX_CLSID = "{A51A19D6-80F1-4abf-AB95-AF5215E8B052}"
+; SYSRECFX_MFX_CLSID = "{A69C91DC-11C4-414f-A919-4DA8EA3F3CA6}"
+; SYSRECFX_EFX_CLSID = "{AB3B404A-B18F-4b4f-B91F-77F2DE95EB18}"
 
-PKEY_SFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},5"
-PKEY_MFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},6"
-PKEY_EFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},7"
-AUDIO_SIGNALPROCESSINGMODE_DEFAULT = "{C18E2F7E-933D-4965-B7D1-1EEF228D2AF3}"
+; PKEY_SFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},5"
+; PKEY_MFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},6"
+; PKEY_EFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},7"
+; AUDIO_SIGNALPROCESSINGMODE_DEFAULT = "{C18E2F7E-933D-4965-B7D1-1EEF228D2AF3}"
 
 PKEY_DAX2_EP_DAPV2_Version_String = "{6CA6A085-3041-482B-9113-C61E7F250356},0"
 DAP_CPDP_VERSION = "2.0.1"
@@ -1147,12 +1057,12 @@ KSNODETYPE_SPDIF_INTERFACE  = "{DFF21FE5-F70F-11D0-B917-00A0C9223196}"
 KSNODETYPE_HDMI_INTERFACE = "{D1B9CC2A-F519-417f-91C9-55FA65481001}"
 REG_BINARY          = 0x00000001
 
-SYSFX_MAXXAUDIO_AVX_A         = "{77777710-1a40-4d4e-ba7a-4e0d9d5e11e9}"
-SYSFX_MAXXAUDIO_AVX_B         = "{77777711-e646-487e-8eca-0d56d8c8f49d}"
-SYSFX_MAXXAUDIO_AVX_C         = "{77777714-eae7-4420-aa26-197075b5e212}"
-SYSFX_MAXXAUDIO_AVX_DOCK_A    = "{77777712-a138-40df-8a2a-425917e4dc67}"
-SYSFX_MAXXAUDIO_AVX_DOCK_B    = "{77777713-cdc9-4325-85a1-cc6b881c3b81}"
-SYSFX_MAXXAUDIO_AVX_DOCK_C    = "{77777715-2c4b-40d4-a552-e6d4c1d9e027}"
+; SYSFX_MAXXAUDIO_AVX_A         = "{77777710-1a40-4d4e-ba7a-4e0d9d5e11e9}"
+; SYSFX_MAXXAUDIO_AVX_B         = "{77777711-e646-487e-8eca-0d56d8c8f49d}"
+; SYSFX_MAXXAUDIO_AVX_C         = "{77777714-eae7-4420-aa26-197075b5e212}"
+; SYSFX_MAXXAUDIO_AVX_DOCK_A    = "{77777712-a138-40df-8a2a-425917e4dc67}"
+; SYSFX_MAXXAUDIO_AVX_DOCK_B    = "{77777713-cdc9-4325-85a1-cc6b881c3b81}"
+; SYSFX_MAXXAUDIO_AVX_DOCK_C    = "{77777715-2c4b-40d4-a552-e6d4c1d9e027}"
 
 Audio3D_CLSID="{D8F1EEE0-F634-11CF-8700-00A0245D918B}"
 RT_UNINSTALL="Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{F132AF7F-7BCA-4EDE-8A7C-958108FE7DBC}"
