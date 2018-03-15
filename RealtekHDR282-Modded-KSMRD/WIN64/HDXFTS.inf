@@ -360,19 +360,6 @@ PETrust=true
 %MfgName% = AzaliaManufacturerID, NTamd64.6.0
 
 [AzaliaManufacturerID.NTamd64.6.0]
-"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0671&SUBSYS_1734121E
-"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0282&SUBSYS_1734122A
-"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0671&SUBSYS_173411EB
-"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0671&SUBSYS_17341215
-"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0282&SUBSYS_17341210
-"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0282&SUBSYS_1734120F
-"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0671&SUBSYS_17341203
-"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0671&SUBSYS_17341232
-"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0671&SUBSYS_1734123A
-"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0255&SUBSYS_1734123D
-"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0671&SUBSYS_1734123F	;; 2017/03/16
-"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0255&SUBSYS_17341243	;; 2017/03/16
-"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0255&SUBSYS_17341232	;; 2017/05/15
 
 [RtkHD.DelReg]
 HKLM,Software\RealTek\InitAP

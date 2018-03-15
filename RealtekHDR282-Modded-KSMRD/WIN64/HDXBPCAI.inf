@@ -140,7 +140,7 @@ PETrust=true
 %MfgName% = AzaliaManufacturerID, NTamd64.6.0
 
 [AzaliaManufacturerID.NTamd64.6.0]
-"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0272&SUBSYS_103C143E
+
 
 [RtkHD.DelReg]
 HKLM,Software\RealTek\InitAP

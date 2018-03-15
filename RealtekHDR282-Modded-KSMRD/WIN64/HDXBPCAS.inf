@@ -181,8 +181,6 @@ PETrust=true
 %MfgName% = AzaliaManufacturerID, NTamd64.6.0
 
 [AzaliaManufacturerID.NTamd64.6.0]
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB_HP2014_bPC_AIO, HDAUDIO\FUNC_01&VEN_10EC&DEV_0255&SUBSYS_103C82A6
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB_HP2014_bPC_AIO, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C830A
 
 
 [RtkHD.DelReg]

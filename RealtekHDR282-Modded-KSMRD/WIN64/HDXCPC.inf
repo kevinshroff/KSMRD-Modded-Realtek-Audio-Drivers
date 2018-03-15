@@ -177,15 +177,6 @@ PETrust=true
 %MfgName% = AzaliaManufacturerID, NTamd64.6.0
 
 [AzaliaManufacturerID.NTamd64.6.0]
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB_HP2014_cPC_DT, HDAUDIO\FUNC_01&VEN_10EC&DEV_0867&SUBSYS_103C82F2
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB_HP2014_cPC_DT, HDAUDIO\FUNC_01&VEN_10EC&DEV_0867&SUBSYS_103C82F9
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB_HP2014_cPC_DT, HDAUDIO\FUNC_01&VEN_10EC&DEV_0867&SUBSYS_103C82FF
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB_HP2014_cPC_DT, HDAUDIO\FUNC_01&VEN_10EC&DEV_0867&SUBSYS_103C82FE
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB_HP2014_cPC_DT, HDAUDIO\FUNC_01&VEN_10EC&DEV_1220&SUBSYS_103C8375
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB_HP2014_cPC_DT, HDAUDIO\FUNC_01&VEN_10EC&DEV_1220&SUBSYS_103C8376
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB_HP2014_cPC_DT, HDAUDIO\FUNC_01&VEN_10EC&DEV_0867&SUBSYS_103C8399
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB_HP2014_cPC_DT, HDAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_103C8425
-
 
 [RtkHD.DelReg]
 HKLM,Software\RealTek\InitAP

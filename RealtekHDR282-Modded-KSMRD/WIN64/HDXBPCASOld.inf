@@ -181,17 +181,6 @@ PETrust=true
 %MfgName% = AzaliaManufacturerID, NTamd64.6.0
 
 [AzaliaManufacturerID.NTamd64.6.0]
-"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0272&SUBSYS_103C1489
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C18DD
-"Realtek High Definition Audio" = IntcAzAudModel103C3395, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C3395
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C18E8
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C18E6
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C18EA
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C2179
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C2176
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C22AD
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB_HP2014_bPC_AIO, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C225F
-"Realtek High Definition Audio" = IntcAzAudModelSRS_FB_HP2014_bPC_AIO, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C8063
 
 
 
