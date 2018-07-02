@@ -1,0 +1,1654 @@
+; INF file for installing Realtek High Definition Audio Driver
+
+[Version]
+CatalogFile=HDXRT.CAT
+Signature = "$chicago$"
+Class=MEDIA
+ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
+Provider=%OrganizationName%
+DriverPackageType=PlugAndPlay
+DriverPackageDisplayName=%PackageDisplayName%
+DriverVer=06/14/2017, 6.0.1.8186
+
+[SourceDisksNames]
+222="Realtek HD Audio Installation Disk",,,
+
+[SourceDisksFiles]
+RTKVHD64.sys=222
+RtlCPAPI.dll=222
+RTCOMDLL.dll=222
+RtlUpd64.exe=222
+RTSnMg64.cpl=222
+RAVCpl64.exe=222
+EP64.exe=222
+ToastDll64.dll=222
+CreateRtkToastLnk.exe=222
+RltkAPO64.dll=222
+RtPgEx64.dll=222
+RtkCoLDR64.dll=222
+RCoInstII64.dll=222
+RtkApi64.dll=222
+RtCOM64.dll=222
+RtkCfg64.dll=222
+RtkCfg.dll=222
+RtlCPAPI64.dll=222
+RtkAudioService64.exe=222
+vncutil64.exe=222
+RAVBg64.exe=222
+RtkNGUI64.exe=222
+AudioLibW1064.dll=222
+DarkSkinImages64.dll=222
+BlackSkinImages64.dll=222
+WhiteJadeSkinImages64.dll=222
+BlackBlueSkinImages64.dll=222
+RTAIODAT.DAT=222
+RtDataProc.dll=222
+RtDataProc64.dll=222
+OrangeBlackSkinImages64.dll=222
+PremiumBlackSkinImages64.dll=222
+PremiumBlack2SkinImages64.dll=222
+ICEsoundAPO64.dll=222
+DolbyDAX2APOv211.dll=222
+DolbyDAX2APOProp.dll=222
+HiFiDAX2API.dll=222
+RTAIODAT2.DAT=222
+DAX2.sdf=222
+sl3apo64.dll=222
+slcnt64.dll=222
+sltech64.dll=222
+FMAPO64.dll=222
+FMAPO32.dll=222
+FMAPP.exe=222
+FMAPP.dll=222
+tosasfapo64.dll=222
+toseaeapo64.dll=222
+tossaeapo64.dll=222
+tossaemaxapo64.dll=222
+DAX3APOv251.dll=222
+DolbyDAX2APOvlldp.dll=222
+DAX3APOProp.dll=222
+HiFiDAX2APIPCLL.dll=222
+RTAIODAT3.DAT=222
+DAX3.sdf=222
+RealtekKeywordDetectorAdapter.dll=222,WOV
+UDT_universal_taskdata_v12_0_7.raw=222,WOV\kdFiles\eng-eng
+taskData_HBG_enUS_v23.0.1.raw=222,WOV\kdFiles\eng-eng
+nihao_lianshiang_zh_d2_am.raw=222,WOV\kdFiles\eng-eng
+nihao_lianshiang_zh_d2_s1.raw=222,WOV\kdFiles\eng-eng
+heycortana_128_d1_am.raw=222,WOV\kdFiles\eng-eng
+heycortana_128_d1_s3.raw=222,WOV\kdFiles\eng-eng
+RtkVpCP.dll=222,WOV
+RtkVpSec.dll=222,WOV
+RtkAlc5514fwse.dat=222,WOV
+RtkWovApi.dll=222,WOV
+CSpotter16_Training_SDK_PC.dll=222,WOV
+CVoiceTag.dll=222,WOV
+
+[DestinationDirs]
+DefaultDestDir=10; dirid = \system32\drivers
+IntcAzAudModelCopyFiles = 10,system32\drivers
+SfxFxWOW64.CopyList  = 10, SysWOW64
+RTLCPAPI.CopyList  = 10, SysWOW64\RTCOM
+RTCOMDLL.CopyList  = 10, SysWOW64\RTCOM
+RTUninstall.CopyList = 16422, Realtek\Audio\HDA
+RTUI.CopyList      = 16422, Realtek\Audio\HDA
+RTCPL.CopyList     = 11
+RTCOM64.CopyList   = 11
+SfxFx.CopyList  = 11     ; %windir%\system32
+RtkCoInst.CopyList = 11
+DAX2.CopyList = 11, DAX2
+WOV.CopyList = 11, RealtekKeywordDetectorAdapter
+CP.CopyList = 11
+DAX3.CopyList = 11, DAX3
+
+[SignatureAttributes]
+RTKVHD64.sys=SignatureAttributes.DRM
+RltkAPO64.dll=SignatureAttributes.PETrust
+RtlCPAPI.dll=SignatureAttributes.PETrust
+RTCOMDLL.dll=SignatureAttributes.PETrust
+RtkApi64.dll=SignatureAttributes.PETrust
+RtCOM64.dll=SignatureAttributes.PETrust
+RtkCfg64.dll=SignatureAttributes.PETrust
+RtkCfg.dll=SignatureAttributes.PETrust
+RtlCPAPI64.dll=SignatureAttributes.PETrust
+RtDataProc.dll=SignatureAttributes.PETrust
+RtDataProc64.dll=SignatureAttributes.PETrust
+DolbyDAX2APOv211.dll=SignatureAttributes.PETrust
+sl3apo64.dll=SignatureAttributes.PETrust
+slcnt64.dll=SignatureAttributes.PETrust
+sltech64.dll=SignatureAttributes.PETrust
+FMAPO64.dll=SignatureAttributes.PETrust
+FMAPO32.dll=SignatureAttributes.PETrust
+tosasfapo64.dll=SignatureAttributes.PETrust
+toseaeapo64.dll=SignatureAttributes.PETrust
+tossaeapo64.dll=SignatureAttributes.PETrust
+ICEsoundAPO64.dll=SignatureAttributes.PETrust
+tossaemaxapo64.dll=SignatureAttributes.PETrust
+DAX3APOv251.dll=SignatureAttributes.PETrust
+DolbyDAX2APOvlldp.dll=SignatureAttributes.PETrust
+DAX3APOProp.dll=SignatureAttributes.PETrust
+HiFiDAX2APIPCLL.dll=SignatureAttributes.PETrust
+
+[SignatureAttributes.DRM]
+DRMLevel=1300
+
+[SignatureAttributes.PETrust]
+PETrust=true
+
+[Manufacturer]
+%MfgName% = AzaliaManufacturerID, NTamd64.6.0
+
+[AzaliaManufacturerID.NTamd64.6.0]
+"Realtek High Definition Audio" = IntcAzAudModel_17AA380A, HDAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_17AA380A
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0700&SUBSYS_17AA2002
+"Realtek High Definition Audio" = IntcAzAudModel_17AA3806, HDAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_17AA3806
+"Realtek High Definition Audio" = IntcAzAudModel_17AA3807, HDAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_17AA3807
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_17AA3808
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_17AA3809
+"Realtek High Definition Audio" = IntcAzAudModel_17AA3820, HDAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_17AA3820
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_17AA3821
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_17AA380C
+
+[RtkHD.DelReg]
+HKLM,Software\RealTek\InitAP
+HKCU,Software\RealTek
+HKLM,Software\Avance
+HKR,Settings
+
+[IntcAzAudModelCopyFiles]
+RTKVHD64.sys
+RTAIODAT.DAT
+RtkAlc5514fwse.dat
+
+[RtkCoInst.CopyList]
+RtkCoLDR64.dll
+RCoInstII64.dll
+
+[RtkCoInstInfo]
+OriginalInfSourcePath = %1%
+
+[RTUninstall.CopyList]
+RtlUpd64.exe
+
+[RTLCPAPI.CopyList]
+RTLCPAPI.dll
+
+[RTCOM64.CopyList]
+RTCOM64.dll
+RtlCPAPI64.dll
+RtkCfg64.dll
+RtDataProc64.dll
+
+[RTCOMDLL.CopyList]
+RTCOMDLL.dll
+RtkCfg.dll 
+RtDataProc.dll
+FMAPO32.dll
+
+[RTUI.CopyList]
+RAVCpl64.exe
+EP64.exe
+ToastDll64.dll
+CreateRtkToastLnk.exe
+RtkAudioService64.exe
+vncutil64.exe
+RAVBg64.exe
+RtkNGUI64.exe
+AudioLibW1064.dll
+DarkSkinImages64.dll
+BlackSkinImages64.dll
+WhiteJadeSkinImages64.dll
+BlackBlueSkinImages64.dll
+OrangeBlackSkinImages64.dll
+PremiumBlackSkinImages64.dll
+PremiumBlack2SkinImages64.dll
+FMAPP.exe
+FMAPP.dll
+
+[RTCPL.CopyList]
+RTSnMg64.cpl
+
+[SfxFx.CopyList]
+RltkAPO64.dll
+RtPgEx64.dll
+RtkApi64.dll
+ICEsoundAPO64.dll
+DolbyDAX2APOv211.dll
+DolbyDAX2APOProp.dll
+HiFiDAX2API.dll
+sl3apo64.dll
+slcnt64.dll
+sltech64.dll
+FMAPO64.dll
+tosasfapo64.dll
+toseaeapo64.dll
+tossaeapo64.dll
+tossaemaxapo64.dll
+DAX3APOv251.dll
+DolbyDAX2APOvlldp.dll
+DAX3APOProp.dll
+HiFiDAX2APIPCLL.dll
+
+[SfxFxWOW64.CopyList]
+
+[DAX2.CopyList]
+RTAIODAT2.DAT
+DAX2.sdf
+
+[WOV.CopyList]
+RealtekKeywordDetectorAdapter.dll
+kdFiles\eng-eng\UdtTaskData.raw,UDT_universal_taskdata_v12_0_7.raw
+kdFiles\eng-eng\EftTaskData.raw,taskData_HBG_enUS_v23.0.1.raw
+kdFiles\eng-eng\FixedNet1.raw,nihao_lianshiang_zh_d2_am.raw
+kdFiles\eng-eng\FixedSearch1.raw,nihao_lianshiang_zh_d2_s1.raw
+kdFiles\eng-eng\FixedNet.raw,heycortana_128_d1_am.raw
+kdFiles\eng-eng\FixedSearch.raw,heycortana_128_d1_s3.raw
+
+
+[CP.CopyList]
+RtkVpCP.dll
+RtkVpSec.dll
+RtkWovApi.dll
+CSpotter16_Training_SDK_PC.dll
+CVoiceTag.dll
+
+[DAX3.CopyList]
+RTAIODAT3.DAT
+DAX3.sdf
+
+;;================= Windows 64 ====================
+[IntcAzAudModel.NTamd64]
+Include=ks.inf,wdmaudio.inf
+Needs=KS.Registration,WDMAUDIO.Registration,mssysfx.CopyFilesAndRegister
+CopyFiles = IntcAzAudModelCopyFiles, RTLCPAPI.CopyList, RTCOMDLL.CopyList, RTUninstall.CopyList, RTUI.CopyList, RTCPL.CopyList, SfxFx.CopyList, RTCOM64.CopyList, DAX2.CopyList, SfxFxWOW64.CopyList, WOV.CopyList, CP.CopyList, DAX3.CopyList
+DelReg    = FMAPO.DelReg, RtkHD.DelReg, RealtekEffects.DelReg, RealtekOptions.DelReg, IntelIPS.DelReg, WOV.DelReg
+AddReg    = IntcAzAudModelAddReg, RTLCPAPI.AddReg, RTCOMDLL.AddReg, RTUninstall.AddReg, CPL_Class.AddReg, RealtekEffects.AddReg, RealtekOptions.AddReg, IntelIPS.AddReg, FMAPO.AddReg, WOV.AddReg
+AddProperty  = OEMCustomBranding.AddProperty
+RegisterDlls = SfxFx.RegisterDlls, RTCOM64.RegisterDlls
+
+[IntcAzAudModel.NTamd64.HW]
+AddReg=HdAudSecurity.AddReg
+
+[IntcAzAudModel.NTamd64.Services]
+AddService = IntcAzAudAddService, 0x00000002, IntcAzAudServiceInstall
+
+[IntcAzAudModel.NTamd64.CoInstallers]
+CopyFiles = RtkCoInst.CopyList
+AddReg = RtkCoInst.AddReg
+
+
+[IntcAzAudModel_17AA380A.NTamd64]
+Include=ks.inf,wdmaudio.inf
+Needs=KS.Registration,WDMAUDIO.Registration,mssysfx.CopyFilesAndRegister
+CopyFiles = IntcAzAudModelCopyFiles, RTLCPAPI.CopyList, RTCOMDLL.CopyList, RTUninstall.CopyList, RTUI.CopyList, RTCPL.CopyList, SfxFx.CopyList, RTCOM64.CopyList, DAX2.CopyList, SfxFxWOW64.CopyList, WOV.CopyList, CP.CopyList, DAX3.CopyList
+DelReg    = FMAPO.DelReg, RtkHD.DelReg, RealtekEffects.DelReg, RealtekOptions.DelReg, IntelIPS.DelReg, WOV.DelReg
+AddReg    = IntcAzAudModelAddReg, RTLCPAPI.AddReg, RTCOMDLL.AddReg, RTUninstall.AddReg, CPL_Class.AddReg, RealtekEffects.AddReg, RealtekOptions.AddReg, IntelIPS.AddReg, FMAPO.AddReg, WOV.AddReg, DolbyATMOSUnlock_17AA380A.AddReg
+AddProperty  = OEMCustomBranding.AddProperty
+RegisterDlls = SfxFx.RegisterDlls, RTCOM64.RegisterDlls
+[IntcAzAudModel_17AA380A.NTamd64.HW]
+Needs=IntcAzAudModel.NTamd64.HW
+[IntcAzAudModel_17AA380A.NTamd64.Services]
+Needs=IntcAzAudModel.NTamd64.Services
+[IntcAzAudModel_17AA380A.NTamd64.CoInstallers]
+CopyFiles = RtkCoInst.CopyList
+AddReg = RtkCoInst.AddReg
+[DolbyATMOSUnlock_17AA380A.AddReg]
+HKLM, "SOFTWARE\Dolby\AtmosOEM", "HDAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_17AA380A", %REG_BINARY%, 64,0E,CF,33,58,A3,90,37,DB,B9,54,72,E3,BE,25,09,78,58,12,5C,71,1C,E1,E5,22,97,F7,AD,D0,B6,8D,31,6F,D8,35,C1,0D,8A,22,AD,B3,89,F6,CF,CD,26,C2,24,E7,A5,D9,8F,10,56,0C,A2,BF,2A,5F,40,FC,2C,2C,EE,79,C2,12,59,E3,63,C5,F8,B9,40,F0,99,1E,8F,3F,D1,E9,DB,6B,FB,74,3A,27,7D,3D,C8,3D,ED,FF,AA,33,D6,BE,2E,FE,26,53,4A,BA,3A,CD,3A,CD,5E,77,54,B9,53,3A,42,EB,00,AA,1E,C1,8F,DF,8B,0C,77,FE,A9,A5,4A,7F,B7,6B,EE,77,34,E1,4C,17,1A,2E,69,B4,E0,61,90,11,B8,F6,82,DA,37,0D,A5,3F,99,2A,31,14,0E,70,46,B3,F6,08,A2,B8,4D,F0,2A,85,54,0B,92,AC,5E,01,A8,99,BB,0F,49,8F,3A,98,2F,51,EE,83,EA,6D,CF,24,D4,8D,76,FC,88,B4,29,04,5D,C3,58,BC,44,14,E0,96,F6,7E,80,A3,24,4E,52,74,B8,96,02,3F,80,F0,6D,FB,A2,C2,01,3F,5C,F8,3C,6A,AB,B1,09,BC,04,84,F3,09,D5,6D,09,39,53,3A,B6,16,19,67,11,0D,6B,92,00,9E,34,5E,CB,45,8D,60,D7,68,2B,D7,F9,11,F1,F0,A3,74,6D,E4,0C,2F,AE,3E,88,35,3C,4A,36,46,E2,84,FF,A4,65,B5,B1,47,1D,51,87,56,02,8E,15,B2,B5,D9,65,AB,13,A1,81,AA,85,59,8F,01,3A,EF,4C,B0,BB,50,9E,4B,BB,3B,8F,85,53,97,DB,61,B2,78,FA,48,C1,B9,79,AE,EC,BB,74,BA,78,9D,0F,A0,16,40,8E,1A,2C,4B,F6,F9,7C,A2,3B,BF,F8,0C,AC,24,B7,0B,BD,A4,AD,BC,63,C4,86,6C,BE,4F,78,40,C5,BF,41,9D,30,71,8B,B7,74,CA,86,C8,89,7C,A9,7B,C0,60,0F,9B,AF,D8,05,EB,B5,87,64,A4,A2,3A,B4,E6,AC,C4,B9,53,6B,FA,C9,02,3E,AB,A7,38,82,9B,21,51,97,5D,A6,B7,78,58,4C,C8,17,59,7C,EC,FD,08,AB,78,04,B8,56,AC,7A,F9,10,A4,61,F7,E9,FE,A9,A7,0E,85,B1,C7,37,C3,F3,88,12,A2,AB,66,C4,1E,8A,7A,64,4A,EC,39,DC,53,22,6E,A4,64,2F,AF,CB,3B,05,0C,76,9E,C9,42,D4,86,21,07,16,DC,37,3C,7A,6D,D6,23,96,79,97,CF,8B,DF,FE,64,8D,B0,16,41,45
+
+[IntcAzAudModel_17AA3806.NTamd64]
+Include=ks.inf,wdmaudio.inf
+Needs=KS.Registration,WDMAUDIO.Registration,mssysfx.CopyFilesAndRegister
+CopyFiles = IntcAzAudModelCopyFiles, RTLCPAPI.CopyList, RTCOMDLL.CopyList, RTUninstall.CopyList, RTUI.CopyList, RTCPL.CopyList, SfxFx.CopyList, RTCOM64.CopyList, DAX2.CopyList, SfxFxWOW64.CopyList, WOV.CopyList, CP.CopyList, DAX3.CopyList
+DelReg    = FMAPO.DelReg, RtkHD.DelReg, RealtekEffects.DelReg, RealtekOptions.DelReg, IntelIPS.DelReg, WOV.DelReg
+AddReg    = IntcAzAudModelAddReg, RTLCPAPI.AddReg, RTCOMDLL.AddReg, RTUninstall.AddReg, CPL_Class.AddReg, RealtekEffects.AddReg, RealtekOptions.AddReg, IntelIPS.AddReg, FMAPO.AddReg, WOV.AddReg, DolbyATMOSUnlock_17AA3806.AddReg
+AddProperty  = OEMCustomBranding.AddProperty
+RegisterDlls = SfxFx.RegisterDlls, RTCOM64.RegisterDlls
+[IntcAzAudModel_17AA3806.NTamd64.HW]
+Needs=IntcAzAudModel.NTamd64.HW
+[IntcAzAudModel_17AA3806.NTamd64.Services]
+Needs=IntcAzAudModel.NTamd64.Services
+[IntcAzAudModel_17AA3806.NTamd64.CoInstallers]
+CopyFiles = RtkCoInst.CopyList
+AddReg = RtkCoInst.AddReg
+[DolbyATMOSUnlock_17AA3806.AddReg]
+HKLM, "SOFTWARE\Dolby\AtmosOEM", "HDAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_17AA3806", %REG_BINARY%, 8C,94,40,B7,4D,93,2B,48,CA,CA,7C,1F,04,3D,10,0D,17,15,38,76,FA,A2,E8,4D,25,1D,4E,E6,7C,36,6A,17,E8,1F,CB,87,E0,14,F5,F4,52,60,26,91,15,4F,93,A5,76,3A,4B,42,9E,75,1D,C9,CB,B1,48,5F,68,14,FC,84,62,97,B8,62,D5,27,69,7E,EA,4A,FB,8E,CF,77,62,CC,5A,D8,5E,18,98,AA,43,D1,40,A1,F0,9D,87,E9,2A,70,75,71,AE,C0,71,BB,BB,FB,DC,7C,9B,CD,5E,2F,1B,6D,1A,A2,DF,E4,FD,36,5F,34,30,E9,92,29,6D,86,2A,14,28,75,29,51,63,7A,AE,F3,F5,4C,AC,D9,87,B8,FC,B9,99,FB,E9,E2,20,3E,B1,0B,07,8A,03,E5,84,84,92,AB,FC,C5,6B,32,53,D3,9A,46,55,7F,D0,1A,65,C0,DB,93,78,93,78,44,81,83,D9,44,FD,39,C5,F3,5C,A2,E1,14,99,47,B3,48,6B,DB,04,55,B4,20,A4,F3,14,13,D9,16,1D,43,79,1A,C4,AB,56,CF,00,8A,4E,40,43,1E,44,E3,CF,83,71,B7,1F,EF,1B,3D,D6,08,E4,76,EC,BB,9A,66,92,34,06,9B,61,00,05,08,5C,72,9D,A3,50,85,AB,54,11,7E,6E,BA,58,34,5B,62,AE,45,1C,35,5B,98,C5,CB,C8,8B,36,CB,AA,82,B0,37,B4,F9,CC,BF,9D,C2,B7,CE,B1,27,08,36,19,F1,23,4B,FE,A1,84,B1,F7,75,5E,3E,85,8C,A8,9F,85,79,7E,E2,AB,EF,08,E2,75,36,6D,9C,E3,DA,62,9A,D0,B9,48,CA,4E,A3,B2,36,B0,3D,5F,30,66,F8,A3,3D,48,EF,5A,9B,17,E8,78,2E,9A,B4,C9,6D,74,5A,D7,91,13,B4,3C,E8,AC,75,C3,02,7D,43,1D,7B,27,56,16,E5,13,6E,BE,E8,79,25,AC,7C,20,AA,C6,12,FE,A5,34,92,43,BA,33,84,F3,A7,EF,41,7E,71,C2,38,6F,00,1A,D8,30,D5,DD,44,74,EF,2F,B0,CE,8E,7F,B2,AD,E9,01,5D,20,48,AD,58,0C,C3,DF,F3,72,6C,02,88,04,40,03,31,74,50,AE,7C,7C,C5,FA,B2,EA,BA,0A,A6,65,60,8B,31,08,91,1B,8C,4C,8C,E2,18,74,9B,ED,41,BB,6E,DB,80,09,F1,69,99,3B,17,4A,16,F5,35,72,85,EC,B8,9E,D6,8A,AA,B9,7E,0F,66,66,E7,93,66,D5,E2,D0,B1,D9,B4,21,71,D3,0E,F3,3D,6E,46,A5,B3,E7,AE
+
+[IntcAzAudModel_17AA3820.NTamd64]
+Include=ks.inf,wdmaudio.inf
+Needs=KS.Registration,WDMAUDIO.Registration,mssysfx.CopyFilesAndRegister
+CopyFiles = IntcAzAudModelCopyFiles, RTLCPAPI.CopyList, RTCOMDLL.CopyList, RTUninstall.CopyList, RTUI.CopyList, RTCPL.CopyList, SfxFx.CopyList, RTCOM64.CopyList, DAX2.CopyList, SfxFxWOW64.CopyList, WOV.CopyList, CP.CopyList, DAX3.CopyList
+DelReg    = FMAPO.DelReg, RtkHD.DelReg, RealtekEffects.DelReg, RealtekOptions.DelReg, IntelIPS.DelReg, WOV.DelReg
+AddReg    = IntcAzAudModelAddReg, RTLCPAPI.AddReg, RTCOMDLL.AddReg, RTUninstall.AddReg, CPL_Class.AddReg, RealtekEffects.AddReg, RealtekOptions.AddReg, IntelIPS.AddReg, FMAPO.AddReg, WOV.AddReg, DolbyATMOSUnlock_17AA3820.AddReg
+AddProperty  = OEMCustomBranding.AddProperty
+RegisterDlls = SfxFx.RegisterDlls, RTCOM64.RegisterDlls
+[IntcAzAudModel_17AA3820.NTamd64.HW]
+Needs=IntcAzAudModel.NTamd64.HW
+[IntcAzAudModel_17AA3820.NTamd64.Services]
+Needs=IntcAzAudModel.NTamd64.Services
+[IntcAzAudModel_17AA3820.NTamd64.CoInstallers]
+CopyFiles = RtkCoInst.CopyList
+AddReg = RtkCoInst.AddReg
+[DolbyATMOSUnlock_17AA3820.AddReg]
+HKLM, "SOFTWARE\Dolby\AtmosOEM", "HDAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_17AA3820", %REG_BINARY%, 3D,F1,37,BC,F5,90,43,E6,35,AA,76,C6,E0,0B,E5,63,CE,7F,48,F6,CB,6E,C6,E5,98,E9,D9,66,B2,A8,50,77,39,D4,7C,54,5B,51,AB,32,4C,81,AF,3F,F9,DE,B9,C5,02,C0,27,20,B4,A1,E7,1C,59,70,4B,F6,B3,80,50,EA,02,9B,69,35,F2,CE,D3,BC,3C,DC,1E,62,C8,DA,5C,C3,F0,F4,D5,E6,58,A9,C8,30,73,24,5E,D3,B0,44,1C,2A,17,32,A8,BB,F0,C9,68,3B,A2,36,DD,3D,39,47,E5,68,BA,40,45,F1,09,B2,F6,44,AF,0D,BC,2F,0D,F4,73,70,A3,A6,67,B7,2B,9F,AF,5A,6F,F6,5F,65,68,59,1D,82,6E,56,86,32,B2,22,7F,CB,14,D9,94,34,38,9C,6C,C8,A6,FC,A5,34,A6,CA,AD,3C,A3,56,D9,CD,64,6A,CB,13,EE,AA,34,FD,01,2D,0B,46,07,0D,2B,17,D5,97,71,BB,80,FE,2D,1C,8F,F9,A0,2E,8F,94,12,E6,8D,F7,A6,7B,D7,50,44,C3,CF,94,7F,80,95,59,52,76,E1,F1,E8,99,D2,AE,76,11,7A,2C,E3,D2,40,97,B3,DA,6E,2D,E3,29,CC,63,EB,DE,D2,74,2E,83,25,13,A1,40,68,3B,BC,19,93,4C,47,7A,A9,61,2D,4A,20,53,2F,BE,25,C0,8D,41,B8,02,B1,43,E4,C1,76,32,84,DC,FC,6F,D7,AA,BC,C6,53,CE,BE,6F,C4,FF,D9,AC,DA,CA,34,94,07,CD,67,C4,19,DB,CE,8E,CA,A8,6B,A5,00,D8,97,2D,70,F1,DB,5D,2D,6C,68,6E,77,18,32,4B,CD,FA,73,7D,03,B6,99,2D,CE,DF,64,82,94,F9,32,02,17,A3,29,3B,10,E1,CC,46,20,25,8C,09,0D,9F,53,A0,23,03,C1,5C,B7,EF,B1,0A,8D,6F,99,10,D1,65,24,5F,2C,B9,B8,29,8D,8B,B1,DA,B6,7F,E2,DB,11,76,21,EB,5A,4B,00,35,C3,89,97,8F,D7,15,70,AA,00,06,2E,57,BA,D3,51,80,57,CE,98,60,00,02,4B,93,AC,8E,7C,9F,F3,D7,6F,51,D9,A7,B7,21,5B,6D,0A,77,F3,E7,9D,98,03,37,FD,11,93,B7,71,B8,13,0C,44,00,71,CB,06,3D,47,B7,87,7C,A3,F8,D2,11,76,13,2D,F4,22,9C,5A,2F,B1,66,65,19,F6,6F,66,BA,42,B8,0C,0D,22,D2,33,05,7E,D5,00,2C,2E,8D,C5,BA,74,8F,24,CC,45,CF,BD,7D,98,7C,3F,4E,9C,99,65,69
+
+
+[IntcAzAudModel_17AA3807.NTamd64]
+Include=ks.inf,wdmaudio.inf
+Needs=KS.Registration,WDMAUDIO.Registration,mssysfx.CopyFilesAndRegister
+CopyFiles = IntcAzAudModelCopyFiles, RTLCPAPI.CopyList, RTCOMDLL.CopyList, RTUninstall.CopyList, RTUI.CopyList, RTCPL.CopyList, SfxFx.CopyList, RTCOM64.CopyList, DAX2.CopyList, SfxFxWOW64.CopyList, WOV.CopyList, CP.CopyList, DAX3.CopyList
+DelReg    = FMAPO.DelReg, RtkHD.DelReg, RealtekEffects.DelReg, RealtekOptions.DelReg, IntelIPS.DelReg, WOV.DelReg
+AddReg    = IntcAzAudModelAddReg, RTLCPAPI.AddReg, RTCOMDLL.AddReg, RTUninstall.AddReg, CPL_Class.AddReg, RealtekEffects.AddReg, RealtekOptions.AddReg, IntelIPS.AddReg, FMAPO.AddReg, WOV.AddReg, DolbyATMOSUnlock_17AA3807.AddReg
+AddProperty  = OEMCustomBranding.AddProperty
+RegisterDlls = SfxFx.RegisterDlls, RTCOM64.RegisterDlls
+[IntcAzAudModel_17AA3807.NTamd64.HW]
+Needs=IntcAzAudModel.NTamd64.HW
+[IntcAzAudModel_17AA3807.NTamd64.Services]
+Needs=IntcAzAudModel.NTamd64.Services
+[IntcAzAudModel_17AA3807.NTamd64.CoInstallers]
+CopyFiles = RtkCoInst.CopyList
+AddReg = RtkCoInst.AddReg
+[DolbyATMOSUnlock_17AA3807.AddReg]
+HKLM, "SOFTWARE\Dolby\AtmosOEM", "HDAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_17AA3807", %REG_BINARY%, 69,B4,1C,D3,6D,59,56,52,7A,EA,89,CD,B2,57,9D,6D,E2,A0,7B,8B,B8,3A,50,27,4B,84,12,71,AC,0E,B9,1C,D2,DB,2A,03,04,E9,24,1A,8A,06,87,33,7C,54,BB,42,D3,BC,1E,3B,87,1E,A3,DF,D0,E3,0F,D2,88,5F,41,FF,40,BD,DE,D3,13,B3,DA,42,DB,5F,E7,34,5A,C9,D3,11,E6,67,02,D2,36,F7,56,8C,FD,7C,10,6E,A5,6D,F9,B1,A5,7E,25,F0,E3,01,9A,D4,ED,77,80,81,25,88,C0,7A,D7,04,E2,63,E2,9D,94,BA,85,B7,49,96,99,AA,97,B2,FE,99,5B,3B,7E,15,36,2F,2E,D6,3B,F9,AA,A6,0F,9A,D6,F0,57,00,30,F4,31,24,69,04,1A,B4,94,9A,94,5A,DF,A9,9B,71,31,45,93,A6,32,FF,B4,1F,08,4A,EF,C7,7D,F5,05,C0,87,56,45,B5,82,82,BD,24,02,CB,C4,07,27,20,FF,10,EB,70,D8,AA,98,C7,79,ED,BC,C6,B1,73,97,E2,2F,13,79,F9,FC,BD,75,07,DA,7C,10,31,92,AE,4A,74,AE,86,51,CA,43,7F,7C,5D,C4,4A,E6,BD,F6,41,B0,97,B3,52,04,34,84,5E,A9,9A,56,FB,07,4E,18,D0,B6,8A,6B,80,41,66,81,91,EF,B4,26,22,04,02,4C,CD,91,59,32,6B,B1,ED,FF,BE,E6,4C,E4,57,CE,DF,69,D9,34,7E,EF,32,7C,71,8E,63,77,21,32,62,4F,42,AB,AF,E0,CC,55,88,A8,C8,17,53,09,DF,88,BD,1D,37,5E,F8,ED,B2,D3,7A,11,F5,89,99,B8,30,CF,CE,98,B2,58,67,59,1F,3E,BC,B1,C2,DF,0D,06,87,71,12,63,52,1F,45,97,13,5D,D0,E4,14,FC,82,A2,53,D4,B8,60,BF,1D,7A,45,9D,E0,19,83,04,66,84,55,D3,19,F4,4C,F1,2B,1C,AB,12,19,A9,65,BD,08,4A,AE,59,59,C8,EA,FB,74,05,67,DA,77,67,5C,E8,EB,F4,22,57,EB,0F,38,CE,C0,EF,2F,37,05,5C,5A,D2,29,2E,8C,6B,61,EE,CD,5A,38,FE,ED,10,82,84,60,84,8A,72,2B,F6,6D,BF,45,1D,68,55,BD,E4,63,CA,F3,F5,A8,7A,B2,C4,2F,E7,43,F1,1C,A6,E3,DF,C3,56,F8,36,16,0F,8F,6A,C6,4B,40,2A,FF,AF,A0,59,01,D9,B2,54,20,2E,5C,36,A0,AA,13,FE,3D,09,D5,F7,28,92,2A,25,0A,87,E3,63,5C,82,E2,BB,91,15
+
+[RealtekEffects.AddReg]
+HKLM,Software\Realtek\RealtekEffects
+HKR,EffectSettings,EDS0,1,1,0,0,0,1,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,2,0,0,58,2,0,0,0,0,0,0,1,0,0,0,B4,0,0,0,B4,0,0,0,64,0,0,0,64,0,0,0,0,0,0,0
+
+[RealtekEffects.AddReg.Security]
+"G:BUD:(A;CIOI;KA;;;BU)"
+
+[RealtekEffects.DelReg]
+HKLM,Software\Realtek\RealtekEffects
+
+[RealtekOptions.AddReg]
+HKLM,Software\Realtek\RealtekOptions
+HKLM,Software\Realtek\Audio\WOV
+HKLM,Software\Realtek\WOV
+
+[RealtekOptions.AddReg.Security]
+"G:BUD:(A;CIOI;KA;;;BU)"
+
+[RealtekOptions.DelReg]
+HKLM,Software\Realtek\RealtekOptions
+HKLM,Software\Realtek\Audio\WOV
+
+[IntelIPS.AddReg]
+HKLM,Software\IPS,NeedConfigure,0,"true"
+HKLM,Software\Intel\IntelSstApoSettings,ApoPresetIndex,0x00010001,0xffffffff
+HKLM,Software\Intel\IntelSstApoSettings,ApoPresetLiterals,0,"aec_bf_ns;AEC_bf_ns;aec_BF_ns;AEC_BF_ns;aec_bf_NS;AEC_bf_NS;aec_BF_NS;AEC_BF_NS"
+HKLM,Software\Intel\IntelSstApoSettings,HiddenLiteralIndexesWin10,0,""
+HKLM,Software\Intel\IntelSstApoSettings,PropertyPageMode,0x00010001,1
+
+[IntelIPS.AddReg.Security]
+"G:BUD:(A;CIOI;KA;;;BU)"
+
+[IntelIPS.DelReg]
+HKLM,Software\IPS
+
+[IntcAzAudServiceInstall]
+DisplayName   = "Service for Realtek HD Audio (WDM)"
+ServiceType   = 1
+StartType     = 3
+ErrorControl  = 1
+ServiceBinary = %10%\system32\drivers\RTKVHD64.sys
+
+[SfxFx.RegisterDlls]
+11,,RltkAPO64.dll,1
+11,,RtPgEx64.dll,1
+11,,RtkApi64.dll,1
+11,,RtCOM64.dll,1
+11,,RtlCPAPI64.dll,1
+11,,RtkCfg64.dll,1
+11,,ICEsoundAPO64.dll,1
+11,,DolbyDAX2APOv211.dll,1
+11,,DolbyDAX2APOProp.dll,1
+11,,HiFiDAX2API.dll,1
+11,,sl3apo64.dll,1
+11,,slcnt64.dll,1
+11,,FMAPO64.dll,1
+11,,tosasfapo64.dll,1
+11,,toseaeapo64.dll,1
+11,,tossaeapo64.dll,1
+11,,tossaemaxapo64.dll,1
+11,,DAX3APOv251.dll,1
+11,,DolbyDAX2APOvlldp.dll,1
+11,,DAX3APOProp.dll,1
+11,,HiFiDAX2APIPCLL.dll,1
+
+[RTCOM64.RegisterDlls]
+10,SysWOW64\RTCOM,FMAPO32.dll,1
+
+[OEMCustomBranding.AddProperty]
+DeviceBrandingIcon,,,,"%11%\RtPgEx64.dll,-200"
+DeviceVendorWebSite,,,,"http://www.realtek.com.tw/" ; Place your URL here
+
+[RTUninstall.AddReg]
+HKLM,%RT_UNINSTALL%,DisplayName,,"Realtek High Definition Audio Driver"
+HKLM,%RT_UNINSTALL%,UninstallString,,%16422%"\Realtek\Audio\HDA\RtlUpd64.exe -r -m -nrg2709"
+HKLM,%RT_UNINSTALL%,DisplayIcon,,%16422%"\Realtek\Audio\HDA\RtlUpd64.exe"
+HKLM,%RT_UNINSTALL%,Publisher,,%OrganizationName%
+HKLM,%RT_UNINSTALL%,DisplayVersion,,"6.0.1.8186"
+HKLM,%RT_UNINSTALL%,InstallLocation,,%16422%"\Realtek\Audio\HDA"
+
+[CPL_Class.AddReg]
+HKLM,%CPL_CLASS_S%,%NEWCPL_CLASS_KS%,0x00010001 ,0x00000004
+
+[RTLCPAPI.AddReg]
+HKCR,Wow6432Node\RtlCP.RtlCP.1,,0,"RtlCP Class"
+HKCR,Wow6432Node\RtlCP.RtlCP.1\CLSID,,0,%RTLCPAPI_CLSID%
+HKCR,Wow6432Node\RtlCP.RtlCP,,0,"RtlCP Class"
+HKCR,Wow6432Node\RtlCP.RtlCP\CurVer,,0,"RtlCP.RtlCP.1"
+HKCR,Wow6432Node\CLSID\%RTLCPAPI_CLSID%,,0,"RtlCP Class"
+HKCR,Wow6432Node\CLSID\%RTLCPAPI_CLSID%\ProgID,,0,"RtlCP.RtlCP.1"
+HKCR,Wow6432Node\CLSID\%RTLCPAPI_CLSID%\VersionIndependentProgID,,0,"RtlCP.RtlCP"
+HKCR,Wow6432Node\CLSID\%RTLCPAPI_CLSID%\Programmable
+HKCR,Wow6432Node\CLSID\%RTLCPAPI_CLSID%\InProcServer32,,0,%10%\SysWOW64\RTCOM\RTLCPAPI.dll
+HKCR,Wow6432Node\CLSID\%RTLCPAPI_CLSID%\InProcServer32,ThreadingModel,0,Both
+
+[RTCOMDLL.AddReg]
+HKCR,Wow6432Node\RTCOMDLL.RTLCSSAPI.1,,0,"RTLCSSAPI Class"
+HKCR,Wow6432Node\RTCOMDLL.RTLCSSAPI.1\CLSID,,0,%RTCOMDLL_CLSID%
+HKCR,Wow6432Node\RTCOMDLL.RTLCSSAPI,,0,"RTLCSSAPI Class"
+HKCR,Wow6432Node\RTCOMDLL.RTLCSSAPI\CurVer,,0,"RTCOMDLL.RTLCSSAPI.1"
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%,,0,"RTLCSSAPI Class"
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%\ProgID,,0,"RTCOMDLL.RTLCSSAPI.1"
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%\VersionIndependentProgID,,0,"RTCOMDLL.RTLCSSAPI"
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%\Programmable
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%\InProcServer32,,0,%10%\SysWOW64\RTCOM\RTCOMDLL.dll
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID%\InProcServer32,ThreadingModel,0,Apartment
+HKCR,Wow6432Node\RTCOMDLL.SONY.1,,0,"SONY Class"
+HKCR,Wow6432Node\RTCOMDLL.SONY.1\CLSID,,0,%RTCOMDLL_CLSID2%
+HKCR,Wow6432Node\RTCOMDLL.SONY,,0,"SONY Class"
+HKCR,Wow6432Node\RTCOMDLL.SONY\CurVer,,0,"RTCOMDLL.SONY.1"
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID2%,,0,"SONY Class"
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID2%\ProgID,,0,"RTCOMDLL.SONY.1"
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID2%\VersionIndependentProgID,,0,"RTCOMDLL.SONY"
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID2%\Programmable
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID2%\InProcServer32,,0,%10%\SysWOW64\RTCOM\RTCOMDLL.dll
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID2%\InProcServer32,ThreadingModel,0,Apartment
+HKCR,Wow6432Node\PropSet.PropSet.1,,0,"PropSet Class"
+HKCR,Wow6432Node\PropSet.PropSet.1\CLSID,,0,%RTCOMDLL_CLSID3%
+HKCR,Wow6432Node\PropSet.PropSet,,0,"PropSet Class"
+HKCR,Wow6432Node\PropSet.PropSet\CurVer,,0,"PropSet.PropSet.1"
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID3%,,0,"PropSet Class"
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID3%\ProgID,,0,"PropSet.PropSet.1"
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID3%\VersionIndependentProgID,,0,"PropSet.PropSet"
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID3%\Programmable
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID3%\InProcServer32,,0,%10%\SysWOW64\RTCOM\RTCOMDLL.dll
+HKCR,Wow6432Node\CLSID\%RTCOMDLL_CLSID3%\InProcServer32,ThreadingModel,0,Apartment
+
+HKCR,Wow6432Node\RtkCfg.RtkCfgApi.1,,0,"RtkCfgApi Class"
+HKCR,Wow6432Node\RtkCfg.RtkCfgApi.1\CLSID,,0,%RTKCFG_CLSID%
+HKCR,Wow6432Node\RtkCfg.RtkCfgApi,,0,"RtkCfgApi Class"
+HKCR,Wow6432Node\RtkCfg.RtkCfgApi\CurVer,,0,"RtkCfg.RtkCfgApi.1"
+HKCR,Wow6432Node\RtkCfg.RtkCfgApi\CLSID,,0,%RTKCFG_CLSID%
+HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%,,0,"RtkCfgApi Class"
+HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%\ProgID,,0,"RtkCfg.RtkCfgApi.1"
+HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%\VersionIndependentProgID,,0,"RtkCfg.RtkCfgApi"
+HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%\Programmable
+HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%\InProcServer32,,0,%10%\SysWOW64\RTCOM\RtkCfg.dll
+HKCR,Wow6432Node\CLSID\%RTKCFG_CLSID%\InProcServer32,ThreadingModel,0,Both
+
+HKCR,Wow6432Node\%RTDP_CID1_PATH%,,0,"RtNuanceProc Class"
+HKCR,Wow6432Node\%RTDP_CID1_PATH%\InProcServer32,,0,%10%\SysWOW64\RTCOM\RtDataProc.dll
+HKCR,Wow6432Node\%RTDP_CID1_PATH%\InProcServer32,ThreadingModel,0,Both
+HKCR,Wow6432Node\%RTDP_CID2_PATH%,,0,"RtDataProc Class"
+HKCR,Wow6432Node\%RTDP_CID2_PATH%\InProcServer32,,0,%10%\SysWOW64\RTCOM\RtDataProc.dll
+HKCR,Wow6432Node\%RTDP_CID2_PATH%\InProcServer32,ThreadingModel,0,Both
+HKCR,%RTDP_CID1_PATH%,,0,"RtNuanceProc Class"
+HKCR,%RTDP_CID1_PATH%\InProcServer32,,0,%11%\RtDataProc64.dll
+HKCR,%RTDP_CID1_PATH%\InProcServer32,ThreadingModel,0,Both
+HKCR,%RTDP_CID2_PATH%,,0,"RtDataProc Class"
+HKCR,%RTDP_CID2_PATH%\InProcServer32,,0,%11%\RtDataProc64.dll
+HKCR,%RTDP_CID2_PATH%\InProcServer32,ThreadingModel,0,Both
+
+[WOV.AddReg]
+HKCR,CLSID\{61314671-ABE8-43CD-BB76-575FE905CE51},,,"RealtekKeywordDetector Class"
+HKCR,CLSID\{61314671-ABE8-43CD-BB76-575FE905CE51}\InprocServer32,,,%11%\RealtekKeywordDetectorAdapter\RealtekKeywordDetectorAdapter.dll
+HKCR,CLSID\{61314671-ABE8-43CD-BB76-575FE905CE51}\InprocServer32,"ThreadingModel",,"Both"
+HKCR,CLSID\{243664FB-F5F5-46B9-88CD-463A338A804C},,,"RtkVpCP"
+HKCR,CLSID\{243664FB-F5F5-46B9-88CD-463A338A804C}\InprocServer32,,,%11%\RtkVpCP.dll
+HKCR,CLSID\{243664FB-F5F5-46B9-88CD-463A338A804C}\InprocServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\{F544A15B-72D3-42BA-B7AA-84569A34FC2C},,,"RtkWovApi"
+HKCR,CLSID\{F544A15B-72D3-42BA-B7AA-84569A34FC2C}\InprocServer32,,,%11%\RtkWovApi.dll
+HKCR,CLSID\{F544A15B-72D3-42BA-B7AA-84569A34FC2C}\InprocServer32,"ThreadingModel",,"Both"
+
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\Credential Providers\{243664FB-F5F5-46B9-88CD-463A338A804C}",,,"RtkVpCP"
+HKLM,"SYSTEM\CurrentControlSet\Control\Lsa","Security Packages",0x10008,"RtkVpSec"
+
+[WOV.DelReg]
+HKLM,"SYSTEM\CurrentControlSet\Control\Lsa","Security Packages test",0x18002,"RtkVpSec12345"
+
+[HdAudSecurity.AddReg]
+; FILE_DEVICE_SOUND
+HKR,,DeviceType,0x10001,0x0000001D
+; SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_RWX_RES_RWX HKR,,Security,,"D:P(A;;GA;;;SY)(A;;GRGWGX;;;BA)(A;;GRGWGX;;;WD)(A;;GRGWGX;;;RC)"
+
+[RtkCoInst.AddReg]
+HKR,,CoInstallers32,,"RtkCoLDR64.dll,RtkCoInstallerLoader"
+
+[IntcAzAudModelAddReg]
+HKR,,AssociatedFilters,,"wdmaud,swmidi,redbook"
+HKR,,Driver,,RTKVHD64.sys
+HKR,Settings,COINSTALLER_NEED_ADD_CPL_RUNKEY,0x00010001,1
+HKR,WOVSettings,RTKWOV,0x00010001,6
+
+HKR, DispatchSettings, UsePositionLock, 3, 01, 00, 00, 00
+
+HKR,PowerSettings,ConservationIdleTime,1,00,00,00,0     ; Not doing idle power management when on battery
+HKR,PowerSettings,PerformanceIdleTime,1,00,00,00,00     ; Not doing idle power management when on AC power
+HKR,PowerSettings,IdlePowerState,1,03,00,00,00          ; go to D3 for idle power management
+
+HKR,Drivers,SubClasses,,"wave,midi,mixer,aux"
+
+HKR,Drivers\wave\wdmaud.drv,Driver,,wdmaud.drv
+HKR,Drivers\midi\wdmaud.drv,Driver,,wdmaud.drv
+HKR,Drivers\mixer\wdmaud.drv,Driver,,wdmaud.drv
+HKR,Drivers\aux\wdmaud.drv,Driver,,wdmaud.drv
+
+HKR,Drivers\wave\wdmaud.drv,Description,,%IntcAzAudioDeviceDescription%
+HKR,Drivers\midi\wdmaud.drv,Description,,%IntcAzAudioDeviceDescription%
+HKR,Drivers\mixer\wdmaud.drv,Description,,%IntcAzAudioDeviceDescription%
+HKR,Drivers\aux\wdmaud.drv,Description,,%IntcAzAudioDeviceDescription%
+
+HKR,,SetupPreferredAudioDevices,3,01,00,00,00
+
+HKR,InterfaceSetting\FriendlyName,RearLineOutWave,,%RearLineOutWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineOutTopo,,%RearLineOutTopoDeviceName%
+HKR,InterfaceSetting,RearLineOutTopo,0x10000,"SysFx","OEMSettingsOverride"
+HKR,InterfaceSetting\FriendlyName,RearLineOutWave2,,%PrimaryLineOutWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,PrimaryLineOutTopo,,%PrimaryLineOutTopoDeviceName%
+HKR,InterfaceSetting,PrimaryLineOutTopo,0x10000,"SysFx","OEMSettingsOverride"
+HKR,InterfaceSetting\FriendlyName,RearLineOutWave3,,%SingleLineOutWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,SingleLineOutTopo,,%SingleLineOutTopoDeviceName%
+HKR,InterfaceSetting,SingleLineOutTopo,0x10000,"SysFx","OEMSettingsOverride"
+HKR,InterfaceSetting\FriendlyName,RearLineInWave3,,%SingleLineInWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,SingleLineInTopo,,%SingleLineInTopoDeviceName%
+HKR,InterfaceSetting,SingleLineInTopo,0x10000,"RTHDAProperties"
+HKR,InterfaceSetting\FriendlyName,SecondaryLineOutWave,,%SecondaryLineOutWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,SecondaryLineOutTopo,,%SecondaryLineOutTopoDeviceName%
+HKR,InterfaceSetting,SecondaryLineOutTopo,0x10000,"SysFx","OEMSettingsOverride"
+HKR,InterfaceSetting\FriendlyName,SecondaryLineInWave,,%SecondaryLineInWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,SecondaryLineInTopo,,%SecondaryLineInTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,PrimaryLineInWave,,%PrimaryLineInWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,PrimaryLineInTopo,,%PrimaryLineInTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,HPRearCaptureWave,,%HPRearCaptureWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,HPRearCaptureTopo,,%HPRearCaptureTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,HPCPCCaptureWave,,%HPCPCCaptureWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,HPCPCCaptureTopo,,%HPCPCCaptureTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontPanelHeadphoneWave,,%FrontPanelHeadphoneWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,DigitalInputWave,,%DigitalInputWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,DigitalInputTopo,,%DigitalInputTopoDeviceName%
+HKR,InterfaceSetting,DigitalInputTopo,0x10000,"RTHDAProperties"
+HKR,InterfaceSetting\FriendlyName,RearLineInBlackWave,,%RearLineInBlackWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInBlackTopo,,%RearLineInBlackTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInGreyWave,,%RearLineInGreyWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInGreyTopo,,%RearLineInGreyTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInBlueWave,,%RearLineInBlueWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInBlueTopo,,%RearLineInBlueTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInGreenWave,,%RearLineInGreenWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInGreenTopo,,%RearLineInGreenTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInRedWave,,%RearLineInRedWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInRedTopo,,%RearLineInRedTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInOrangeWave,,%RearLineInOrangeWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInOrangeTopo,,%RearLineInOrangeTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInYellowWave,,%RearLineInYellowWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInYellowTopo,,%RearLineInYellowTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInPurpleWave,,%RearLineInPurpleWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInPurpleTopo,,%RearLineInPurpleTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInPinkWave,,%RearLineInPinkWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInPinkTopo,,%RearLineInPinkTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInGoldenWave,,%RearLineInGoldenWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInGoldenTopo,,%RearLineInGoldenTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInSilverWave,,%RearLineInSilverWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInSilverTopo,,%RearLineInSilverTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInWhiteWave,,%RearLineInWhiteWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearLineInWhiteTopo,,%RearLineInWhiteTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInBlackWave,,%RearMicInBlackWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInBlackTopo,,%RearMicInBlackTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInGreyWave,,%RearMicInGreyWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInGreyTopo,,%RearMicInGreyTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInBlueWave,,%RearMicInBlueWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInBlueTopo,,%RearMicInBlueTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInGreenWave,,%RearMicInGreenWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInGreenTopo,,%RearMicInGreenTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInRedWave,,%RearMicInRedWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInRedTopo,,%RearMicInRedTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInOrangeWave,,%RearMicInOrangeWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInOrangeTopo,,%RearMicInOrangeTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInYellowWave,,%RearMicInYellowWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInYellowTopo,,%RearMicInYellowTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInPurpleWave,,%RearMicInPurpleWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInPurpleTopo,,%RearMicInPurpleTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInPinkWave,,%RearMicInPinkWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInPinkTopo,,%RearMicInPinkTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInGoldenWave,,%RearMicInGoldenWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInGoldenTopo,,%RearMicInGoldenTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInSilverWave,,%RearMicInSilverWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInSilverTopo,,%RearMicInSilverTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInWhiteWave,,%RearMicInWhiteWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RearMicInWhiteTopo,,%RearMicInWhiteTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInBlackWave,,%FrontLineInBlackWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInBlackTopo,,%FrontLineInBlackTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInGreyWave,,%FrontLineInGreyWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInGreyTopo,,%FrontLineInGreyTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInBlueWave,,%FrontLineInBlueWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInBlueTopo,,%FrontLineInBlueTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInGreenWave,,%FrontLineInGreenWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInGreenTopo,,%FrontLineInGreenTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInRedWave,,%FrontLineInRedWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInRedTopo,,%FrontLineInRedTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInOrangeWave,,%FrontLineInOrangeWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInOrangeTopo,,%FrontLineInOrangeTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInYellowWave,,%FrontLineInYellowWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInYellowTopo,,%FrontLineInYellowTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInPurpleWave,,%FrontLineInPurpleWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInPurpleTopo,,%FrontLineInPurpleTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInPinkWave,,%FrontLineInPinkWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInPinkTopo,,%FrontLineInPinkTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInGoldenWave,,%FrontLineInGoldenWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInGoldenTopo,,%FrontLineInGoldenTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInSilverWave,,%FrontLineInSilverWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInSilverTopo,,%FrontLineInSilverTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInWhiteWave,,%FrontLineInWhiteWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontLineInWhiteTopo,,%FrontLineInWhiteTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInBlackWave,,%FrontMicInBlackWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInBlackTopo,,%FrontMicInBlackTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInGreyWave,,%FrontMicInGreyWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInGreyTopo,,%FrontMicInGreyTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInBlueWave,,%FrontMicInBlueWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInBlueTopo,,%FrontMicInBlueTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInGreenWave,,%FrontMicInGreenWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInGreenTopo,,%FrontMicInGreenTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInRedWave,,%FrontMicInRedWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInRedTopo,,%FrontMicInRedTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInOrangeWave,,%FrontMicInOrangeWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInOrangeTopo,,%FrontMicInOrangeTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInYellowWave,,%FrontMicInYellowWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInYellowTopo,,%FrontMicInYellowTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInPurpleWave,,%FrontMicInPurpleWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInPurpleTopo,,%FrontMicInPurpleTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInPinkWave,,%FrontMicInPinkWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInPinkTopo,,%FrontMicInPinkTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInGoldenWave,,%FrontMicInGoldenWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInGoldenTopo,,%FrontMicInGoldenTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInSilverWave,,%FrontMicInSilverWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInSilverTopo,,%FrontMicInSilverTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInWhiteWave,,%FrontMicInWhiteWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,FrontMicInWhiteTopo,,%FrontMicInWhiteTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtSpdifWave,,%RtSpdifWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtSpdifTopo,,%RtSpdifTopoDeviceName%
+HKR,InterfaceSetting,RtSpdifTopo,0x10000,"SysFx","OEMSPDIFSettingsOverride"
+HKR,InterfaceSetting\FriendlyName,RtSpdifHDMIWave,,%RtSpdifHDMIWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtSpdifHDMITopo,,%RtSpdifHDMITopoDeviceName%
+HKR,InterfaceSetting,RtSpdifHDMITopo,0x10000,"SysFx","OEMSPDIFSettingsOverride"
+HKR,InterfaceSetting\FriendlyName,RtSpdifRCAWave,,%RtSpdifRCAWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtSpdifRCATopo,,%RtSpdifRCATopoDeviceName%
+HKR,InterfaceSetting,RtSpdifRCATopo,0x10000,"SysFx","OEMSPDIFSettingsOverride"
+HKR,InterfaceSetting\FriendlyName,RtSpdifOptWave,,%RtSpdifOptWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtSpdifOptTopo,,%RtSpdifOptTopoDeviceName%
+HKR,InterfaceSetting,RtSpdifOptTopo,0x10000,"SysFx","OEMSPDIFSettingsOverride"
+HKR,InterfaceSetting\FriendlyName,RtStereoMixWave,,%RtStereoMixWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtStereoMixTopo,,%RtStereoMixTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtMicInWave,,"Realtek HD Audio Mic input"
+HKR,InterfaceSetting\FriendlyName,RtMicInTopo,,"Realtek HD Audio Mic input mixer"
+HKR,InterfaceSetting\FriendlyName,RtMicInSSTWave,,"Realtek HD Audio Mic input with SST"
+HKR,InterfaceSetting\FriendlyName,RtMicInSSTTopo,,"Realtek HD Audio Mic input mixer with SST"
+HKR,InterfaceSetting\FriendlyName,RtLineInWave,,%RtLineInWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtLineInTopo,,%RtLineInTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtCDInWave,,%RtCDInWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtCDInTopo,,%RtCDInTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtAuxInWave,,%RtAuxInWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtAuxInTopo,,%RtAuxInTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtFrontMicInWave,,%RtFrontMicInWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtFrontMicInTopo,,%RtFrontMicInTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtFrontLineInWave,,%RtFrontLineInWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtFrontLineInTopo,,%RtFrontLineInTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,DigitalMICWave,,%DigitalMICWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,DigitalMICTopo,,%DigitalMICTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtMicArWave,,%RtMicArWaveDeviceName%
+HKR,InterfaceSetting\FriendlyName,RtMicArTopo,,%RtMicArTopoDeviceName%
+HKR,InterfaceSetting\FriendlyName,BTBPOutWave,,"Realtek HDA Bluetooth Bypass Output"
+HKR,InterfaceSetting\FriendlyName,BTBPOutTopo,,"Realtek HDA Bluetooth Bypass Output Mixer"
+HKR,InterfaceSetting,BTBPOutTopo,0x10000,"RTHDAProperties"
+HKR,InterfaceSetting\FriendlyName,BTBPInWave,,"Realtek HDA Bluetooth Bypass Iutput"
+HKR,InterfaceSetting\FriendlyName,BTBPInTopo,,"Realtek HDA Bluetooth Bypass Iutput Mixer"
+HKR,InterfaceSetting,BTBPInTopo,0x10000,"RTHDAProperties"
+HKR,InterfaceSetting\FriendlyName,RearLineOutWaveSST,,"Realtek HD Audio output with SST"
+HKR,InterfaceSetting\FriendlyName,RearLineOutTopoSST,,"Realtek HD Audio output mixer with SST"
+HKR,InterfaceSetting,RearLineOutTopoSST,0x10000,"SysFx","OEMSettingsOverride"
+HKR,InterfaceSetting\FriendlyName,RearLineOutWaveSST2,,"Realtek HDA Primary output with SST"
+HKR,InterfaceSetting\FriendlyName,RearLineOutTopoSST2,,"Realtek HDA Primary output mixer with SST"
+HKR,InterfaceSetting,RearLineOutTopoSST2,0x10000,"SysFx","OEMSettingsOverride"
+HKR,InterfaceSetting\FriendlyName,RearLineOutWaveSST3,,"Realtek HD Audio 2nd output with SST"
+HKR,InterfaceSetting\FriendlyName,RearLineOutTopoSST3,,"Realtek HD Audio 2nd output mixer with SST"
+HKR,InterfaceSetting,RearLineOutTopoSST3,0x10000,"SysFx","OEMSettingsOverride"
+HKR,InterfaceSetting\FriendlyName,RearLineOutWaveDock,,"Realtek HD Audio dock/base output"
+HKR,InterfaceSetting\FriendlyName,RearLineOutTopoDock,,"Realtek HD Audio dock/base output mixer"
+HKR,InterfaceSetting,RearLineOutTopoDock,0x10000,"SysFx","OEMSettingsOverride"
+HKR,InterfaceSetting,rtmicintopo,0x10000,"SysRecFx","SysWovFx"
+
+HKR,InterfaceSetting\SysFx\FX\0,%PKEY_DisplayName%,,%SYSFX_FriendlyName%
+HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_PreMixClsid%,,%SYSFX_PREMIX_CLSID%
+HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_PostMixClsid%,,%SYSFX_POSTMIX_CLSID%
+HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_SFXClsid%,,%SYSFX_SFX_CLSID%
+HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_MFXClsid%,,%SYSFX_MFX_CLSID%
+HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_EFXClsid%,,%SYSFX_EFX_CLSID%
+HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_UiClsid%,,%SYSFX_UI_CLSID%
+HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SYSFX_Association%,,%KSNODETYPE_ANY%  ; GUID NULL means install on all endpoints
+HKR,InterfaceSetting\SysFx\FX\0,%PKEY_SFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+HKR,InterfaceSetting\SysFx\FX\0,%PKEY_MFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+HKR,InterfaceSetting\SysFx\FX\0,%PKEY_EFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4701",0x00010001,0x0    ;; PKEY_PCEE_IntSpkr_20_AE_Chkbox=0
+HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4702",0x00010001,0x0    ;; PKEY_PCEE_IntSpkr_20_Surr_Chkbox=0
+HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4705",0x00010001,0x0    ;; PKEY_PCEE_IntSpkr_51_AE_Chkbox=0
+HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4706",0x00010001,0x0    ;; PKEY_PCEE_IntSpkr_51_Surr_Chkbox=0
+HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4716",0x00010001,0x0    ;; PKEY_PCEE_HP_AE_Chkbox=0
+HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4717",0x00010001,0x0    ;; PKEY_PCEE_HP_Surr_Chkbox=0
+HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4723",0x00010001,0x0    ;; PKEY_PCEE_ExtSpkr_20_AE_Chkbox=0
+HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4724",0x00010001,0x0    ;; PKEY_PCEE_ExtSpkr_20_Surr_Chkbox=0
+HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4735",0x00010001,0x0    ;; PKEY_PCEE_ExtSpkr_51_Surr_Chkbox=0
+HKR,InterfaceSetting\SysFx\FX\0,"{01F0E753-3A7A-4b21-A904-D06826245E43},4737",0x00010001,0x0    ;; PKEY_PCEE_ExtSpkr_71_Surr_Chkbox=0
+HKR,InterfaceSetting\SysFx\FX\0,"{DB619741-3240-42A9-B35B-66460BED49BA},0",0x00010001,0x1
+HKR,InterfaceSetting\SysFx\EP\0,"{6CA6A085-3041-482B-9113-C61E7F250356},0",,"2.1.1"
+HKR,InterfaceSetting\SysFx\EP\0,"{6945B39C-AAB2-4413-8E03-F5AF7360BDB1},6",,"1.6.0.15"
+HKR,InterfaceSetting\SysFx\EP\0,"{7A8B74C8-FA66-4460-8542-D6119C59E9D4},4",0x00010001,0x100
+HKR,InterfaceSetting\OEMSettingsOverride\EP\0, "RtEPAssociation",,%KSNODETYPE_ANY%
+HKR,InterfaceSetting\OEMSettingsOverride\EP\0, %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,DC,05,00,08,00,20,00,16,00,18,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
+HKR,InterfaceSetting\OEMSettingsOverride\EP\0, %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+HKR,InterfaceSetting\RTHDAProperties\EP\0,"RtEPAssociation",,%KSNODETYPE_ANY%
+HKR,InterfaceSetting\RTHDAProperties\EP\0,%PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_DisplayName%,,%SYSFX_FriendlyName%
+HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_PreMixClsid%,,%SYSRECFX_PREMIX_CLSID%
+HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_MFXClsid%,,%SYSRECFX_MFX_CLSID%
+HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_EFXClsid%,,%SYSRECFX_EFX_CLSID%
+HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_UiClsid%,,%SYSFX_UI_CLSID%
+HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_Association%,,%KSNODETYPE_ANY%  ; GUID NULL means install on all endpoints
+HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_MFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_EFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+HKR,InterfaceSetting\SysRecFx\FX\0,%PKEY_SYSFX_Andrea_License%,0x00010001,15	; For Andrea license key
+HKR,InterfaceSetting\SysRecFx\FX\0,"{1da5d803-d492-4edd-8c23-e0c0ffee7f0e},5",0x00010001,0x0
+HKR,InterfaceSetting\SysRecFx\FX\0,"{b8f15a90-fda1-41ae-9db2-04c32d80474e},0",0x00010001,0x1
+HKR,InterfaceSetting\SysRecFx\FX\0,"{9ced12de-ae99-433e-ab41-e28d689851f1},0",0x00010001,0x46
+HKR,InterfaceSetting\SysRecFx\FX\0,"{98d40fdd-a4e6-462e-8475-5823b3d75f41},0",0x00010001,0x12
+HKR,InterfaceSetting\SysRecFx\FX\0,"{ac5b94de-91ab-43fb-af96-78cafef89c63},0",0x00010001,0x0
+HKR,InterfaceSetting\SysRecFx\FX\0,"{19d85455-f3eb-49ff-8744-4c8b42f08526},0",0x00010001,0x0
+HKR,InterfaceSetting\SysRecFx\FX\0,"{cd7a348f-67e1-4739-a9d4-6091757cd33e},0",0x00010001,0x2
+HKR,InterfaceSetting\SysRecFx\FX\0,"{7f51f1ca-6173-4334-80a7-79b2d2b7795d},0",0x00010001,0x0
+HKR,InterfaceSetting\SysRecFx\FX\0,"{d3f0eca2-4860-41c8-8eaa-43e51a4825b4},0",0x00010001,0x0
+HKR,InterfaceSetting\SysRecFx\FX\0,"{52638e28-6738-11e3-aebb-00059a3c7a00},0",0x00010001,0x0
+HKR,InterfaceSetting\SysRecFx\FX\0,"{cf6a85cc-67bd-11e3-928e-00059a3c7a00},0",0x00010001,0x0
+HKR,InterfaceSetting\SysRecFx\FX\0,"{b62677b6-d00f-4b13-ba2e-3a1d04b1cdf4},0",0x00010001,0x0
+HKR,InterfaceSetting\SysRecFx\FX\0,"{350f2124-8994-4f05-8515-b6d5bf3fbcc7},6",0x00010001,0x1
+HKR,InterfaceSetting\SysRecFx\FX\0,"{F47A9D84-6CA7-4C5E-A853-9F91BC1991AE},6",0x00000001,41,0,0,0,0,0,0,0,0
+HKR,InterfaceSetting\SysRecFx\FX\0,"{6696EC45-CA78-414A-8666-C9ED965ACFEE},6",0x00000001,41,0,0,0,0,0,0,0,0
+HKR,InterfaceSetting\SysWovFx\FX\0,"{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},8",,"{A6658ED6-B127-462E-A8EA-F7CD4D94E394}"
+HKR,InterfaceSetting\SysWovFx\FX\0,"{D3993A3F-99C2-4402-B5EC-A92A0367664B},8",0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+HKR,InterfaceSetting\SysRecFx\EP\0,"RtEPAssociation",,%KSNODETYPE_ANY%
+HKR,InterfaceSetting\SysRecFx\EP\0,%PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, "RtEPAssociation",,%KSNODETYPE_HDMI_INTERFACE%
+HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,EE,02,00,04,00,10,00,16,00,10,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
+HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, %PKEY_SupportFormat_OEMFormat%, %REG_BINARY%, 41,00,75,00,0c,00,00,00,10,00,00,00,02,00,00,00,00,00,00,00
+HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\1, "RtEPAssociation",,%KSNODETYPE_ANY%
+HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\1, %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,EE,02,00,04,00,10,00,16,00,10,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
+HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\1, %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+
+HKR,SSTPPCfg\{271F72A1-BC28-44C7-AA94-2B2C17C32561}\MIC\MFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{271F72A1-BC28-44C7-AA94-2B2C17C32561}\MIC\MFX,Position,0x10001,1
+
+HKR,SSTPPCfg\{E1284052-8664-4FE4-A353-3878F72704C3}\HP\EFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{E1284052-8664-4FE4-A353-3878F72704C3}\HP\EFX,Position,0x10001,1
+HKR,SSTPPCfg\{E1284052-8664-4FE4-A353-3878F72704C3}\SPK\EFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{E1284052-8664-4FE4-A353-3878F72704C3}\SPK\EFX,Position,0x10001,1
+
+HKR,SSTPPCfg\{B489C2DE-0F96-42E1-8A2D-C25B5091EE49}\HP\EFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{B489C2DE-0F96-42E1-8A2D-C25B5091EE49}\HP\EFX,Position,0x10001,1
+HKR,SSTPPCfg\{B489C2DE-0F96-42E1-8A2D-C25B5091EE49}\SPK\EFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{B489C2DE-0F96-42E1-8A2D-C25B5091EE49}\SPK\EFX,Position,0x10001,1
+
+HKR,SSTPPCfg\{E0E018A8-3550-4B54-A8D0-A8E05D0FCBA2}\HP\MFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{E0E018A8-3550-4B54-A8D0-A8E05D0FCBA2}\HP\MFX,Position,0x10001,1
+HKR,SSTPPCfg\{E0E018A8-3550-4B54-A8D0-A8E05D0FCBA2}\SPK\MFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{E0E018A8-3550-4B54-A8D0-A8E05D0FCBA2}\SPK\MFX,Position,0x10001,1
+
+HKR,SSTPPCfg\{202BADB5-8870-4290-B536-F2380C63F55D}\SPK\EFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{202BADB5-8870-4290-B536-F2380C63F55D}\SPK\EFX,Position,0x10001,1
+HKR,SSTPPCfg\{202BADB5-8870-4290-B536-F2380C63F55D}\SPK\EFX,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0
+HKR,SSTPPCfg\{F1C69181-329A-45F0-8EEF-D8BDDF81E036}\SPK\EFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{F1C69181-329A-45F0-8EEF-D8BDDF81E036}\SPK\EFX,Position,0x10001,2
+
+HKR,SSTPPCfg\{BD70CE66-7CEE-4277-A91A-D6368FEAF83D}\HP\EFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{BD70CE66-7CEE-4277-A91A-D6368FEAF83D}\HP\EFX,Position,0x10001,1
+
+HKR,SSTPPCfg\{7111001F-D35F-44D9-81D2-7AC685BED3D7}\SPK\EFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{7111001F-D35F-44D9-81D2-7AC685BED3D7}\SPK\EFX,Position,0x10001,1
+
+HKR,SSTPPCfg\{88373A01-16A5-469D-A39A-BDEB594178B8}\SPK\MFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{88373A01-16A5-469D-A39A-BDEB594178B8}\SPK\MFX,Position,0x10001,1
+HKR,SSTPPCfg\{88373A01-16A5-469D-A39A-BDEB594178B8}\HP\MFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{88373A01-16A5-469D-A39A-BDEB594178B8}\HP\MFX,Position,0x10001,1
+
+HKR,SSTPPCfg\{54CAB206-82CB-4B67-A1EE-FCD45C126DC8}\SPK\EFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{54CAB206-82CB-4B67-A1EE-FCD45C126DC8}\SPK\EFX,Position,0x10001,1
+HKR,SSTPPCfg\{54CAB206-82CB-4B67-A1EE-FCD45C126DC8}\HP\EFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{54CAB206-82CB-4B67-A1EE-FCD45C126DC8}\HP\EFX,Position,0x10001,1
+
+HKR,SSTPPCfg\{7C708106-3AFF-40FE-88BE-8C999B3F7445}\MIC\MFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{7C708106-3AFF-40FE-88BE-8C999B3F7445}\MIC\MFX,Position,0x10001,1
+HKR,SSTPPCfg\{7C708106-3AFF-40FE-88BE-8C999B3F7445}\MIC\MFX,0,1,3,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, \
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,ff,7f,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, \
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,ff,7f,0,0,0,0,0,0,0,0,0,0,0,0, \
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,2,0,96,0,88,0,88,0,88,0,88,0,88,0,1,0,f7,ff,0,0,0,60,ff,7f,29,7c,fb,ff,f8,ff,fb,ff,f5,ff,31,0,f2,ff,0,0,2,0,f8,ff,0,10,0,0,27,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,f8,ff,fc,ff,fe,ff,fe, \
+ff,ff,ff,f1,ff,cd,2c,66,66,cd,2c,9a,79,0,70,0,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, \
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, \
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, \
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, \
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,5a,0,2d,0,ec,ff,0,10,0,0,0,30,0,8,33,73,0,0,0,0,0,0,0,8,0,8,aa,6a,cd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, \
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, \
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, \
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, \
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0
+
+HKR,SSTPPCfg\{B3573EFF-6441-4A75-91F7-4281EEC4597D}\MIC\MFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{B3573EFF-6441-4A75-91F7-4281EEC4597D}\MIC\MFX,Position,0x10001,1
+
+HKR,SSTPPCfg\{F3578986-4400-4ADF-AE7E-CD433CD3F26E}\MIC\MFX,Enabled,0x10001,1
+HKR,SSTPPCfg\{F3578986-4400-4ADF-AE7E-CD433CD3F26E}\MIC\MFX,Position,0x10001,1
+
+HKLM,%MediaCategories%\%IntAzAudGuidRearLineOutDac%,Name,,%RearLineOutDacName%
+HKLM,%MediaCategories%\%IntAzAudGuidRearLineOutDac%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%IntAzAudGuidFrontHPOutDac%,Name,,%FrontHPOutDacName%
+HKLM,%MediaCategories%\%IntAzAudGuidFrontHPOutDac%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontMicVolume%,Name,,%Node.FrontMicVolume%
+HKLM,%MediaCategories%\%GUID.FrontMicVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontMicMute%,Name,,%Node.FrontMicMute%
+HKLM,%MediaCategories%\%GUID.FrontMicMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.UAJ1%,Name,,%Node.UAJ1%
+HKLM,%MediaCategories%\%GUID.UAJ1%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.UAJ2%,Name,,%Node.UAJ2%
+HKLM,%MediaCategories%\%GUID.UAJ2%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.SPDIF%,Name,,%Node.SPDIF%
+HKLM,%MediaCategories%\%GUID.SPDIF%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontLin%,Name,,%Node.FrontLin%
+HKLM,%MediaCategories%\%GUID.FrontLin%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.Front%,Name,,%Node.Front%
+HKLM,%MediaCategories%\%GUID.Front%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.Surround%,Name,,%Node.Surround%
+HKLM,%MediaCategories%\%GUID.Surround%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.BackSurround%,Name,,%Node.BackSurround%
+HKLM,%MediaCategories%\%GUID.BackSurround%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.Center%,Name,,%Node.Center%
+HKLM,%MediaCategories%\%GUID.Center%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.LFE%,Name,,%Node.LFE%
+HKLM,%MediaCategories%\%GUID.LFE%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.Side%,Name,,%Node.Side%
+HKLM,%MediaCategories%\%GUID.Side%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.SideSurround%,Name,,%Node.SideSurround%
+HKLM,%MediaCategories%\%GUID.SideSurround%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.DigitalOut%,Name,,%Node.DigitalOut%
+HKLM,%MediaCategories%\%GUID.DigitalOut%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.DigitalIn%,Name,,%Node.DigitalIn%
+HKLM,%MediaCategories%\%GUID.DigitalIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.LineInHP%,Name,,%Node.LineInHP%
+HKLM,%MediaCategories%\%GUID.LineInHP%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.Mic2%,Name,,%Node.Mic2%
+HKLM,%MediaCategories%\%GUID.Mic2%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontPinkInOld%,Name,,%Node.FrontPinkIn%
+HKLM,%MediaCategories%\%GUID.FrontPinkInOld%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontGreenInOld%,Name,,%Node.FrontGreenIn%
+HKLM,%MediaCategories%\%GUID.FrontGreenInOld%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.AudioIn%,Name,,%Node.AudioIn%
+HKLM,%MediaCategories%\%GUID.AudioIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontBlackIn%,Name,,%Node.FrontBlackIn%
+HKLM,%MediaCategories%\%GUID.FrontBlackIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontGreyIn%,Name,,%Node.FrontGreyIn%
+HKLM,%MediaCategories%\%GUID.FrontGreyIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontBlueIn%,Name,,%Node.FrontBlueIn%
+HKLM,%MediaCategories%\%GUID.FrontBlueIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontGreenIn%,Name,,%Node.FrontGreenIn%
+HKLM,%MediaCategories%\%GUID.FrontGreenIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontRedIn%,Name,,%Node.FrontRedIn%
+HKLM,%MediaCategories%\%GUID.FrontRedIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontOrangeIn%,Name,,%Node.FrontOrangeIn%
+HKLM,%MediaCategories%\%GUID.FrontOrangeIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontYellowIn%,Name,,%Node.FrontYellowIn%
+HKLM,%MediaCategories%\%GUID.FrontYellowIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontPurpleIn%,Name,,%Node.FrontPurpleIn%
+HKLM,%MediaCategories%\%GUID.FrontPurpleIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontPinkIn%,Name,,%Node.FrontPinkIn%
+HKLM,%MediaCategories%\%GUID.FrontPinkIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontGoldenIn%,Name,,%Node.FrontGoldenIn%
+HKLM,%MediaCategories%\%GUID.FrontGoldenIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontSilverIn%,Name,,%Node.FrontSilverIn%
+HKLM,%MediaCategories%\%GUID.FrontSilverIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontWhiteIn%,Name,,%Node.FrontWhiteIn%
+HKLM,%MediaCategories%\%GUID.FrontWhiteIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearBlackIn%,Name,,%Node.RearBlackIn%
+HKLM,%MediaCategories%\%GUID.RearBlackIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearGreyIn%,Name,,%Node.RearGreyIn%
+HKLM,%MediaCategories%\%GUID.RearGreyIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearBlueIn%,Name,,%Node.RearBlueIn%
+HKLM,%MediaCategories%\%GUID.RearBlueIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearGreenIn%,Name,,%Node.RearGreenIn%
+HKLM,%MediaCategories%\%GUID.RearGreenIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearRedIn%,Name,,%Node.RearRedIn%
+HKLM,%MediaCategories%\%GUID.RearRedIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearOrangeIn%,Name,,%Node.RearOrangeIn%
+HKLM,%MediaCategories%\%GUID.RearOrangeIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearYellowIn%,Name,,%Node.RearYellowIn%
+HKLM,%MediaCategories%\%GUID.RearYellowIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearPurpleIn%,Name,,%Node.RearPurpleIn%
+HKLM,%MediaCategories%\%GUID.RearPurpleIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearPinkIn%,Name,,%Node.RearPinkIn%
+HKLM,%MediaCategories%\%GUID.RearPinkIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearGoldenIn%,Name,,%Node.RearGoldenIn%
+HKLM,%MediaCategories%\%GUID.RearGoldenIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearSilverIn%,Name,,%Node.RearSilverIn%
+HKLM,%MediaCategories%\%GUID.RearSilverIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearWhiteIn%,Name,,%Node.RearWhiteIn%
+HKLM,%MediaCategories%\%GUID.RearWhiteIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.BlackIn%,Name,,%Node.BlackIn%
+HKLM,%MediaCategories%\%GUID.BlackIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.GreyIn%,Name,,%Node.GreyIn%
+HKLM,%MediaCategories%\%GUID.GreyIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.BlueIn%,Name,,%Node.BlueIn%
+HKLM,%MediaCategories%\%GUID.BlueIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.GreenIn%,Name,,%Node.GreenIn%
+HKLM,%MediaCategories%\%GUID.GreenIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RedIn%,Name,,%Node.RedIn%
+HKLM,%MediaCategories%\%GUID.RedIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.OrangeIn%,Name,,%Node.OrangeIn%
+HKLM,%MediaCategories%\%GUID.OrangeIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.YellowIn%,Name,,%Node.YellowIn%
+HKLM,%MediaCategories%\%GUID.YellowIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.PurpleIn%,Name,,%Node.PurpleIn%
+HKLM,%MediaCategories%\%GUID.PurpleIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.PinkIn%,Name,,%Node.PinkIn%
+HKLM,%MediaCategories%\%GUID.PinkIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.GoldenIn%,Name,,%Node.GoldenIn%
+HKLM,%MediaCategories%\%GUID.GoldenIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.SilverIn%,Name,,%Node.SilverIn%
+HKLM,%MediaCategories%\%GUID.SilverIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.WhiteIn%,Name,,%Node.WhiteIn%
+HKLM,%MediaCategories%\%GUID.WhiteIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.AudioInput%,Name,,%Node.AudioInput%
+HKLM,%MediaCategories%\%GUID.AudioInput%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.LineOutVolume%,Name,,%Node.LineOutVolume%
+HKLM,%MediaCategories%\%GUID.LineOutVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.Surr%,Name,,%Node.Surr%
+HKLM,%MediaCategories%\%GUID.Surr%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.Surrback%,Name,,%Node.Surrback%
+HKLM,%MediaCategories%\%GUID.Surrback%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.MonoMic%,Name,,%Node.MonoMic%
+HKLM,%MediaCategories%\%GUID.MonoMic%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.StereoMic%,Name,,%Node.StereoMic%
+HKLM,%MediaCategories%\%GUID.StereoMic%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.PCBeep%,Name,,%Node.PCBeep%
+HKLM,%MediaCategories%\%GUID.PCBeep%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.PcBeepVolume%,Name,,%Node.PcBeepVolume%
+HKLM,%MediaCategories%\%GUID.PcBeepVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.SideHP%,Name,,%Node.SideHP%
+HKLM,%MediaCategories%\%GUID.SideHP%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.MicLineInVolume%,Name,,%Node.MicLineInVolume%
+HKLM,%MediaCategories%\%GUID.MicLineInVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.LineIn1%,Name,,%Node.LineIn1%
+HKLM,%MediaCategories%\%GUID.LineIn1%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.LineIn2%,Name,,%Node.LineIn2%
+HKLM,%MediaCategories%\%GUID.LineIn2%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.TVIn%,Name,,%Node.TVIn%
+HKLM,%MediaCategories%\%GUID.TVIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontAVIn%,Name,,%Node.FrontAVIn%
+HKLM,%MediaCategories%\%GUID.FrontAVIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.DisableAnalogCD%,Name,,%Node.DisableAnalogCD%
+HKLM,%MediaCategories%\%GUID.DisableAnalogCD%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.LimitedOutput%,Name,,%Node.LimitedOutput%
+HKLM,%MediaCategories%\%GUID.LimitedOutput%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RTSPDIFOut%,Name,,%Node.RTSPDIFOut%
+HKLM,%MediaCategories%\%GUID.RTSPDIFOut%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RTHDMIOut%,Name,,%Node.RTHDMIOut%
+HKLM,%MediaCategories%\%GUID.RTHDMIOut%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RTSPDIFOutRCA%,Name,,%Node.RTSPDIFOutRCA%
+HKLM,%MediaCategories%\%GUID.RTSPDIFOutRCA%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RTSPDIFOutOpt%,Name,,%Node.RTSPDIFOutOpt%
+HKLM,%MediaCategories%\%GUID.RTSPDIFOutOpt%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RTSPDIFIn%,Name,,%Node.RTSPDIFIn%
+HKLM,%MediaCategories%\%GUID.RTSPDIFIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RTHDMIOutAC3%,Name,,%Node.RTHDMIOutAC3%
+HKLM,%MediaCategories%\%GUID.RTHDMIOutAC3%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearLineOutWave3%,Name,,%SingleLineOutWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearLineOutWave3%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearLineOutWave2%,Name,,%PrimaryLineOutWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearLineOutWave2%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.SecondaryLineOutWave%,Name,,%SecondaryLineOutWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.SecondaryLineOutWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearLineInBlackWave%,Name,,%RearLineInBlackWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearLineInBlackWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearLineInGreyWave%,Name,,%RearLineInGreyWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearLineInGreyWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearLineInBlueWave%,Name,,%RearLineInBlueWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearLineInBlueWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearLineInGreenWave%,Name,,%RearLineInGreenWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearLineInGreenWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearLineInRedWave%,Name,,%RearLineInRedWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearLineInRedWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearLineInOrangeWave%,Name,,%RearLineInOrangeWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearLineInOrangeWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearLineInYellowWave%,Name,,%RearLineInYellowWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearLineInYellowWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearLineInPurpleWave%,Name,,%RearLineInPurpleWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearLineInPurpleWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearLineInPinkWave%,Name,,%RearLineInPinkWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearLineInPinkWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearLineInGoldenWave%,Name,,%RearLineInGoldenWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearLineInGoldenWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearLineInSilverWave%,Name,,%RearLineInSilverWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearLineInSilverWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearLineInWhiteWave%,Name,,%RearLineInWhiteWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearLineInWhiteWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearMicInBlackWave%,Name,,%RearMicInBlackWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearMicInBlackWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearMicInGreyWave%,Name,,%RearMicInGreyWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearMicInGreyWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearMicInBlueWave%,Name,,%RearMicInBlueWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearMicInBlueWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearMicInGreenWave%,Name,,%RearMicInGreenWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearMicInGreenWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearMicInRedWave%,Name,,%RearMicInRedWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearMicInRedWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearMicInOrangeWave%,Name,,%RearMicInOrangeWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearMicInOrangeWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearMicInYellowWave%,Name,,%RearMicInYellowWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearMicInYellowWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearMicInPurpleWave%,Name,,%RearMicInPurpleWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearMicInPurpleWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearMicInPinkWave%,Name,,%RearMicInPinkWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearMicInPinkWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearMicInGoldenWave%,Name,,%RearMicInGoldenWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearMicInGoldenWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearMicInSilverWave%,Name,,%RearMicInSilverWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearMicInSilverWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.RearMicInWhiteWave%,Name,,%RearMicInWhiteWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.RearMicInWhiteWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontLineInBlackWave%,Name,,%FrontLineInBlackWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontLineInBlackWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontLineInGreyWave%,Name,,%FrontLineInGreyWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontLineInGreyWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontLineInBlueWave%,Name,,%FrontLineInBlueWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontLineInBlueWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontLineInGreenWave%,Name,,%FrontLineInGreenWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontLineInGreenWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontLineInRedWave%,Name,,%FrontLineInRedWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontLineInRedWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontLineInOrangeWave%,Name,,%FrontLineInOrangeWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontLineInOrangeWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontLineInYellowWave%,Name,,%FrontLineInYellowWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontLineInYellowWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontLineInPurpleWave%,Name,,%FrontLineInPurpleWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontLineInPurpleWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontLineInPinkWave%,Name,,%FrontLineInPinkWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontLineInPinkWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontLineInGoldenWave%,Name,,%FrontLineInGoldenWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontLineInGoldenWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontLineInSilverWave%,Name,,%FrontLineInSilverWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontLineInSilverWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontLineInWhiteWave%,Name,,%FrontLineInWhiteWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontLineInWhiteWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontMicInBlackWave%,Name,,%FrontMicInBlackWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontMicInBlackWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontMicInGreyWave%,Name,,%FrontMicInGreyWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontMicInGreyWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontMicInBlueWave%,Name,,%FrontMicInBlueWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontMicInBlueWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontMicInGreenWave%,Name,,%FrontMicInGreenWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontMicInGreenWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontMicInRedWave%,Name,,%FrontMicInRedWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontMicInRedWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontMicInOrangeWave%,Name,,%FrontMicInOrangeWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontMicInOrangeWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontMicInYellowWave%,Name,,%FrontMicInYellowWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontMicInYellowWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontMicInPurpleWave%,Name,,%FrontMicInPurpleWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontMicInPurpleWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontMicInPinkWave%,Name,,%FrontMicInPinkWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontMicInPinkWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontMicInGoldenWave%,Name,,%FrontMicInGoldenWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontMicInGoldenWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontMicInSilverWave%,Name,,%FrontMicInSilverWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontMicInSilverWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FrontMicInWhiteWave%,Name,,%FrontMicInWhiteWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FrontMicInWhiteWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FjIntrMICWave%,Name,,%FjIntrMICWaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FjIntrMICWave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FjMic1Wave%,Name,,%FjMic1WaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FjMic1Wave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FjLineIn1Wave%,Name,,%FjLineIn1WaveDeviceName%
+HKLM,%MediaCategories%\%GUID.FjLineIn1Wave%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.IntrSubWoofer%,Name,,%IntrSubWooferDeviceName%
+HKLM,%MediaCategories%\%GUID.IntrSubWoofer%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.DigitalMic%,Name,,%Node.DigitalMic%
+HKLM,%MediaCategories%\%GUID.DigitalMic%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.FMRadio%,Name,,%Node.FMRadio%
+HKLM,%MediaCategories%\%GUID.FMRadio%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.2ndMic%,Name,,%Node.2ndMic%
+HKLM,%MediaCategories%\%GUID.2ndMic%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.BTBPOut%,Name,,%Node.BTBPOut%
+HKLM,%MediaCategories%\%GUID.BTBPOut%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.BTBPIn%,Name,,%Node.BTBPIn%
+HKLM,%MediaCategories%\%GUID.BTBPIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.IntrSubWoofer%,Name,,%IntrSubWooferDeviceName%
+HKLM,%MediaCategories%\%GUID.IntrSubWoofer%,Display,1,00,00,00,00
+
+[Strings]
+MfgName="Realtek"
+MediaCategories="SYSTEM\CurrentControlSet\Control\MediaCategories"
+OrganizationName="Realtek Semiconductor Corp."
+PackageDisplayName="HD Audio Driver"
+
+;;
+;; PropertyKey GUIDS
+;;
+PKEY_SYSFX_Association          = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},0"
+PKEY_SYSFX_PreMixClsid          = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},1"
+PKEY_SYSFX_PostMixClsid         = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},2"
+PKEY_SYSFX_SFXClsid             = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},5"
+PKEY_SYSFX_MFXClsid             = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},6"
+PKEY_SYSFX_EFXClsid             = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},7"
+PKEY_SYSFX_UiClsid              = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},3"
+PKEY_DisplayName                = "{B725F130-47EF-101A-A5F1-02608C9EEBAC},10"
+;;PKEY_DisplayName                = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},4"
+PKEY_AudioEndpoint_Ext_UiClsid  = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},1"
+PKEY_AudioEndpoint_Association  = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},2"
+PKEY_AudioEndpoint_Supports_EventDriven_Mode = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},7"
+PKEY_SYSFX_Andrea_License	= "{b7eae14c-6c01-446f-b83f-3181e129b6dd},6"
+
+PKEY_AudioEndpoint_ControlPanelPageProvider = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E}"
+
+;;
+;; PKEY_AudioEngine_OEMFormat:  Specifies the default format that is used for rendering/capturing.
+;; vartype = VT_BLOB
+;;
+PKEY_AudioEngine_OEMFormat = "{E4870E26-3CC5-4CD2-BA46-CA0A9A70ED04},3"
+PKEY_SupportFormat_OEMFormat = "{B3F8FA53-0004-438E-9003-51A46E139BFC},5"
+
+;;CONTROLLER_EXT_UI_CLSID    = "{EE661557-A649-4cb5-B868-86FCC6251414}"
+CONTROLLER_EXT_UI_CLSID    = "{30A4AD88-9965-4569-85A1-8453A8DE8DA7}"
+
+;;AUDIOENDPOINT_EXT_UI_CLSID = "{6C57B2A2-91F5-4b90-93D5-FAB82485ECA6}"
+AUDIOENDPOINT_EXT_UI_CLSID = "{31A53A7B-E0D8-4f99-B950-F6C8F25E6731}"
+
+SYSFX_PREMIX_CLSID    = "{DC253AB8-10DC-483c-AB5F-D6A4E189FD70}"
+SYSFX_POSTMIX_CLSID   = "{A27368B3-D810-42ce-B114-83900258B8EC}"
+SYSFX_SFX_CLSID       = "{DA2C9ECE-7418-4906-B4FA-0A00B3EB88AA}"
+SYSFX_MFX_CLSID       = "{A296D363-EE83-4af9-9BE7-729C1296150A}"
+SYSFX_EFX_CLSID       = "{A29EB043-6CE2-4ee2-B38C-F58719E0D88F}"
+SYSFX_UI_CLSID        = "{6861CFDC-0461-49d5-A8DF-BE5ACD02692F}"
+SYSFX_FriendlyName    = "Realtek System Effect"
+SYSRECFX_PREMIX_CLSID = "{A51A19D6-80F1-4abf-AB95-AF5215E8B052}"
+SYSRECFX_MFX_CLSID = "{A69C91DC-11C4-414f-A919-4DA8EA3F3CA6}"
+SYSRECFX_EFX_CLSID = "{AB3B404A-B18F-4b4f-B91F-77F2DE95EB18}"
+
+PKEY_SFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},5"
+PKEY_MFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},6"
+PKEY_EFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},7"
+AUDIO_SIGNALPROCESSINGMODE_DEFAULT = "{C18E2F7E-933D-4965-B7D1-1EEF228D2AF3}"
+
+PKEY_DAX2_EP_DAPV2_Version_String = "{6CA6A085-3041-482B-9113-C61E7F250356},0"
+DAP_CPDP_VERSION = "2.1.1"
+
+KSNODETYPE_ANY      = "{00000000-0000-0000-0000-000000000000}"
+KSNODETYPE_SPEAKER  = "{DFF21CE1-F70F-11D0-B917-00A0C9223196}"
+KSNODETYPE_SPDIF_INTERFACE  = "{DFF21FE5-F70F-11D0-B917-00A0C9223196}"
+KSNODETYPE_HDMI_INTERFACE = "{D1B9CC2A-F519-417f-91C9-55FA65481001}"
+REG_BINARY          = 0x00000001
+
+Audio3D_CLSID="{D8F1EEE0-F634-11CF-8700-00A0245D918B}"
+AUTORUN="Software\Microsoft\Windows\CurrentVersion\Run"
+RT_UNINSTALL="Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{F132AF7F-7BCA-4EDE-8A7C-958108FE7DBC}"
+CPL_CLASS_S="SOFTWARE\Microsoft\Windows\CurrentVersion\Control Panel\Extended Properties\{305CA226-D286-468e-B848-2B2E8E697B74} 2"
+NEWCPL_CLASS_KS="%SystemRoot%\System32\RTSnMg64.cpl"
+
+RearLineOutWaveDeviceName="Realtek HD Audio rear output"
+RearLineOutTopoDeviceName="Realtek HD rear output mixer"
+RearLineOutDacName="HD Line Out DAC(s) for rear panel"
+
+SecondaryLineInWaveDeviceName="Realtek HD Audio 2nd input"
+SecondaryLineInTopoDeviceName="Realtek HD rear 2nd mixer"
+
+PrimaryLineInWaveDeviceName="Realtek HDA Primary input"
+PrimaryLineInTopoDeviceName="Realtek HD rear Primary mixer"
+
+PrimaryLineOutWaveDeviceName="Realtek HDA Primary output"
+PrimaryLineOutTopoDeviceName="Realtek HD Primary output mixer"
+
+SingleLineOutWaveDeviceName="Realtek HD Audio output"
+SingleLineOutTopoDeviceName="Realtek HD Audio output mixer"
+
+SingleLineInWaveDeviceName="Realtek HD Audio input"
+SingleLineInTopoDeviceName="Realtek HD input mixer"
+
+SecondaryLineOutWaveDeviceName="Realtek HD Audio 2nd output"
+SecondaryLineOutTopoDeviceName="Realtek HD Secondary output mixer"
+
+HPRearCaptureWaveDeviceName="Back Line in/Mic, Front Line in"
+HPRearCaptureTopoDeviceName="Rear input, Front Line in mixer"
+
+HPCPCCaptureWaveDeviceName="Line in/Mic in"
+HPCPCCaptureTopoDeviceName="Line in/Mic in Mixer"
+
+RearMicInWaveDeviceName="Realtek HD rear Mic in"
+RearMicInTopoDeviceName="Realtek HD rear Mic in Mixer"
+
+FrontPanelHeadphoneWaveDeviceName="Realtek HD Audio front output"
+FrontHPOutDacName="HD Headphone DAC for front panel" 
+
+DigitalInputWaveDeviceName="Realtek HD Digital input"
+DigitalInputTopoDeviceName="Realtek HD Digital input mixer"
+
+IntcAzAudioDeviceDescription = "Realtek High Definition Audio(SST)"
+
+DigitalMICWaveDeviceName="Realtek Digital Microphone"
+DigitalMICTopoDeviceName="Realtek Digital Microphone mixer"
+
+;================================NewFrameWork===========================================
+RearLineInBlackWaveDeviceName="Line in at rear panel (black)"
+RearLineInBlackTopoDeviceName="Line in at rear mixer (black)"
+RearLineInGreyWaveDeviceName="Line in at rear panel (Grey)"
+RearLineInGreyTopoDeviceName="Line in at rear mixer (Grey)"
+RearLineInBlueWaveDeviceName="Line in at rear panel (Blue)"
+RearLineInBlueTopoDeviceName="Line in at rear mixer (Blue)"
+RearLineInGreenWaveDeviceName="Line in at rear panel (Green)"
+RearLineInGreenTopoDeviceName="Line in at rear mixer (Green)"
+RearLineInRedWaveDeviceName="Line in at rear panel (Red)"
+RearLineInRedTopoDeviceName="Line in at rear mixer (Red)"
+RearLineInOrangeWaveDeviceName="Line in at rear panel (Orange)"
+RearLineInOrangeTopoDeviceName="Line in at rear mixer (Orange)"
+RearLineInYellowWaveDeviceName="Line in at rear panel (Yellow)"
+RearLineInYellowTopoDeviceName="Line in at rear mixer (Yellow)"
+RearLineInPurpleWaveDeviceName="Line in at rear panel (Purple)"
+RearLineInPurpleTopoDeviceName="Line in at rear mixer (Purple)"
+RearLineInPinkWaveDeviceName="Line in at rear panel (Pink)"
+RearLineInPinkTopoDeviceName="Line in at rear mixer (Pink)"
+RearLineInGoldenWaveDeviceName="Line in at rear panel (Golden)"
+RearLineInGoldenTopoDeviceName="Line in at rear mixer (Golden)"
+RearLineInSilverWaveDeviceName="Line in at rear panel (Silver)"
+RearLineInSilverTopoDeviceName="Line in at rear mixer (Silver)"
+RearLineInWhiteWaveDeviceName="Line in at rear panel (White)"
+RearLineInWhiteTopoDeviceName="Line in at rear mixer (White)"
+RearMicInBlackWaveDeviceName="Mic in at rear panel (black)"
+RearMicInBlackTopoDeviceName="Mic in at rear mixer (black)"
+RearMicInGreyWaveDeviceName="Mic in at rear panel (Grey)"
+RearMicInGreyTopoDeviceName="Mic in at rear mixer (Grey)"
+RearMicInBlueWaveDeviceName="Mic in at rear panel (Blue)"
+RearMicInBlueTopoDeviceName="Mic in at rear mixer (Blue)"
+RearMicInGreenWaveDeviceName="Mic in at rear panel (Green)"
+RearMicInGreenTopoDeviceName="Mic in at rear mixer (Green)"
+RearMicInRedWaveDeviceName="Mic in at rear panel (Red)"
+RearMicInRedTopoDeviceName="Mic in at rear mixer (Red)"
+RearMicInOrangeWaveDeviceName="Mic in at rear panel (Orange)"
+RearMicInOrangeTopoDeviceName="Mic in at rear mixer (Orange)"
+RearMicInYellowWaveDeviceName="Mic in at rear panel (Yellow)"
+RearMicInYellowTopoDeviceName="Mic in at rear mixer (Yellow)"
+RearMicInPurpleWaveDeviceName="Mic in at rear panel (Purple)"
+RearMicInPurpleTopoDeviceName="Mic in at rear mixer (Purple)"
+RearMicInPinkWaveDeviceName="Mic in at rear panel (Pink)"
+RearMicInPinkTopoDeviceName="Mic in at rear mixer (Pink)"
+RearMicInGoldenWaveDeviceName="Mic in at rear panel (Golden)"
+RearMicInGoldenTopoDeviceName="Mic in at rear mixer (Golden)"
+RearMicInSilverWaveDeviceName="Mic in at rear panel (Silver)"
+RearMicInSilverTopoDeviceName="Mic in at rear mixer (Silver)"
+RearMicInWhiteWaveDeviceName="Mic in at rear panel (White)"
+RearMicInWhiteTopoDeviceName="Mic in at rear mixer (White)"
+FrontLineInBlackWaveDeviceName="Line in at front panel (black)"
+FrontLineInBlackTopoDeviceName="Line in at front mixer (black)"
+FrontLineInGreyWaveDeviceName="Line in at front panel (Grey)"
+FrontLineInGreyTopoDeviceName="Line in at front mixer (Grey)"
+FrontLineInBlueWaveDeviceName="Line in at front panel (Blue)"
+FrontLineInBlueTopoDeviceName="Line in at front mixer (Blue)"
+FrontLineInGreenWaveDeviceName="Line in at front panel (Green)"
+FrontLineInGreenTopoDeviceName="Line in at front mixer (Green)"
+FrontLineInRedWaveDeviceName="Line in at front panel (Red)"
+FrontLineInRedTopoDeviceName="Line in at front mixer (Red)"
+FrontLineInOrangeWaveDeviceName="Line in at front panel (Orange)"
+FrontLineInOrangeTopoDeviceName="Line in at front mixer (Orange)"
+FrontLineInYellowWaveDeviceName="Line in at front panel (Yellow)"
+FrontLineInYellowTopoDeviceName="Line in at front mixer (Yellow)"
+FrontLineInPurpleWaveDeviceName="Line in at front panel (Purple)"
+FrontLineInPurpleTopoDeviceName="Line in at front mixer (Purple)"
+FrontLineInPinkWaveDeviceName="Line in at front panel (Pink)"
+FrontLineInPinkTopoDeviceName="Line in at front mixer (Pink)"
+FrontLineInGoldenWaveDeviceName="Line in at front panel (Golden)"
+FrontLineInGoldenTopoDeviceName="Line in at front mixer (Golden)"
+FrontLineInSilverWaveDeviceName="Line in at front panel (Silver)"
+FrontLineInSilverTopoDeviceName="Line in at front mixer (Silver)"
+FrontLineInWhiteWaveDeviceName="Line in at front panel (White)"
+FrontLineInWhiteTopoDeviceName="Line in at front mixer (White)"
+FrontMicInBlackWaveDeviceName="Mic in at front panel (black)"
+FrontMicInBlackTopoDeviceName="Mic in at front mixer (black)"
+FrontMicInGreyWaveDeviceName="Mic in at front panel (Grey)"
+FrontMicInGreyTopoDeviceName="Mic in at front mixer (Grey)"
+FrontMicInBlueWaveDeviceName="Mic in at front panel (Blue)"
+FrontMicInBlueTopoDeviceName="Mic in at front mixer (Blue)"
+FrontMicInGreenWaveDeviceName="Mic in at front panel (Green)"
+FrontMicInGreenTopoDeviceName="Mic in at front mixer (Green)"
+FrontMicInRedWaveDeviceName="Mic in at front panel (Red)"
+FrontMicInRedTopoDeviceName="Mic in at front mixer (Red)"
+FrontMicInOrangeWaveDeviceName="Mic in at front panel (Orange)"
+FrontMicInOrangeTopoDeviceName="Mic in at front mixer (Orange)"
+FrontMicInYellowWaveDeviceName="Mic in at front panel (Yellow)"
+FrontMicInYellowTopoDeviceName="Mic in at front mixer (Yellow)"
+FrontMicInPurpleWaveDeviceName="Mic in at front panel (Purple)"
+FrontMicInPurpleTopoDeviceName="Mic in at front mixer (Purple)"
+FrontMicInPinkWaveDeviceName="Mic in at front panel (Pink)"
+FrontMicInPinkTopoDeviceName="Mic in at front mixer (Pink)"
+FrontMicInGoldenWaveDeviceName="Mic in at front panel (Golden)"
+FrontMicInGoldenTopoDeviceName="Mic in at front mixer (Golden)"
+FrontMicInSilverWaveDeviceName="Mic in at front panel (Silver)"
+FrontMicInSilverTopoDeviceName="Mic in at front mixer (Silver)"
+FrontMicInWhiteWaveDeviceName="Mic in at front panel (White)"
+FrontMicInWhiteTopoDeviceName="Mic in at front mixer (White)"
+FjIntrMICWaveDeviceName="Internal MIC"
+FjMic1WaveDeviceName="MIC In"
+FjLineIn1WaveDeviceName="Line In"
+RtSpdifWaveDeviceName="Realtek HDA SPDIF Out"
+RtSpdifTopoDeviceName="Realtek HDA SPDIF Out Mixer"
+RtSpdifHDMIWaveDeviceName="Realtek HDA HDMI Out"
+RtSpdifHDMITopoDeviceName="Realtek HDA HDMI Out Mixer"
+RtSpdifRCAWaveDeviceName="Realtek HDA SPDIF RCA Out"
+RtSpdifRCATopoDeviceName="Realtek HDA SPDIF RCA Out Mixer"
+RtSpdifOptWaveDeviceName="Realtek HDA SPDIF Optical Out"
+RtSpdifOptTopoDeviceName="Realtek HDA SPDIF Optical Out Mixer"
+IntrSubWooferDeviceName="Internal Subwoofer"
+
+RtStereoMixWaveDeviceName="Realtek HD Audio Stereo input"
+RtLineInWaveDeviceName="Realtek HD Audio Line input"
+RtCDInWaveDeviceName="Realtek HD Audio CD input"
+RtAuxInWaveDeviceName="Realtek HD Audio AUX input"
+RtFrontMicInWaveDeviceName="Realtek HD Audio Front Mic input"
+RtFrontLineInWaveDeviceName="Realtek HD Audio Front Line input"
+RtMicArWaveDeviceName="Realtek HD Audio Mic Array input"
+
+RtStereoMixTopoDeviceName="Realtek HD Audio Stereo input mixer"
+RtLineInTopoDeviceName="Realtek HD Audio Line input mixer"
+RtCDInTopoDeviceName="Realtek HD Audio CD input mixer"
+RtAuxInTopoDeviceName="Realtek HD Audio AUX input mixer"
+RtFrontMicInTopoDeviceName="Realtek HD Audio Front Mic input mixer"
+RtFrontLineInTopoDeviceName="Realtek HD Audio Front Line input mixer"
+RtMicArTopoDeviceName="Realtek HD Audio Mic Array mixer"
+
+;===============new framework================================
+
+KSCATEGORY_AUDIO = "{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
+KSCATEGORY_RENDER="{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_REALTIME = "{EB115FFC-10C8-4964-831D-6DCB02E6F23F}"
+
+KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_TOPOLOGY="{DDA54A40-1E4C-11D1-A050-405705C10000}"
+Proxy.CLSID ="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+
+RTLCPAPI_CLSID="{E9F1F599-7B14-4213-BF46-F992758CAB81}"
+
+RTCOMDLL_CLSID="{CC0CA09A-5B84-43F2-BE5C-9169C192565F}"
+RTCOMDLL_CLSID2="{A9C2CEBF-36DC-40A3-92E6-ED59FDD9D20D}"
+RTCOMDLL_CLSID3="{C6606CA5-2108-4CAF-8E52-1953F2DBF716}"
+
+RTKCFG_CLSID="{AF099A7C-45D2-4CE6-9327-EEAAB0395444}"
+
+; guids for rear line out
+IntAzAudGuidRearLineOutDac= "{EEF86A90-3742-4974-B8D2-5370E1C540F6}"
+IntAzAudGuidFrontHPOutDac = "{497B34AD-D67F-411c-8076-80D5B4250D67}"
+
+;; Node
+GUID.FrontMicVolume     ="{8E1FC059-D41D-417f-8103-FC592A4B32C8}"
+GUID.FrontMicMute       ="{65D86BEA-A16C-4e40-9F01-50C559D721B9}"
+GUID.UAJ1               ="{E7CD3EA7-072F-4d9f-B94A-744108964E0E}"
+GUID.UAJ2               ="{93FCBD9E-08CD-4cbd-B018-5EE0B83E7AF0}"
+GUID.SPDIF              ="{7B1A60BA-4F2D-41f6-95B1-5589F90D1ECE}"
+GUID.FrontLin           ="{757AB5CF-F4D5-42e4-9609-BF78FC6C712B}"
+GUID.Front              ="{8A74FFAE-8766-480f-AF6D-325FCF9AB324}"
+GUID.Surround           ="{B25A6526-9703-4117-9D7F-260A5DF5CC34}"
+GUID.BackSurround       ="{366E009F-CC06-495c-9959-13E7986FA760}"
+GUID.Center             ="{594AC582-B82A-4024-99E7-DC5B358E0F30}"
+GUID.LFE                ="{19532773-C332-4de7-BEDD-F888163C3094}"
+GUID.Side               ="{A5B27DE2-40F3-469e-9A4D-2CD8D5D9284D}"
+GUID.SideSurround       ="{32DD8857-C301-45b4-AB78-4D35E58402DC}"
+GUID.DigitalOut         ="{7CB80EC0-9C2D-4924-AA30-3DB3864F8CD6}"
+GUID.DigitalIn          ="{4F30E318-2B36-4b46-AF17-36A336363A12}"
+GUID.LineInHP           ="{B001EDFD-CF09-402f-8652-2E32AE568508}"
+GUID.Mic2               ="{2216D589-3C9F-4843-B4E9-933F2ABCA6D2}"
+GUID.FrontPinkInOld        ="{39E595A1-9F2B-4276-A416-8D7A1534F01C}"
+GUID.FrontGreenInOld       ="{38CB5F75-F95A-425c-8444-F1C18942DB14}"
+GUID.AudioIn            ="{D4649B85-6687-4ec4-8C65-5B7B6248C470}"
+GUID.LineOutVolume      ="{9ACC8A34-DBF9-416d-97E7-3B90FE28FBD1}"
+GUID.PcBeepVolume       ="{093C0065-6B45-4582-87D7-5A6742F6E859}"
+GUID.Surr               ="{38D6C869-D317-4dd2-B1B0-A9CAD8DD9639}"
+GUID.Surrback           ="{C6E24B42-19BF-4211-9021-C696E3284C4F}"
+GUID.MonoMic            ="{3BEFF10F-1EC8-448f-9654-73067CCE3C6A}"
+GUID.StereoMic          ="{AA23B58F-B6D2-4952-B318-A0304B7EDEB3}"
+GUID.PCBeep             ="{C57704A3-108F-4760-99BA-6369AD13345D}"
+GUID.SideHP             ="{C61C32C2-2BE7-467e-A278-B49E6746921E}"
+GUID.MicLineInVolume     ="{5B08FA7D-A8BC-42a6-A1A9-C52AB5FC47A7}"
+
+;; Nodes (localizeable)
+Node.FrontMicVolume     ="FrontMic"
+Node.FrontMicMute       ="FrontMic Mute"
+Node.UAJ1               ="FPink"
+Node.UAJ2               ="FGreen"
+Node.SPDIF              ="SPDIF"
+Node.FrontLin           ="FrontLineIn"
+Node.Front              ="Front"
+Node.Surround           ="Rear"
+Node.BackSurround       ="Back Surround"
+Node.Center             ="Center"
+Node.LFE                ="Subwoofer"
+Node.Side               ="Side"
+Node.SideSurround       ="Side Surround"
+Node.DigitalOut         ="DigitalOut"
+Node.DigitalIn          ="DigitalIn"
+Node.LineInHP           ="Line In 1 or 2"
+Node.Mic2               ="Microphone2"
+Node.FrontPinkInOld        ="FrontPink In"
+Node.FrontGreenInOld       ="FrontGreen In"
+Node.AudioIn            ="Audio In"
+Node.LineOutVolume      = "Line Out"
+Node.Surr               ="Surround"
+Node.Surrback           ="Surr-Back"
+Node.MonoMic            ="Mono Mic"
+Node.StereoMic          ="Stereo Mic"
+Node.PCBeep             ="PC Beep"
+Node.PcBeepVolume       ="PC Beep"
+Node.SideHP             ="Side/HP"
+Node.MicLineInVolume     ="Mic/Line In"
+;;New Framework
+GUID.FrontBlackIn            ="{C1857CBB-5FEA-420c-89FD-0479D7D366FB}"
+Node.FrontBlackIn            ="Front Black In"
+GUID.FrontGreyIn             ="{74B67688-4723-4ec7-A1A6-09F33FF91FDB}"
+Node.FrontGreyIn             ="Front Grey In"
+GUID.FrontBlueIn             ="{9B0DC1D3-EFC8-4364-8ACD-9172D388F487}"
+Node.FrontBlueIn             ="Front Blue In"
+GUID.FrontGreenIn            ="{BA697E2A-BC14-4c0d-9E16-3935F2F15E08}"
+Node.FrontGreenIn            ="Front Green In"
+GUID.FrontRedIn              ="{AC846E6F-5695-4cec-B694-956A2E689AF4}"
+Node.FrontRedIn              ="Front Red In"
+GUID.FrontOrangeIn           ="{C2BEEC11-5DF2-4fd9-B2D1-B5E2A1E46CB7}"
+Node.FrontOrangeIn           ="Front Orange In"
+GUID.FrontYellowIn           ="{783FFBEB-79D4-40b8-BBB4-B90479D17F1F}"
+Node.FrontYellowIn           ="Front Yellow In"
+GUID.FrontPurpleIn           ="{0D95D21C-2FF7-4a66-9526-CC39DA3E749E}"
+Node.FrontPurpleIn           ="Front Purple In"
+GUID.FrontPinkIn             ="{930A479F-0487-4baa-9672-4C7C36C0EFB2}"
+Node.FrontPinkIn             ="Front Pink In"
+GUID.FrontGoldenIn           ="{8FED8EA0-0485-408c-9963-D3AC59D34A1F}"
+Node.FrontGoldenIn           ="Front Golden In"
+GUID.FrontSilverIn           ="{FB0CBA7B-73ED-4880-9A7F-338D67AB1E71}"
+Node.FrontSilverIn           ="Front Silver In"
+GUID.FrontWhiteIn            ="{788F5056-8394-4bf5-8608-B8BC009F9B0D}"
+Node.FrontWhiteIn            ="Front White In"
+GUID.RearBlackIn             ="{16238C4C-5B07-4acf-9B1D-72056187853C}"
+Node.RearBlackIn             ="Rear Black In"
+GUID.RearGreyIn              ="{066ED7CF-26FC-4cd6-8DB0-BDA088FFC7B6}"
+Node.RearGreyIn              ="Rear Grey In"
+GUID.RearBlueIn              ="{25C9B7B5-B490-4418-B8C9-AE6A9E597D10}"
+Node.RearBlueIn              ="Rear Blue In"
+GUID.RearGreenIn             ="{D5841A06-2012-49bb-848A-4E3C9D8E83EC}"
+Node.RearGreenIn             ="Rear Green In"
+GUID.RearRedIn               ="{EEB9FF66-875E-44d0-A7BC-94F8FF8A6B2E}"
+Node.RearRedIn               ="Rear Red In"
+GUID.RearOrangeIn            ="{656A2737-0A8D-4c24-B11B-2CF3568DF248}"
+Node.RearOrangeIn            ="Rear Orange In"
+GUID.RearYellowIn            ="{EA1B271B-D19A-41ea-9141-E0FE75259300}"
+Node.RearYellowIn            ="Rear Yellow In"
+GUID.RearPurpleIn            ="{D907F836-CE83-4354-B62C-B9700CCC0366}"
+Node.RearPurpleIn            ="Rear Purple In"
+GUID.RearPinkIn              ="{CECB705D-C0D9-4c47-84F6-0A210E9DFD0B}"
+Node.RearPinkIn              ="Rear Pink In"
+GUID.RearGoldenIn            ="{98B9900B-618A-4bd3-9B62-B206E9AA5F6F}"
+Node.RearGoldenIn            ="Rear Golden In"
+GUID.RearSilverIn            ="{B8CE8B6A-A73E-494d-8218-F308670F6149}"
+Node.RearSilverIn            ="Rear Silver In"
+GUID.RearWhiteIn             ="{6D33D369-990F-444b-A4E6-57A29B8F0993}"
+Node.RearWhiteIn             ="Rear White In"
+;;======================================================================
+GUID.BlackIn            ="{2AFE8623-D5B6-49d6-898D-A16A616E571B}"
+Node.BlackIn            ="Black In"
+GUID.GreyIn             ="{8A965A50-6F78-424c-8EDD-DD904C4C7AAC}"
+Node.GreyIn             ="Grey In"
+GUID.BlueIn             ="{CD2AAD6D-761E-4b6d-A4C6-8F543A38C099}"
+Node.BlueIn             ="Blue In"
+GUID.GreenIn            ="{5153DE62-8983-4a02-8F87-2969BC2A279A}"
+Node.GreenIn            ="Green In"
+GUID.RedIn              ="{6735C4E4-C0DA-473f-8D1F-2FD185C83071}"
+Node.RedIn              ="Red In"
+GUID.OrangeIn           ="{B89B4F6B-5820-46a0-999C-A9765221DA30}"
+Node.OrangeIn           ="Orange In"
+GUID.YellowIn           ="{D7F95568-524C-4ef1-A58E-1E8BF3E4443E}"
+Node.YellowIn           ="Yellow In"
+GUID.PurpleIn           ="{A57DE92C-E432-4432-8166-E02D8C4ACDDC}"
+Node.PurpleIn           ="Purple In"
+GUID.PinkIn             ="{C0F074E4-0F6A-4b6f-BC09-5DF75D24757F}"
+Node.PinkIn             ="Pink In"
+GUID.GoldenIn           ="{72DA7D85-CCB7-4bce-BDD7-A8F0E56958B8}"
+Node.GoldenIn           ="Golden In"
+GUID.SilverIn           ="{892B95E3-FEA5-48b2-93B8-49373E588E38}"
+Node.SilverIn           ="Silver In"
+GUID.WhiteIn            ="{710CE1E3-334A-4771-A4B2-CFFF54B70DBF}"
+Node.WhiteIn            ="White In"
+GUID.AudioInput         ="{B8B35FC5-6051-44e0-A3CE-B6E000564C64}"
+Node.AudioInput         ="Audio Input"
+GUID.LineIn1            ="{1B5D1795-4D18-4057-81DA-06A5FC19F3AC}"
+GUID.LineIn2            ="{AD8341CB-C580-46e7-B593-44440EFB4DE8}"
+Node.LineIn1            ="Line In 1"
+Node.LineIn2            ="Line In 2"
+GUID.TVIn               ="{38FAF4E0-3EEF-47d7-AD52-F20AB10340C3}"
+Node.TVIn               ="TV In"
+GUID.FrontAVIn          ="{E27EEDDE-A24D-4f87-8EDE-5A58E7FF8D70}"
+Node.FrontAVIn          ="Front AV In"
+GUID.DisableAnalogCD	="{08FDB237-3D34-4c59-9511-56E178AE3E10}"
+Node.DisableAnalogCD	="Disable Analog CD"
+GUID.LimitedOutput	="{D172D8CE-0235-4b09-92EB-BDE320CFB94C}"
+Node.LimitedOutput	="Limited Output"
+
+GUID.RTSPDIFOut			="{8FD300D2-FFE1-44f3-A9EB-6F4395D73C9F}"
+Node.RTSPDIFOut			="Realtek Digital Output"
+GUID.RTHDMIOut			="{9C8E490E-877D-48fe-9EF1-AD83C91CC057}"
+Node.RTHDMIOut			="Realtek HDMI Output"
+GUID.RTSPDIFOutRCA		="{3FF4EDB6-3FF3-4b5a-B164-10FFF0367547}"
+Node.RTSPDIFOutRCA		="Realtek Digital Output(RCA)"
+GUID.RTSPDIFOutOpt		="{94FCA009-B26E-4cdc-AC75-051613EF01BB}"
+Node.RTSPDIFOutOpt		="Realtek Digital Output(Optical)"
+GUID.RTHDMIOutAC3		="{5E66F238-FF5B-49b9-B3BA-4E8F65399FCD}"
+Node.RTHDMIOutAC3		="Allow AC3/DTS/WMA output.(Reboot required)"
+
+GUID.RTSPDIFIn			="{8FD300D3-FFE1-44f3-A9EB-6F4395D73C9F}"
+Node.RTSPDIFIn			="Realtek Digital Input"
+
+GUID.RearLineOutWave3   ="{FDCD16F9-7895-4f2c-9E95-2C4F62DE500D}"
+GUID.RearLineOutWave2   ="{73EC718D-EEBD-4305-BD56-E50807C4B3E2}"
+GUID.SecondaryLineOutWave ="{D0D252D2-0D9A-47f7-B44B-3FB73C31F6FA}"
+
+GUID.RearLineInBlackWave  ="{29FAD4B6-42C6-46fe-85D2-772B3F38E42B}"
+GUID.RearLineInGreyWave   ="{5D3113BA-46E3-4e48-BF97-5E1486E5C845}"
+GUID.RearLineInBlueWave   ="{6EDFC84F-270B-43f4-A4DA-F4FA32BE0023}"
+GUID.RearLineInGreenWave  ="{4C28B434-D501-4131-A626-D667F954A279}"
+GUID.RearLineInRedWave    ="{F9C764D1-0A97-4216-BD80-57D11C86BF21}"
+GUID.RearLineInOrangeWave ="{FA3C462A-11E7-4cfe-9C20-4208E87EE2F1}"
+GUID.RearLineInYellowWave ="{242792D9-E16F-4e09-9F4A-FD5C910230F2}"
+GUID.RearLineInPurpleWave ="{64593A8D-8942-415f-83F7-495232599984}"
+GUID.RearLineInPinkWave   ="{3FAF44E8-FC47-4921-AA2A-CB511CD5A340}"
+GUID.RearLineInGoldenWave ="{A18CE952-B042-42d4-AE98-6AD616604407}"
+GUID.RearLineInSilverWave ="{9ABF55D5-4319-4e1e-A1E6-D720FB153A73}"
+GUID.RearLineInWhiteWave  ="{39514CCF-B424-454d-A2DD-7CCCC41902CC}"
+
+GUID.RearMicInBlackWave   ="{963BB9C2-C99A-4278-8C85-0A53FAD66593}"
+GUID.RearMicInGreyWave    ="{750D77D8-DD18-45fa-813B-31AAF37D8816}"
+GUID.RearMicInBlueWave    ="{D09B4160-D155-4409-814C-7BDFD3DCC115}"
+GUID.RearMicInGreenWave   ="{E63A12AB-7A2A-40bf-B5F5-176F3E17A75B}"
+GUID.RearMicInRedWave     ="{397BCD99-443F-4f0a-91F7-8CF33B73E7B5}"
+GUID.RearMicInOrangeWave  ="{DF15C716-2E97-498c-953B-71B1A6E4BD03}"
+GUID.RearMicInYellowWave  ="{A80B8021-3A94-4cba-A31F-A30285215AEB}"
+GUID.RearMicInPurpleWave  ="{ADA7C584-EC2C-4bad-9491-38EA3EDC364E}"
+GUID.RearMicInPinkWave    ="{9767F352-1066-4606-B843-EB3DFF14AE48}"
+GUID.RearMicInGoldenWave  ="{0BF09DFA-1DC9-45d6-9E68-B62FCE22F574}"
+GUID.RearMicInSilverWave  ="{D88BF175-E66E-41f6-91A0-1AE5BD7FB550}"
+GUID.RearMicInWhiteWave   ="{C949BDB2-0F63-411d-9A1C-FF2C68137986}"
+
+GUID.FrontLineInBlackWave ="{E922348B-F538-48f2-8A46-03610CA3C815}"
+GUID.FrontLineInGreyWave  ="{F84AD65F-8888-4076-BA55-15FA42C66D43}"
+GUID.FrontLineInBlueWave  ="{EEA8F0C2-15F2-47ba-9939-8B68B99B5A47}"
+GUID.FrontLineInGreenWave ="{D9CFB32D-C42A-446d-8D3D-BE3ACF1FE392}"
+GUID.FrontLineInRedWave   ="{37E6001D-7297-439e-BB83-EAAA48F54DE1}"
+GUID.FrontLineInOrangeWave="{0FBC7B0C-368C-468a-ADCA-A9C1DFD67B01}"
+GUID.FrontLineInYellowWave="{C1601920-82B6-411d-B1EB-F1B8A9DD2DCD}"
+GUID.FrontLineInPurpleWave="{F32BA73A-930B-4596-A47F-A9339FB7E24C}"
+GUID.FrontLineInPinkWave  ="{9EC96236-A9B3-45b3-8E19-C4F424399457}"
+GUID.FrontLineInGoldenWave="{9F31B40E-E3D2-4683-8CD8-DD29972CBD6A}"
+GUID.FrontLineInSilverWave="{9B706B3E-F3FE-4d4b-B410-468D3E083D98}"
+GUID.FrontLineInWhiteWave ="{6E56DB59-D4D1-4fa8-9575-AE39763E14C7}"
+
+GUID.FrontMicInBlackWave  ="{063C7B0E-7D63-45ea-BD17-BD2383C9DA48}"
+GUID.FrontMicInGreyWave   ="{F6810363-D355-4c27-B60C-DB10B4A6DB1F}"
+GUID.FrontMicInBlueWave   ="{4872BA3F-61F9-495f-97C1-0FC6D149B0D8}"
+GUID.FrontMicInGreenWave  ="{564C8501-3C26-4051-B3DF-80157C565158}"
+GUID.FrontMicInRedWave    ="{FA5703D8-BC38-4759-BDDB-53A0A9977D86}"
+GUID.FrontMicInOrangeWave ="{2F055121-7B49-4389-AE10-6D8FDB6F9E15}"
+GUID.FrontMicInYellowWave ="{67DC169B-1C82-4fb7-B566-CC917F303CD7}"
+GUID.FrontMicInPurpleWave ="{8DE7D024-880C-4a50-BFBA-6118FA703728}"
+GUID.FrontMicInPinkWave   ="{D3D9A153-5556-40a7-8C1B-E476344A524A}"
+GUID.FrontMicInGoldenWave ="{4F8E73AF-13D0-4ab4-BD05-DA13475B6D99}"
+GUID.FrontMicInSilverWave ="{9B72B3D3-32F5-4d3b-868E-C506824ED45A}"
+GUID.FrontMicInWhiteWave  ="{53824709-A7CA-4432-9423-D47A01938B83}"
+
+GUID.FjIntrMICWave        ="{703EFE0E-C7D3-4506-96BF-E2D28E2ECEEE}"
+GUID.FjMic1Wave           ="{703EFE0D-C7D3-4506-96BF-E2D28E2ECEEE}"
+GUID.FjLineIn1Wave        ="{703EFE0C-C7D3-4506-96BF-E2D28E2ECEEE}"
+
+GUID.DigitalMic           ="{7DF69A32-C356-4f5a-A3BB-757B8B5177D4}"
+Node.DigitalMic           ="Digital Mic"
+
+GUID.FMRadio              ="{93ED2CB4-7D0D-4c1c-8A91-5AE457E066AD}"
+Node.FMRadio              ="FM radio"
+GUID.2ndMic              ="{8D6EF1FE-9E90-43eb-8E0D-7411B70AB6AC}"
+Node.2ndMic              ="2nd Mic"
+GUID.BTBPOut             ="{8D6EF1FE-9E91-43eb-8E0D-7411B70AB6AC}"
+Node.BTBPOut             ="Bluetooth bypass output"
+GUID.BTBPIn              ="{8D6EF1FE-9E92-43eb-8E0D-7411B70AB6AC}"
+Node.BTBPIn              ="Bluetooth bypass input"
+
+GUID.IntrSubWoofer        ="{CE407554-302B-44a8-9455-BB933694A1A5}"
+
+RTDP_CID1_PATH="CLSID\{3739576F-F27B-4857-9E3E-8BAAA2A030B9}"
+RTDP_CID2_PATH="CLSID\{BBA39DEF-B0D8-4D50-9133-85D5B1AC7971}"
+
+[FMAPO.AddReg]
+HKLM,Software\Fortemedia
+HKLM,Software\Fortemedia\RealtekEffects
+HKLM,Software\Fortemedia\VoiceTracking,"{3F21D705-F23F-43C2-8055-73FB6412FA23},0",0x00010001,0x00000000
+
+[FMAPO.AddReg.Security]
+"G:BUD:(A;CIOI;KA;;;BU)"
+
+[FMAPO.DelReg]
+HKLM,Software\Fortemedia\RealtekEffects
+HKLM,Software\Fortemedia\VoiceTracking
+HKLM,Software\Fortemedia

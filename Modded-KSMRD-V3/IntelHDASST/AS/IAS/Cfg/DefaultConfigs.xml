@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AudioServiceDefaultConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ConfigurationEntry ConfigType="PreProcessing" Stage="ThirdStage" ChannelsCount="1">aecs_asr_str_def_1ch_in.tf</ConfigurationEntry>
+  <ConfigurationEntry ConfigType="PreProcessing" Stage="ThirdStage" ChannelsCount="2">aecs_asr_str_def_2ch_in.tf</ConfigurationEntry>
+  <ConfigurationEntry ConfigType="PreProcessing" Stage="ThirdStage" ChannelsCount="4">aecs_asr_str_def_4ch_in.tf</ConfigurationEntry>
+  <ConfigurationEntry ConfigType="PreProcessing" Stage="SecondStage" ChannelsCount="1">aecs_wov_str_def_1ch_in.tf</ConfigurationEntry>
+  <ConfigurationEntry ConfigType="PreProcessing" Stage="SecondStage" ChannelsCount="2">aecs_wov_str_def_2ch_in.tf</ConfigurationEntry>
+  <ConfigurationEntry ConfigType="PreProcessing" Stage="SecondStage" ChannelsCount="4">aecs_wov_str_def_4ch_in.tf</ConfigurationEntry>
+</AudioServiceDefaultConfiguration>

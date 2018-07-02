@@ -1,0 +1,58 @@
+﻿Version: 1.0.10.208
+
+The installation path is C:\Windows\System32\Intel\IntelHwKws\\
+GUID for enabling etl logging: {9FA3E5AE-ECC4-4041-BEC3-7023B8445F5E}
+
+Changes:
+* 2 October 2017:
+	- Adding IntelHwKwsImpl.dll.
+* 28 September 2017:
+	- Adding workaround for DMIC driver issue.
+* 27 September 2017:
+	- Removing "Spanish - Spain (Traditional Sort)" as "Spanish - Spain (Modern Sort)" is already supported.
+* 25 September 2017:
+	- By default logging to file is disabled.
+* 10 August 2017:
+	- paths to artifacts shortened, dll renamed to IntelHwKws.dll
+* 2 June 2017:
+	- Removed IntelKeywordDetectorAdapterProvider.dll.
+* 20 April 2017:
+    - All components are now UWP compliant.
+    - Minimal required operating system is now Windows 10.
+* 6 April 2017:
+    - OEM DLL no longer logs to the Windows Registry. It uses etl instead. The component log GUID is: {9FA3E5AE-ECC4-4041-BEC3-7023B8445F5E}.
+* 11 July 2016:
+    - added support for new languages:
+        pt-BR: Portuguese - Brazil
+* 13 May 2016:
+    - IntelWoV binary updated to version 1.2.299.0
+    - fixes in logging
+    - added support for new languages:
+        es-MX: Spanish - Mexico,
+        fr-CA: French - Canada.
+        es-ES: Spanish - Spain (Modern Sort)
+* 26 Feb 2016:
+    - removed Windows Registry entries: MsftVADState and WOVState
+* 27 Nov 2015:
+    - IntelWoV binary updated to version 1.2.227.0
+    - platform constraints are now read from a separate file
+* 18 Nov 2015:
+    - IntelWoV binary updated to version 1.1.214.0
+* 10 Nov 2015:
+    - IntelWoV binary updated to version 1.1.208.0
+    - added support for new languages:
+        ja-JP: Japanese - Japan,
+        en-IN: English - India,
+        en-CA: English - Canada,
+        en-AU: English - Australia,
+        en-UK: English - United Kingdom.
+
+* 22 Sep 2015:
+    - IntelWov binary updated to version 1.0.165
+    - added support for new languages:
+        zh-CN: Chinese - People's Republic of China,
+        fr-FR: French - France,
+        it-IT: Italian - Italy,
+        de-DE: German - Germany,
+        en-US: English - United States,
+        es-ES: Spanish - Spain.
