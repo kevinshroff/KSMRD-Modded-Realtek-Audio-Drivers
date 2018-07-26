@@ -1,4 +1,4 @@
-﻿Version: 1.0.10.208
+﻿Version: 1.0.0.201
 
 The installation path is C:\Windows\System32\Intel\IntelHwKws\\
 GUID for enabling etl logging: {9FA3E5AE-ECC4-4041-BEC3-7023B8445F5E}
