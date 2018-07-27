@@ -3,4 +3,3 @@ KSMRD Modded Realtek drivers. Disables vendor post-processing (i.e. Waves MaxxAu
 
 As of 7/27/18 KSMRD v3.0.1 pre-release, driver has been tested and verified to work on the following devices:
 - XPS 15 9560
-- XPS 13 9360
