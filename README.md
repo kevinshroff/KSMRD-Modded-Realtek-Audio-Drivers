@@ -1,6 +1,6 @@
 # Kevin Shroff's Modded Realtek Audio Drivers (KSMRD)
 
-KSMRD release notes:
+#### KSMRD release notes:
 - v3.0.2: added driver level support for XPS 13 9350 (needs testing)
 
 As of KSMRD v3.0.2 pre-release, driver supports the following hardware:
@@ -12,19 +12,26 @@ As of KSMRD v3.0.2 pre-release, driver supports the following hardware:
 - XPS 13 9350
 - probably other recent Dell Windows devices
 
-This is the latest version of my KSMRD driver, based on the latest Realtek Audio drivers released by Dell. Currently has been verified to work on XPS 15 9560 and some other Dell laptops - support for other devices can be requested to be added OR verified that they are supported by the driver by doing the following:
-1) Open an issue here on GitHub
-2) Go to Device Manager - Sound, video and game controllers, and right click Realtek Audio.
-3) Click properties, then click on tab "Details", and then under the Property drop-down list select Hardware IDs and copy and paste the second line to the GitHub issue, asking me to verify or add support for that device.
+## Advantages of KSMRD:
+1) Completely flat & clean audio experience: no post-processing
 
-Installation instructions: 
+2) No extra, unalterable Waves MaxxAudio bloatware
 
-Follow all instructions EXACTLY otherwise you WILL face problems.
+3) Reduced power consumption compared to stock Dell Realtek Audio drivers - as there is no post-processing constantly going on with all audio, this may lead to increased battery life
 
-1) Use the [same instructions as for the old KSMRD driver](https://www.reddit.com/r/Dell/comments/6nt3ch/kevin_shroffs_modded_realtek_audio_drivers_for/), (Note: in the KSMRD install instructions step 12, disable "Realtek HD Audio Universal Service" and "Waves MaxxAudio Service Application" in Task Manager's startup tab - the services have been renamed) 
+4) No stupid GUI popups for Input/Output switcher (The prompt "What did you just plugin: Headphone/Speaker/Microphone" does not popup anymore)
 
-2) **AND** also do the following registry tweak (after driver installation): 
-- Change the values of ALL instances of ConservationIdleTime and PerformanceIdleTime to FF FF FF under HKEY_LOCAL_MACHINE\SYSTEM\ (use CTRL+F to search for ConservationIdleTime, etc.) within the registry.
+5) Can prevent laptop speaker damage - some people had concerns that the Waves MaxxAudio software was pushing the XPS laptop speakers too hard, causing early speaker damage. As Waves MaxxAudio and its sound effects are removed, this concern should not be an issue with this driver.
 
+#### About 
+This modded Realtek Audio driver disables the heavy post-processing sound effects from the stock Dell driver to allow for a clean, neutral, and flat audio experience. This is achieved by disabling Waves MaxxAudio throughout the driver, thus leaving intact only the essential core Realtek audio software.
+
+Waves Maxxaudio is immutable bloatware that is shipped with all modern Dell XPS systems. It is inherently flawed as it heavily manipulates any and all audio output, making it impossible to accurately produce or listen to music, and overall degrades the entire aural experience on any machine that it is present on.
+
+As Waves MaxxAudio is part of the Audio driver of Dell XPS systems, it was otherwise impossible to disable just MaxxAudio and its processing effects - even when MaxxAudio is turned off in its application's GUI, post-processing STILL occurs on any and all audio output. The only other alternative was to use the Microsoft default Windows High Definition Audio driver, but this driver has many problems on Dell XPS machines - it causes random loud pops and crackles, especially during usage with ASIO software (in my experience).
+
+My modded driver solves these problems as it uses the original Dell driver as a base (which has no pop/crackle problems), and additionally disables all post-processing and provides flat, clean audio playback just like the Windows High Definition Audio driver, but without its bugs. This driver also has some additional advantages:
+
+[DOWNLOADS & INSTALL INSTRUCTIONS](https://github.com/kevinshroff/KSMRD-Modded-Realtek-Audio-Drivers/releases "DOWNLOADS")
 ---
 > Developed by Kevin Shroff | [Donate with Paypal](http://www.paypal.me/kevinshroff "donate") | [My YouTube channel](https://www.youtube.com/c/KevinShroff "YouTube") | [My Soundcloud](https://soundcloud.com/nivekfforhs "Soundcloud")
