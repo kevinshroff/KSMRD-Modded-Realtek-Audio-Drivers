@@ -26,4 +26,5 @@ Follow all instructions EXACTLY otherwise you WILL face problems.
 2) **AND** also do the following registry tweak (after driver installation): 
 - Change the values of ALL instances of ConservationIdleTime and PerformanceIdleTime to FF FF FF under HKEY_LOCAL_MACHINE\SYSTEM\ (use CTRL+F to search for ConservationIdleTime, etc.) within the registry.
 
-> Developed by Kevin Shroff
+---
+> Developed by Kevin Shroff | [Donate with Paypal](http://www.paypal.me/kevinshroff "donate") | [My YouTube channel](https://www.youtube.com/c/KevinShroff "YouTube") | [My Soundcloud](https://soundcloud.com/nivekfforhs "Soundcloud")
