@@ -30,7 +30,7 @@ Waves Maxxaudio is immutable bloatware that is shipped with all modern Dell XPS 
 
 As Waves MaxxAudio is part of the Audio driver of Dell XPS systems, it was otherwise impossible to disable just MaxxAudio and its processing effects - even when MaxxAudio is turned off in its application's GUI, post-processing STILL occurs on any and all audio output. The only other alternative was to use the Microsoft default Windows High Definition Audio driver, but this driver has many problems on Dell XPS machines - it causes random loud pops and crackles, especially during usage with ASIO software (in my experience).
 
-My modded driver solves these problems as it uses the original Dell driver as a base (which has no pop/crackle problems), and additionally disables all post-processing and provides flat, clean audio playback just like the Windows High Definition Audio driver, but without its bugs. This driver also has some additional advantages:
+My modded driver solves these problems as it disables all post-processing and provides flat, clean audio playback just like the Windows High Definition Audio driver, but without its bugs.
 
 [DOWNLOADS & INSTALL INSTRUCTIONS](https://github.com/kevinshroff/KSMRD-Modded-Realtek-Audio-Drivers/releases "DOWNLOADS")
 ---
