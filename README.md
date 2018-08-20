@@ -10,6 +10,7 @@ As of KSMRD v3.0.2 pre-release, driver supports the following hardware:
 - XPS 13 9370 (probably)
 - XPS 13 9360
 - XPS 13 9350
+- probably other recent Dell Windows devices
 
 This is the latest version of my KSMRD driver, based on the latest Realtek Audio drivers released by Dell. Currently has been verified to work on XPS 15 9560 and some other Dell laptops - support for other devices can be requested to be added OR verified that they are supported by the driver by doing the following:
 1) Open an issue here on GitHub
