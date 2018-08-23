@@ -34,4 +34,4 @@ My modded driver solves these problems as it disables all post-processing and pr
 
 [DOWNLOADS & INSTALL INSTRUCTIONS](https://github.com/kevinshroff/KSMRD-Modded-Realtek-Audio-Drivers/releases "DOWNLOADS")
 ---
-> Developed by Kevin Shroff | [Donate with Paypal](http://www.paypal.me/kevinshroff "donate") | [My YouTube channel](https://www.youtube.com/c/KevinShroff "YouTube") | [My Soundcloud](https://soundcloud.com/nivekfforhs "Soundcloud")
+> Developed by Kevin Shroff | [Donate with Paypal](http://www.paypal.me/kevinshroff "donate") | Would greatly appreciate if you could support my driver work by following my social media: [My YouTube channel](https://www.youtube.com/c/KevinShroff "YouTube") | [My Soundcloud](https://soundcloud.com/nivekfforhs "Soundcloud")
