@@ -1,7 +1,7 @@
 # Kevin Shroff's Modded Realtek Audio Drivers (KSMRD)
 
 #### KSMRD release notes:
-- v3.0.2: added driver level support for XPS 13 9350 (needs testing)
+- v3.0.2: added driver level support for XPS 13 9350
 
 As of KSMRD v3.0.2 pre-release, driver supports the following hardware:
 - XPS 15 9570
