@@ -7,7 +7,7 @@ As of KSMRD v3.0.2 pre-release, driver supports the following hardware:
 - XPS 15 9570
 - XPS 15 9560
 - XPS 15 9550 (probably)
-- XPS 13 9370 (probably)
+- XPS 13 9370
 - XPS 13 9360
 - XPS 13 9350
 - probably other recent Dell Windows devices
