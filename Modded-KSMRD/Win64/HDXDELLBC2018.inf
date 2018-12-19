@@ -136,7 +136,7 @@ AddReg=HdAudSecurity.AddReg
 ;;AddService = IntcAzAudAddService, 0x00000002, IntcAzAudServiceInstall
 
 [IntcAzAudServiceInstall]
-;; DisplayName   = "Service for Realtek HD Audio (WDM)"
+;;; DisplayName   = "Service for Realtek HD Audio (WDM)"
 ;; ServiceType   = 1
 ;; StartType     = 3
 ;; ErrorControl  = 1
