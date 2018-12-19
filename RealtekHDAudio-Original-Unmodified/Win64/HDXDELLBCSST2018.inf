@@ -10,7 +10,7 @@ ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
 Provider=%OrganizationName%
 DriverPackageType=PlugAndPlay
 DriverPackageDisplayName=%PackageDisplayName%
-DriverVer=04/19/2018, 6.0.1.8428
+DriverVer=05/29/2018, 6.0.1.8454
 
 [SourceDisksNames]
 222="Realtek HD Audio Installation Disk",,,
@@ -71,7 +71,6 @@ DRMLevel=1300
 "Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0255&SUBSYS_10280739
 "Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0255&SUBSYS_1028073A
 "Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0255&SUBSYS_102808B1
-"Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_102808BB
 "Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0255&SUBSYS_102807F0
 "Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0255&SUBSYS_102807F1
 "Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0255&SUBSYS_102807F2
@@ -117,6 +116,17 @@ DRMLevel=1300
 "Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_10280879
 "Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_1028087A
 "Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_1028087B
+"Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_102808BB
+
+"Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_102808E0
+"Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_102808E1
+"Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_102808E2
+"Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0236&SUBSYS_102808B8
+"Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0236&SUBSYS_102808B9
+"Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0236&SUBSYS_102808BA
+"Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_102808B6
+"Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_102808B7
+"Realtek Audio"      = IntcAzAudModel, INTELAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_102808E9
 
 
 [IntcAzAudModelCopyFiles]
