@@ -157,14 +157,14 @@ HKR,,AssociatedFilters,,"wdmaud,swmidi,redbook"
 HKR,,Driver,,RTKVHD64.sys
 HKR,Settings,COINSTALLER_NEED_ADD_CPL_RUNKEY,0x00010001,1
 ;;HKR,Settings,ForceSST,0x00010001,1
-HKR,Settings,DELLBC,0x00010001,1
+;;HKR,Settings,DELLBC,0x00010001,1
 HKR,Settings,DECOUPLE,0x00010001,1
 
 HKR,PowerSettings,ConservationIdleTime,1,00,00,00,0     ; Not doing idle power management when on battery
 HKR,PowerSettings,PerformanceIdleTime,1,00,00,00,00     ; Not doing idle power management when on AC power
 HKR,PowerSettings,IdlePowerState,1,03,00,00,00          ; go to D3 for idle power management
 
-HKR,Settings,EQ_AGC_CONTROL,0x00010001,0
+;;HKR,Settings,EQ_AGC_CONTROL,0x00010001,0
 
 HKR,Drivers,SubClasses,,"wave,midi,mixer,aux"
 
@@ -764,7 +764,7 @@ MediaCategories="SYSTEM\CurrentControlSet\Control\MediaCategories"
 ;;
 ;; PropertyKey GUIDS
 ;;
-PKEY_AudioEndpoint_Supports_EventDriven_Mode = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},7"
+;;PKEY_AudioEndpoint_Supports_EventDriven_Mode = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},7"
 
 ;;
 ;; PKEY_AudioEngine_OEMFormat:  Specifies the default format that is used for rendering/capturing.
