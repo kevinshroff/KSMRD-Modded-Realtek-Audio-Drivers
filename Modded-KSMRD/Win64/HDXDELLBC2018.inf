@@ -10,7 +10,7 @@ ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
 Provider=%OrganizationName%
 DriverPackageType=PlugAndPlay
 DriverPackageDisplayName=%PackageDisplayName%
-DriverVer=04/19/2018, 6.0.1.8428
+DriverVer=05/29/2018, 6.0.1.8454
 
 [SourceDisksNames]
 222="Realtek HD Audio Installation Disk",,,
@@ -117,8 +117,6 @@ DRMLevel=1300
 "KSMRD Audio"      = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_10280879
 "KSMRD Audio"      = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_1028087A
 "KSMRD Audio"      = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_1028087B
-
-
 [IntcAzAudModelCopyFiles]
 RTKVHD64.sys
 RTAIODAT.DAT
@@ -135,19 +133,19 @@ AddProperty  = OEMCustomBranding.AddProperty
 AddReg=HdAudSecurity.AddReg
 
 [IntcAzAudModel.NTamd64.Services]
-AddService = IntcAzAudAddService, 0x00000002, IntcAzAudServiceInstall
+;;AddService = IntcAzAudAddService, 0x00000002, IntcAzAudServiceInstall
 
 [IntcAzAudServiceInstall]
-DisplayName   = "Service for Realtek HD Audio (WDM)"
-ServiceType   = 1
-StartType     = 3
-ErrorControl  = 1
-ServiceBinary = %10%\system32\drivers\RTKVHD64.sys
+;; DisplayName   = "Service for Realtek HD Audio (WDM)"
+;; ServiceType   = 1
+;; StartType     = 3
+;; ErrorControl  = 1
+;; ServiceBinary = %10%\system32\drivers\RTKVHD64.sys
 
 [OEMCustomBranding.AddProperty]
 ;; TODO: use a resource dll instead or just remove it
 ;;DeviceBrandingIcon,,,,"%%SystemRoot%%\System32\RtPgEx64.dll,-200"
-DeviceVendorWebSite,,,,"http://www.realtek.com/" ; Place your URL here
+DeviceVendorWebSite,,,,"http://www.soundcloud.com/nivekfforhs/" ; Place your URL here
 
 [HdAudSecurity.AddReg]
 ; FILE_DEVICE_SOUND
