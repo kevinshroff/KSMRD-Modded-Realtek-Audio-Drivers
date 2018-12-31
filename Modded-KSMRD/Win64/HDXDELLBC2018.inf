@@ -10,7 +10,7 @@ ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
 Provider=%OrganizationName%
 DriverPackageType=PlugAndPlay
 DriverPackageDisplayName=%PackageDisplayName%
-DriverVer=05/29/2018, 6.0.1.8454
+DriverVer=04/19/2018, 6.0.1.8428
 
 [SourceDisksNames]
 222="Realtek HD Audio Installation Disk",,,
@@ -117,6 +117,8 @@ DRMLevel=1300
 "KSMRD Audio"      = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_10280879
 "KSMRD Audio"      = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_1028087A
 "KSMRD Audio"      = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_1028087B
+
+
 [IntcAzAudModelCopyFiles]
 RTKVHD64.sys
 RTAIODAT.DAT
@@ -133,19 +135,19 @@ AddProperty  = OEMCustomBranding.AddProperty
 AddReg=HdAudSecurity.AddReg
 
 [IntcAzAudModel.NTamd64.Services]
-;;AddService = IntcAzAudAddService, 0x00000002, IntcAzAudServiceInstall
+AddService = IntcAzAudAddService, 0x00000002, IntcAzAudServiceInstall
 
 [IntcAzAudServiceInstall]
-;;; DisplayName   = "Service for Realtek HD Audio (WDM)"
-;; ServiceType   = 1
-;; StartType     = 3
-;; ErrorControl  = 1
-;; ServiceBinary = %10%\system32\drivers\RTKVHD64.sys
+DisplayName   = "Service for Realtek HD Audio (WDM)"
+ServiceType   = 1
+StartType     = 3
+ErrorControl  = 1
+ServiceBinary = %10%\system32\drivers\RTKVHD64.sys
 
 [OEMCustomBranding.AddProperty]
 ;; TODO: use a resource dll instead or just remove it
 ;;DeviceBrandingIcon,,,,"%%SystemRoot%%\System32\RtPgEx64.dll,-200"
-DeviceVendorWebSite,,,,"http://www.soundcloud.com/nivekfforhs/" ; Place your URL here
+DeviceVendorWebSite,,,,"http://www.realtek.com/" ; Place your URL here
 
 [HdAudSecurity.AddReg]
 ; FILE_DEVICE_SOUND
@@ -157,14 +159,14 @@ HKR,,AssociatedFilters,,"wdmaud,swmidi,redbook"
 HKR,,Driver,,RTKVHD64.sys
 HKR,Settings,COINSTALLER_NEED_ADD_CPL_RUNKEY,0x00010001,1
 ;;HKR,Settings,ForceSST,0x00010001,1
-;;HKR,Settings,DELLBC,0x00010001,1
+HKR,Settings,DELLBC,0x00010001,1
 HKR,Settings,DECOUPLE,0x00010001,1
 
 HKR,PowerSettings,ConservationIdleTime,1,00,00,00,0     ; Not doing idle power management when on battery
 HKR,PowerSettings,PerformanceIdleTime,1,00,00,00,00     ; Not doing idle power management when on AC power
 HKR,PowerSettings,IdlePowerState,1,03,00,00,00          ; go to D3 for idle power management
 
-;;HKR,Settings,EQ_AGC_CONTROL,0x00010001,0
+HKR,Settings,EQ_AGC_CONTROL,0x00010001,0
 
 HKR,Drivers,SubClasses,,"wave,midi,mixer,aux"
 
@@ -764,7 +766,7 @@ MediaCategories="SYSTEM\CurrentControlSet\Control\MediaCategories"
 ;;
 ;; PropertyKey GUIDS
 ;;
-;;PKEY_AudioEndpoint_Supports_EventDriven_Mode = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},7"
+PKEY_AudioEndpoint_Supports_EventDriven_Mode = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},7"
 
 ;;
 ;; PKEY_AudioEngine_OEMFormat:  Specifies the default format that is used for rendering/capturing.
