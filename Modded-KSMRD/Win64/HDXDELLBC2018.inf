@@ -162,11 +162,11 @@ HKR,Settings,COINSTALLER_NEED_ADD_CPL_RUNKEY,0x00010001,1
 HKR,Settings,DELLBC,0x00010001,1
 HKR,Settings,DECOUPLE,0x00010001,1
 
-HKR,PowerSettings,ConservationIdleTime,1,00,00,00,0     ; Not doing idle power management when on battery
+HKR,PowerSettings,ConservationIdleTime,1,00,00,00,00     ; Not doing idle power management when on battery
 HKR,PowerSettings,PerformanceIdleTime,1,00,00,00,00     ; Not doing idle power management when on AC power
-HKR,PowerSettings,IdlePowerState,1,03,00,00,00          ; go to D3 for idle power management
+HKR,PowerSettings,IdlePowerState,1,00,00,00,00           ; go to D3 for idle power management
 
-HKR,Settings,EQ_AGC_CONTROL,0x00010001,0
+;;HKR,Settings,EQ_AGC_CONTROL,0x00010001,0
 
 HKR,Drivers,SubClasses,,"wave,midi,mixer,aux"
 
@@ -342,20 +342,20 @@ HKR,InterfaceSetting\FriendlyName,DigitalMICTopo,,%DigitalMICTopoDeviceName%
 HKR,InterfaceSetting\FriendlyName,RtMicArWave,,%RtMicArWaveDeviceName%
 HKR,InterfaceSetting\FriendlyName,RtMicArTopo,,%RtMicArTopoDeviceName%
 
-HKR,InterfaceSetting,RearLineOutTopo,0x10000,"OEMSettingsOverride"
-HKR,InterfaceSetting,PrimaryLineOutTopo,0x10000,"OEMSettingsOverride"
-HKR,InterfaceSetting,SingleLineOutTopo,0x10000,"OEMSettingsOverride"
-HKR,InterfaceSetting,SecondaryLineOutTopo,0x10000,"OEMSettingsOverride"
-HKR,InterfaceSetting,FrontPanelHeadphoneTopo,0x10000,"OEMSettingsOverride"
-HKR,InterfaceSetting,RtSpdifTopo,0x10000,"OEMSPDIFSettingsOverride"
-HKR,InterfaceSetting,RtSpdifHDMITopo,0x10000,"OEMSPDIFSettingsOverride"
-HKR,InterfaceSetting,RtSpdifRCATopo,0x10000,"OEMSPDIFSettingsOverride"
-HKR,InterfaceSetting,RtSpdifOptTopo,0x10000,"OEMSPDIFSettingsOverride"
+;;HKR,InterfaceSetting,RearLineOutTopo,0x10000,"OEMSettingsOverride"
+;;HKR,InterfaceSetting,PrimaryLineOutTopo,0x10000,"OEMSettingsOverride"
+;;HKR,InterfaceSetting,SingleLineOutTopo,0x10000,"OEMSettingsOverride"
+;;HKR,InterfaceSetting,SecondaryLineOutTopo,0x10000,"OEMSettingsOverride"
+;;HKR,InterfaceSetting,FrontPanelHeadphoneTopo,0x10000,"OEMSettingsOverride"
+;;HKR,InterfaceSetting,RtSpdifTopo,0x10000,"OEMSPDIFSettingsOverride"
+;;HKR,InterfaceSetting,RtSpdifHDMITopo,0x10000,"OEMSPDIFSettingsOverride"
+;;HKR,InterfaceSetting,RtSpdifRCATopo,0x10000,"OEMSPDIFSettingsOverride"
+;;HKR,InterfaceSetting,RtSpdifOptTopo,0x10000,"OEMSPDIFSettingsOverride"
 HKR,InterfaceSetting,BTBPOutTopo,0x10000,"RTHDAProperties"
-HKR,InterfaceSetting,RearLineOutTopoSST,0x10000,"OEMSettingsOverride"
-HKR,InterfaceSetting,RearLineOutTopoSST2,0x10000,"OEMSettingsOverride"
-HKR,InterfaceSetting,RearLineOutTopoSST3,0x10000,"OEMSettingsOverride"
-HKR,InterfaceSetting,RearLineOutTopoDock,0x10000,"OEMSettingsOverride"
+;;HKR,InterfaceSetting,RearLineOutTopoSST,0x10000,"OEMSettingsOverride"
+;;HKR,InterfaceSetting,RearLineOutTopoSST2,0x10000,"OEMSettingsOverride"
+;;HKR,InterfaceSetting,RearLineOutTopoSST3,0x10000,"OEMSettingsOverride"
+;;HKR,InterfaceSetting,RearLineOutTopoDock,0x10000,"OEMSettingsOverride"
 
 HKR,InterfaceSetting,SingleLineInTopo,0x10000,"RTHDAProperties"
 HKR,InterfaceSetting,DigitalInputTopo,0x10000,"RTHDAProperties"
@@ -391,35 +391,35 @@ HKR,InterfaceSetting,RtMicArTopo,0x10000,"OEMMicInSettingsOverride"
 HKR,InterfaceSetting,RtMicInSSTTopo,0x10000,"OEMMicInSettingsOverride"
 HKR,InterfaceSetting,RtStereoMixTopo,0x10000,"RTHDAProperties"
 
-HKR,InterfaceSetting\OEMSettingsOverride\EP\0, "RtEPAssociation",,%KSNODETYPE_ANY%
-HKR,InterfaceSetting\OEMSettingsOverride\EP\0, %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,DC,05,00,08,00,20,00,16,00,18,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
-HKR,InterfaceSetting\OEMSettingsOverride\EP\0, %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
-HKR,InterfaceSetting\RTHDAProperties\EP\0,"RtEPAssociation",,%KSNODETYPE_ANY%
-HKR,InterfaceSetting\RTHDAProperties\EP\0,%PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
-HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, "RtEPAssociation",,%KSNODETYPE_ANY%
-HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,EE,02,00,04,00,10,00,16,00,10,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
-HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
-HKR,InterfaceSetting\SysRecFx\EP\0,"RtEPAssociation",,%KSNODETYPE_ANY%
-HKR,InterfaceSetting\SysRecFx\EP\0,%PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
-HKR,InterfaceSetting\OEMMicInSettingsOverride\EP\0, "RtEPAssociation",,%KSNODETYPE_ANY%
-HKR,InterfaceSetting\OEMMicInSettingsOverride\EP\0, %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,EE,02,00,04,00,10,00,16,00,10,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
-HKR,InterfaceSetting\OEMMicInSettingsOverride\EP\0, %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+;;HKR,InterfaceSetting\OEMSettingsOverride\EP\0, "RtEPAssociation",,%KSNODETYPE_ANY%
+;;HKR,InterfaceSetting\OEMSettingsOverride\EP\0, %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,DC,05,00,08,00,20,00,16,00,18,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
+;;HKR,InterfaceSetting\OEMSettingsOverride\EP\0, %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+;;HKR,InterfaceSetting\RTHDAProperties\EP\0,"RtEPAssociation",,%KSNODETYPE_ANY%
+;;HKR,InterfaceSetting\RTHDAProperties\EP\0,%PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+;;HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, "RtEPAssociation",,%KSNODETYPE_ANY%
+;;HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,EE,02,00,04,00,10,00,16,00,10,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
+;;HKR,InterfaceSetting\OEMSPDIFSettingsOverride\EP\0, %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+;;HKR,InterfaceSetting\SysRecFx\EP\0,"RtEPAssociation",,%KSNODETYPE_ANY%
+;;HKR,InterfaceSetting\SysRecFx\EP\0,%PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+;;HKR,InterfaceSetting\OEMMicInSettingsOverride\EP\0, "RtEPAssociation",,%KSNODETYPE_ANY%
+;;HKR,InterfaceSetting\OEMMicInSettingsOverride\EP\0, %PKEY_AudioEngine_OEMFormat%, %REG_BINARY%, 41,00,C8,70,28,00,00,00,FE,FF,02,00,80,BB,00,00,00,EE,02,00,04,00,10,00,16,00,10,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
+;;HKR,InterfaceSetting\OEMMicInSettingsOverride\EP\0, %PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
 
 HKR,SSTPPCfg\{7111001F-D35F-44D9-81D2-7AC685BED3D7}\SPK\EFX,Enabled,0x10001,1
 HKR,SSTPPCfg\{7111001F-D35F-44D9-81D2-7AC685BED3D7}\SPK\EFX,Position,0x10001,1
 
-HKR,SSTPPCfg\{E1284052-8664-4FE4-A353-3878F72704C3}\HP\EFX,Enabled,0x10001,1
-HKR,SSTPPCfg\{E1284052-8664-4FE4-A353-3878F72704C3}\HP\EFX,Position,0x10001,1
+;;HKR,SSTPPCfg\{E1284052-8664-4FE4-A353-3878F72704C3}\HP\EFX,Enabled,0x10001,1
+;;HKR,SSTPPCfg\{E1284052-8664-4FE4-A353-3878F72704C3}\HP\EFX,Position,0x10001,1
 HKR,SSTPPCfg\{E1284052-8664-4FE4-A353-3878F72704C3}\SPK\EFX,Enabled,0x10001,1
 HKR,SSTPPCfg\{E1284052-8664-4FE4-A353-3878F72704C3}\SPK\EFX,Position,0x10001,1
 
-HKR,SSTPPCfg\{B489C2DE-0F96-42E1-8A2D-C25B5091EE49}\HP\EFX,Enabled,0x10001,1
-HKR,SSTPPCfg\{B489C2DE-0F96-42E1-8A2D-C25B5091EE49}\HP\EFX,Position,0x10001,1
+;;HKR,SSTPPCfg\{B489C2DE-0F96-42E1-8A2D-C25B5091EE49}\HP\EFX,Enabled,0x10001,1
+;;HKR,SSTPPCfg\{B489C2DE-0F96-42E1-8A2D-C25B5091EE49}\HP\EFX,Position,0x10001,1
 HKR,SSTPPCfg\{B489C2DE-0F96-42E1-8A2D-C25B5091EE49}\SPK\EFX,Enabled,0x10001,1
 HKR,SSTPPCfg\{B489C2DE-0F96-42E1-8A2D-C25B5091EE49}\SPK\EFX,Position,0x10001,1
 
-HKR,SSTPPCfg\{E0E018A8-3550-4B54-A8D0-A8E05D0FCBA2}\HP\MFX,Enabled,0x10001,1
-HKR,SSTPPCfg\{E0E018A8-3550-4B54-A8D0-A8E05D0FCBA2}\HP\MFX,Position,0x10001,1
+;;HKR,SSTPPCfg\{E0E018A8-3550-4B54-A8D0-A8E05D0FCBA2}\HP\MFX,Enabled,0x10001,1
+;;HKR,SSTPPCfg\{E0E018A8-3550-4B54-A8D0-A8E05D0FCBA2}\HP\MFX,Position,0x10001,1
 HKR,SSTPPCfg\{E0E018A8-3550-4B54-A8D0-A8E05D0FCBA2}\SPK\MFX,Enabled,0x10001,1
 HKR,SSTPPCfg\{E0E018A8-3550-4B54-A8D0-A8E05D0FCBA2}\SPK\MFX,Position,0x10001,1
 
@@ -459,16 +459,16 @@ HKR,SSTPPCfg\{C75061F3-F2B2-4DCC-8F9F-82ABB4131E66}\SPK\EFX,Position,0x10001,1
 
 HKR,SSTPPCfg\{D46F9D72-81A4-47FD-B301-8E39D17C0981}\SPK\EFX,Enabled,0x10001,1
 HKR,SSTPPCfg\{D46F9D72-81A4-47FD-B301-8E39D17C0981}\SPK\EFX,Position,0x10001,1
-;HKR,SSTPPCfg\{D46F9D72-81A4-47FD-B301-8E39D17C0981}\HP\EFX,Enabled,0x10001,1
-;HKR,SSTPPCfg\{D46F9D72-81A4-47FD-B301-8E39D17C0981}\HP\EFX,Position,0x10001,1
+;;HKR,SSTPPCfg\{D46F9D72-81A4-47FD-B301-8E39D17C0981}\HP\EFX,Enabled,0x10001,1
+;;HKR,SSTPPCfg\{D46F9D72-81A4-47FD-B301-8E39D17C0981}\HP\EFX,Position,0x10001,1
 
 HKR,SSTPPCfg\{347297C3-A6D5-40DB-8120-ACE66BABF491}\MIC\MFX,Enabled,0x10001,1
 HKR,SSTPPCfg\{347297C3-A6D5-40DB-8120-ACE66BABF491}\MIC\MFX,Position,0x10001,1
 
 HKR,SSTPPCfg\{849F0D73-1678-4D57-8C78-61C548253993}\SPK\EFX,Enabled,0x10001,1
 HKR,SSTPPCfg\{849F0D73-1678-4D57-8C78-61C548253993}\SPK\EFX,Position,0x10001,1
-HKR,SSTPPCfg\{849F0D73-1678-4D57-8C78-61C548253993}\HP\EFX,Enabled,0x10001,1
-HKR,SSTPPCfg\{849F0D73-1678-4D57-8C78-61C548253993}\HP\EFX,Position,0x10001,1
+;;HKR,SSTPPCfg\{849F0D73-1678-4D57-8C78-61C548253993}\HP\EFX,Enabled,0x10001,1
+;;HKR,SSTPPCfg\{849F0D73-1678-4D57-8C78-61C548253993}\HP\EFX,Position,0x10001,1
 
 ;; Names
 
@@ -766,7 +766,7 @@ MediaCategories="SYSTEM\CurrentControlSet\Control\MediaCategories"
 ;;
 ;; PropertyKey GUIDS
 ;;
-PKEY_AudioEndpoint_Supports_EventDriven_Mode = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},7"
+;;PKEY_AudioEndpoint_Supports_EventDriven_Mode = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},7"
 
 ;;
 ;; PKEY_AudioEngine_OEMFormat:  Specifies the default format that is used for rendering/capturing.
